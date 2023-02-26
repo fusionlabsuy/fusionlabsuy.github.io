@@ -326,9 +326,6 @@ header{
 }
 
 @media only screen and (max-width: 500px){
-    .container{
-        display: none;
-    }
     .hamburger{
         display: block;
         cursor: pointer;
@@ -340,37 +337,36 @@ header{
         margin: 6px 0;
     }
     .nav-bar{
-        height: 300px;
+        height: 0;
         position: absolute;
         top: 80px;
-        right: 0;
         left: 0;
-        margin-left: -30px !important;
-        min-width: 330px;
-        width: 100%;
+        right: 0;
+        width: 100vw;
         background: #fefefe;
         transition: 0.2s;
         overflow: hidden;
     }
     .nav-bar.active{
-        height:450px;
+        height: 550px;
     }
     .nav-bar ul{
-        display: inline-block;
-        justify-content: center;
-        margin: 40px auto;
+        display: block;
+        width: fit-content;
+        margin: 80px auto 0 auto;
         text-align: center;
         transition: 0.5s;
+        opacity: 0;
+        overflow: hidden;
     }
     .nav-bar.active ul{
-        opacity: 1;
+        opacity: 1 !important;
     }
     .nav-bar ul li a{
         margin-bottom: 12px;
+        margin-left: 0 !important;
     }
 }
-
-
 
 
 
