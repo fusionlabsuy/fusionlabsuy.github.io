@@ -1,0 +1,304 @@
+@import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&display=swap');
+
+*, 
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: "Jost", sans-serif;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
+/* NAVIGATION BAR */
+
+.navBar{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: relative;
+
+    max-width: 70rem;
+    height: 3rem;
+    width: 100%;
+
+    margin: 0 auto;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+
+    z-index: 10;
+}
+
+.logo{
+    display: flex;
+    align-items: center;
+    cursor: pointer;
+}
+
+.logo img{
+    width: 30px;
+    margin-right: 0.6rem;
+    margin-top: -0.6rem;
+}
+
+.logo h3{
+    color: var(--darkTwo);
+    font-size: 23px;
+    font-weight: 500;
+    line-height: 1;
+}
+
+.menu ul{
+    display: flex;
+    list-style: none;
+    align-items: center;
+}
+
+.menu a{
+    color: #312f3a;
+    font-size: 18px;
+    font-weight: 600;
+    margin-left: 5rem;
+    display: inline-block;
+}
+
+.menu a:hover{
+    color: #f95590;
+    transform: scale(1.01);
+    transition: 0.2s;
+}
+
+.btn-nav{
+    display: inline-block;
+    padding: 0.6rem 1rem;
+    color: #fff !important;
+    background-color: #312f3a;
+    font-weight: 600 !important;
+    border-radius: 40px;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+
+.btn-nav:hover{
+    color: #000 !important;
+    background-color: #ccc;
+    transform: scale(1) !important;
+}
+
+
+/* LANDING CONTAINER */
+
+.container{
+    background-image: linear-gradient(to bottom right, #3c8ce7 10%, #00cfff 80%);;
+    color: white;
+
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    max-width: 70rem;
+    width: 100%;
+    height: 25rem;
+
+    margin: 0 auto;
+    margin-top: 0.6rem;
+    margin-bottom: 1rem;
+
+    padding: 3rem 5rem;
+    border-radius: 50px 50px 200px 50px;
+    z-index: 10;
+}
+
+.title{
+    font-size: 1.2rem;
+}
+
+.text{
+    font-size: 1rem;
+    margin: 1.9rem 0 2.5rem;
+    max-width: 600px;
+    line-height: 2;
+}
+
+.btn-wp{
+    display: inline-block;
+    padding: 0.6rem 2.6rem;
+    color: #fff !important;
+    background-color: #f95590;
+    font-size: 20px;
+    font-weight: 600 !important;
+    border-radius: 40px;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+
+.btn-wp:hover{
+    background-color: #fff;
+    color: #f95590 !important;
+}
+
+/* ABOUT US */
+
+.selector{
+    max-width: 70rem;
+    width: 100%;
+    height: 46rem;
+
+    margin: 0 auto;
+    margin-top: 2rem;
+    margin-bottom: 2rem;
+
+    align-items: center;
+    justify-content: center;
+
+    z-index: 10;
+}
+
+.selector img{
+    width: 200px;
+    margin: 2rem;
+}
+
+.selector h1{
+    margin-left: 1.5rem;
+    color: #3c8ce7;
+}
+
+.selector p{
+    padding: 0 4rem;
+    font-size: 1.3rem;
+    line-height: 1.5;
+}
+
+.top, .bottom{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+
+    align-items: center;
+    justify-content: center;
+
+    background: radial-gradient(circle at center, #fff 0%, #ddd 100%);
+    box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.3);
+
+    margin-left: auto;
+    margin-right: auto;
+    margin-bottom: 1.5rem;
+    margin-top: 1.5rem;
+
+    padding: 3rem;
+    border-radius: 60px;
+
+    height: 20rem;
+    max-width: 70rem;
+    width: 100%;
+}
+
+/* PRODUCTS */
+
+.products{
+    text-align: center;
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    background-image: linear-gradient(to bottom right, #3c8ce7 10%, #00cfff 80%);;
+    color: white;
+
+    max-width: 70rem;
+    width: 100%;
+    height: 50rem;
+
+    margin: 0 auto;
+    margin-top: 4rem;
+    margin-bottom: 1rem;
+
+    padding: 3.5rem 7rem;
+    border-radius: 100px;
+    z-index: 10;
+}
+
+.products .btn-wp{
+    display: inline-block;
+}
+
+.products h1{
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.plans{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    margin-top: 2rem;
+}
+
+.plans ul{
+    margin-bottom: 5px;
+    text-align: left !important;
+    list-style-position: inside;
+    list-style-image: url(images/tick.png) !important;
+}
+
+.plans li{  
+    color: #312f3a;
+    font-size: 18px;
+    display: inline-block;
+    margin-bottom: 15px;
+}
+
+.plans h2{
+    font-size: 2rem;
+    color: #312f3a;
+}
+
+.plans h3{
+    font-size: 2.5rem;
+    color: #3c8ce7;
+    margin-bottom: 10px;
+}
+
+.plans h4{
+    font-size: 1.4rem;
+    color: #3c8ce7;
+}
+
+.plans h2, h3, h4{
+    margin: 0 auto;
+}
+
+.standard, .avanzado, .premium{
+    display: inline-block;
+    background: radial-gradient(circle at center, #fff 0%, #efefef 100%);
+    border-radius: 50px;
+
+    width: 250px;
+    height: 520px;
+
+    padding: 2rem 1rem;
+}
+
+.tick{
+    display: inline-block;
+    width: 30px;
+    justify-content: center;
+}
+
+.cross img{
+    width: 18px;
+}
+
+
+
