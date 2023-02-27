@@ -22,13 +22,7 @@ a{
 
 /* NAVIGATION BAR */
 
-header{
-    display: flex;
-    justify-content: space-between;
-    align-items: center;
-
-    position: relative;
-
+.navPos{
     max-width: 70rem;
     height: 3rem;
     width: 100%;
@@ -36,6 +30,23 @@ header{
     margin: 0 auto;
     margin-top: 1rem;
     margin-bottom: 1rem;
+    z-index: 0;
+}
+
+header{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+
+    position: fixed;
+    background-color: #fefefe;
+    z-index: 20;
+    margin-top: -1rem;
+    padding: 0.5rem;
+
+    max-width: 70rem;
+    height: 4rem;
+    width: 100%;
 }
 
 .logo{
@@ -442,6 +453,7 @@ header{
 
         box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.3);
     
+        margin-left: 0.25rem;
         margin-bottom: 1rem;
         margin-top: 1rem;
     
