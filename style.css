@@ -24,7 +24,7 @@ a{
 
 .navPos{
     max-width: 70rem;
-    height: 3rem;
+    height: 2.6rem;
     width: 100%;
 
     margin: 0 auto;
@@ -343,12 +343,39 @@ header{
         display: block;
         cursor: pointer;
     }
-    .hamburger .line{
+    .hamburger div{
+        width: 30px;
+        height: 30px;
+        margin: 1px;
+        position: relative;
+    }
+    .hamburger span{
         width: 30px;
         height: 3px;
-        background: #312f3a;
-        margin: 6px 0;
+        background: #000;
+        border-radius: 5px;
+        display: block;
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%, -50%);
     }
+    .hamburger .line-1{
+        transform: translate(-50%, -10px);
+    }
+    .hamburger .line-3{
+        transform: translate(-50%, 8px);
+    }
+    .hamburger.active .line-1{
+        transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    .hamburger.active .line-2{
+        width: 0;
+    }
+    .hamburger.active .line-3{
+        transform: translate(-50%, -50%) rotate(45deg);
+    }
+   
     .nav-bar{
         margin-top: -1.5rem;
         height: 0;
