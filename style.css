@@ -359,6 +359,7 @@ header{
         top: 50%;
         left: 50%;
         transform: translate(-50%, -50%);
+        transition: 0.4s;
     }
     .hamburger .line-1{
         transform: translate(-50%, -10px);
@@ -385,7 +386,7 @@ header{
         right: 0;
         width: 100vw;
         background: #fefefe;
-        transition: 0.2s;
+        transition: 0.4s;
         overflow: hidden;
     }
     .nav-bar.active{
