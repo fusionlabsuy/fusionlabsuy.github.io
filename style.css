@@ -10,6 +10,7 @@
 
 body{
     font-family: "Jost", sans-serif;
+    background-color: #fefefe;
 }
 
 img{
@@ -39,7 +40,7 @@ header{
     align-items: center;
 
     position: fixed;
-    background-color: #fefefe;
+    background-color: #fff;
     z-index: 20;
     margin-top: -1rem;
     padding: 0.5rem;
@@ -489,6 +490,85 @@ header{
     
         height: 200px;
         width: 93vw;
+    }
+
+    /* PRODUCTS - RESPONSIVE */
+
+    .products{
+        width: 93vw;
+        height: 430px;
+    
+        margin: 0 auto;
+        margin-top: 4rem;
+        margin-bottom: 1rem;
+    
+        padding: 1.5rem 1rem;
+        border-radius: 40px;
+    }
+    
+    .products .btn-wp{
+        display: inline-block;
+        font-size: 16px;
+        padding: 5px 10px;
+        margin-bottom: 10px;
+    }
+    
+    .products h1{
+        font-size: 1.8rem;
+        margin-bottom: 10px;
+    }
+    
+    .plans{
+        display: flex;
+        align-items: center;
+        justify-content: space-between;
+        margin-top: 10px;
+    }
+    
+    .plans ul{
+        margin-bottom: 5px;
+        text-align: left !important;
+        list-style-position: inside;
+        list-style-image: url(images/tick.png) !important;
+    }
+    
+    .plans li{  
+        color: #312f3a;
+        font-size: 8px;
+        display: inline-block;
+        margin-bottom: 1px;
+    }
+    
+    .plans h2{
+        font-size: 1rem;
+        color: #312f3a;
+    }
+    
+    .plans h3{
+        font-size: 1rem;
+        color: #3c8ce7;
+        margin-bottom: 2px;
+    }
+    
+    .plans h4{
+        font-size: 0.6rem;
+        color: #3c8ce7;
+        margin-top: 10px;
+    }
+    
+    .plans h2, h3, h4{
+        margin: 0 auto;
+    }
+    
+    .standard, .avanzado, .premium{
+        display: inline-block;
+        background: radial-gradient(circle at center, #fff 0%, #efefef 100%);
+        border-radius: 20px;
+    
+        width: 100px;
+        height: 270px;
+    
+        padding: 1rem 0.6rem;
     }
     
 }
