@@ -496,25 +496,25 @@ header{
 
     .products{
         width: 93vw;
-        height: 430px;
+        height: 400px;
     
         margin: 0 auto;
         margin-top: 4rem;
         margin-bottom: 1rem;
     
-        padding: 1.5rem 1rem;
+        padding: 1.2rem 1rem;
         border-radius: 40px;
     }
     
     .products .btn-wp{
         display: inline-block;
-        font-size: 16px;
+        font-size: 14px;
         padding: 5px 10px;
         margin-bottom: 10px;
     }
     
     .products h1{
-        font-size: 1.8rem;
+        font-size: 1.5rem;
         margin-bottom: 10px;
     }
     
