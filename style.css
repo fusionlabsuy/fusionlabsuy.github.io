@@ -44,10 +44,11 @@ header{
     z-index: 20;
     margin-top: -1rem;
     padding: 0.5rem;
+    padding-left: 7rem;
+    padding-right: 7.8rem;
 
-    max-width: 70rem;
     height: 4rem;
-    width: 100%;
+    width: 100vw;
 }
 
 .logo{
@@ -502,7 +503,7 @@ header{
         margin-top: 4rem;
         margin-bottom: 1rem;
     
-        padding: 1.5rem 1rem;
+        padding: 2rem 1rem;
         border-radius: 40px;
     }
     
