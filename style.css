@@ -309,6 +309,11 @@ header{
     height: 520px;
 
     padding: 2rem 1.5rem;
+    cursor: pointer;
+}
+
+.premium:hover{
+    background-color: #000 !important;
 }
 
 .tick{
@@ -497,7 +502,7 @@ header{
 
     .products{
         width: 93vw;
-        height: 430px;
+        height: 330px;
     
         margin: 0 auto;
         margin-top: 4rem;
@@ -505,6 +510,9 @@ header{
     
         padding: 2rem 1rem;
         border-radius: 40px;
+    }
+    .products.active{
+        height: 400px;
     }
     
     .products .btn-wp{
@@ -521,55 +529,47 @@ header{
     
     .plans{
         display: flex;
+        flex-direction: column;
         align-items: center;
         justify-content: space-between;
         margin-top: 10px;
     }
     
-    .plans ul{
-        margin-bottom: 5px;
-        text-align: left !important;
-        list-style-position: inside;
-        list-style-image: url(images/tick.png) !important;
-    }
-    
-    .plans li{  
-        color: #312f3a;
-        font-size: 8px;
-        display: inline-block;
-        margin-bottom: 1px;
+    .plans li, h4{  
+        display: none;
     }
     
     .plans h2{
-        font-size: 1rem;
+        font-size: 1.2rem;
         color: #312f3a;
     }
     
     .plans h3{
         font-size: 1rem;
         color: #3c8ce7;
-        margin-bottom: 2px;
     }
     
-    .plans h4{
-        font-size: 0.6rem;
-        color: #3c8ce7;
-        margin-top: 10px;
-    }
-    
-    .plans h2, h3, h4{
+    .plans h2, h3{
         margin: 0 auto;
     }
     
     .standard, .avanzado, .premium{
-        display: inline-block;
+        display: flex;
+
         background: radial-gradient(circle at center, #fff 0%, #efefef 100%);
         border-radius: 20px;
+        transition: 0.4s;
     
-        width: 100px;
-        height: 270px;
+        width: 300px;
+        height: 50px;
     
-        padding: 1rem 0.6rem;
+        padding: 0.6rem;
+        margin-bottom: 10px;
+    }
+
+    .standard.active, .avanzado.active, .premium.active{
+        height: 120px;
+        
     }
     
 }
