@@ -64,7 +64,7 @@ header{
 }
 
 .logo h3{
-    color: var(--darkTwo);
+    color: #000;
     font-size: 23px;
     font-weight: 500;
     line-height: 1;
@@ -535,22 +535,13 @@ header{
         margin-top: 10px;
     }
     
-    .plans li, h4{  
+    .plans li, .plans h4, .plans h3{  
         display: none;
     }
     
     .plans h2{
         font-size: 1.2rem;
         color: #312f3a;
-    }
-    
-    .plans h3{
-        font-size: 1rem;
-        color: #3c8ce7;
-    }
-    
-    .plans h2, h3{
-        margin: 0 auto;
     }
     
     .standard, .avanzado, .premium{
@@ -569,7 +560,14 @@ header{
 
     .standard.active, .avanzado.active, .premium.active{
         height: 120px;
-        
+        display: flex;
+        flex-direction: column;
+    }
+
+    .standard.active h3, .avanzado.active h3, .premium.active h3{
+        display: flex;
+        font-size: 1.2rem;
+        color: #3c8ce7;
     }
     
 }
