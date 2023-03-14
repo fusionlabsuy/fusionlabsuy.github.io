@@ -511,9 +511,6 @@ header{
         padding: 2rem 1rem;
         border-radius: 40px;
     }
-    .products.active{
-        height: 400px;
-    }
     
     .products .btn-wp{
         display: inline-block;
@@ -558,9 +555,24 @@ header{
         margin-bottom: 10px;
     }
 
-    .standard.active, .avanzado.active, .premium.active{
-        height: 120px;
+    .peek{
         display: flex;
+        flex-direction: column;
+        justify-content: center;
+        align-items: center;
+        margin: 0 auto;
+    }
+
+        /* Products - active styles */
+
+    .products.active{
+        height: 520px;
+    }
+
+    .standard.active, .avanzado.active, .premium.active{
+        height: 220px;
+        display: grid;
+        grid-template-columns: repeat(2, 1fr);
         flex-direction: column;
     }
 
@@ -569,6 +581,30 @@ header{
         font-size: 1.2rem;
         color: #3c8ce7;
     }
+
+    .standard.active li, .avanzado.active li, .premium.active li{
+        color: #312f3a;
+        font-size: 12px;
+        display: flex;
+        line-height: 0.5;
+        margin-top: 20px;
+    }
+
+    .standard.active .content, .avanzado.active .content, .premium.active .content{
+       align-items: center;
+    }
+
+    .peek.active{
+        margin-top: 20px;
+    }
+
+    .standard.active h4, .avanzado.active h4, .premium.active h4{
+        display: flex;
+        font-size: 15px;
+        margin-top: -60px;
+    }
+
+    
     
 }
 
