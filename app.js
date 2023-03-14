@@ -41,14 +41,6 @@ standard.onmouseout = function(){
     peek.classList.toggle("active");
 }
 
-standard.onclick = function(){
-    standard.classList.toggle("active");
-
-    products.classList.toggle("active");
-    plans.classList.toggle("active");
-    peek.classList.toggle("active");
-}
-
 
 // Avanzado - toggle functions
 
@@ -61,14 +53,6 @@ avanzado.onmouseover = function(){
 }
 
 avanzado.onmouseout = function(){
-    avanzado.classList.toggle("active");
-
-    products.classList.toggle("active");
-    plans.classList.toggle("active");
-    peek.classList.toggle("active");
-}
-
-avanzado.onclick = function(){
     avanzado.classList.toggle("active");
 
     products.classList.toggle("active");
@@ -95,10 +79,4 @@ premium.onmouseout = function(){
     peek.classList.toggle("active");
 }
 
-premium.onclick = function(){
-    premium.classList.toggle("active");
 
-    products.classList.toggle("active");
-    plans.classList.toggle("active");
-    peek.classList.toggle("active");
-}
