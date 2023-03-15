@@ -16,7 +16,6 @@
     
     products = document.querySelector(".products");
     plans = document.querySelector(".plans");
-    peek = document.querySelector(".peek");
     
     standard = document.querySelector(".standard");
     avanzado = document.querySelector(".avanzado");
@@ -30,7 +29,6 @@
     
         products.classList.toggle("active");
         plans.classList.toggle("active");
-        peek.classList.toggle("active");
     }
     
     standard.onmouseout = function(){
@@ -38,7 +36,6 @@
     
         products.classList.toggle("active");
         plans.classList.toggle("active");
-        peek.classList.toggle("active");
     }
     
     
@@ -49,7 +46,6 @@
     
         products.classList.toggle("active");
         plans.classList.toggle("active");
-        peek.classList.toggle("active");
     }
     
     avanzado.onmouseout = function(){
@@ -57,7 +53,6 @@
     
         products.classList.toggle("active");
         plans.classList.toggle("active");
-        peek.classList.toggle("active");
     }
     
     
@@ -68,7 +63,6 @@
     
         products.classList.toggle("active");
         plans.classList.toggle("active");
-        peek.classList.toggle("active");
     }
     
     premium.onmouseout = function(){
@@ -76,7 +70,6 @@
     
         products.classList.toggle("active");
         plans.classList.toggle("active");
-        peek.classList.toggle("active");
     }
     
     
