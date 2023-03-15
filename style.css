@@ -62,7 +62,7 @@ header{
 .logo img{
     width: 30px;
     margin-right: 0.6rem;
-    margin-top: -0.6rem;
+    margin-top: -0.45rem;
 }
 
 .logo h3{
@@ -327,6 +327,45 @@ header{
     width: 18px;
 }
 
+
+/* FOOTER */
+
+footer{
+    color: #efefef;
+    background-color: #111;
+    margin-top: 4rem;
+    padding: 3rem;
+    padding-right: 160px;
+}
+
+footer ul{
+    list-style: none;
+}
+
+.horizontal{
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+}
+
+.horizontal h4{
+    font-size: 28px;
+}
+
+.img-footer-fd{
+    width: 350px;
+    margin: 40px;
+    margin-top: 0;
+}
+
+.img-footer-rd{
+    display: none;
+    width: 0;
+}
+
+.footer-contact{
+    margin-top: -20px;
+}
 
 
 /* RESPONSIVE */
@@ -613,4 +652,24 @@ header{
         margin-top: -25px;
      }
 
+
+     /* FOOTER - RESPONSIVE */
+
+    .footer{
+        margin-top: 2.5rem;
+    }
+
+    .pages-footer, .partners-footer{
+        display: none;
+     }
+
+    .img-footer-fd{
+        display: none;
+        width: 0 !important;
+     }
+
+    .img-footer-rd{
+        width: 100px;
+     }
+    
 }
