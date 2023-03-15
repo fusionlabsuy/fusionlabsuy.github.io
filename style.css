@@ -1,3 +1,5 @@
+/* FusionLabs - juanigomez | landing page - CSS */
+
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&display=swap');
 
 *, 
@@ -316,13 +318,12 @@ header{
     background-color: #000 !important;
 }
 
-.tick{
+.plans.tick{
     display: inline-block;
     width: 30px;
     justify-content: center;
 }
-
-.cross img{
+.plans.cross img{
     width: 18px;
 }
 
@@ -574,6 +575,7 @@ header{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         flex-direction: column;
+        transition: 0.3s ease-in;
     }
 
     .standard.active h3, .avanzado.active h3, .premium.active h3{
@@ -583,28 +585,32 @@ header{
     }
 
     .standard.active li, .avanzado.active li, .premium.active li{
-        color: #312f3a;
-        font-size: 12px;
+        color: #000;
+        font-size: 12.5px;
         display: flex;
         line-height: 0.5;
         margin-top: 20px;
     }
 
-    .standard.active .content, .avanzado.active .content, .premium.active .content{
+    .plans .content{
        align-items: center;
     }
 
-    .peek.active{
-        margin-top: 20px;
+    .products.no li{
+        text-decoration: line-through;
+        text-decoration-style: double;
     }
 
     .standard.active h4, .avanzado.active h4, .premium.active h4{
         display: flex;
         font-size: 15px;
-        margin-top: -60px;
+        color: #312f3a;
+        margin-top: -85px;
+        padding: 0 30px;
     }
 
-    
-    
-}
+    .standard.active .peek, .avanzado.active .peek, .premium.active .peek{
+        margin-top: -25px;
+     }
 
+}
