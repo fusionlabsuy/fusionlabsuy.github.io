@@ -588,10 +588,10 @@ footer ul{
         border-radius: 20px;
         transition: 0.4s;
     
-        width: 300px;
+        width: 80vw;
         height: 50px;
     
-        padding: 0.6rem;
+        padding: 0.6rem 0;
         margin-bottom: 10px;
     }
 
@@ -623,9 +623,17 @@ footer ul{
         color: #3c8ce7;
     }
 
+    .standard.active h4, .avanzado.active h4, .premium.active h4{
+        display: flex;
+        font-size: 15px;
+        color: #312f3a;
+        margin-top: -85px;
+        padding: 0 45px;
+    }
+
     .standard.active li, .avanzado.active li, .premium.active li{
         color: #000;
-        font-size: 12.5px;
+        font-size: 12px;
         display: flex;
         line-height: 0.5;
         margin-top: 20px;
@@ -638,14 +646,6 @@ footer ul{
     .products.no li{
         text-decoration: line-through;
         text-decoration-style: double;
-    }
-
-    .standard.active h4, .avanzado.active h4, .premium.active h4{
-        display: flex;
-        font-size: 15px;
-        color: #312f3a;
-        margin-top: -85px;
-        padding: 0 30px;
     }
 
     .standard.active .peek, .avanzado.active .peek, .premium.active .peek{
