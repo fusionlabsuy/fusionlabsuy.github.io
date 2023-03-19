@@ -1,12 +1,16 @@
 // FusionLabs - juanigomez | landing page - JavaScript
 
-
     //toggle responsive menu:
 
     hamburger = document.querySelector(".hamburger");
     navBar = document.querySelector(".nav-bar");
     
     hamburger.onclick = function(){
+        navBar.classList.toggle("active");
+        hamburger.classList.toggle("active");
+    }
+
+    navBar.onclick = function(){
         navBar.classList.toggle("active");
         hamburger.classList.toggle("active");
     }
