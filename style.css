@@ -24,6 +24,38 @@ a{
     text-decoration: none;
 }
 
+/* Section Divider */
+
+.sec-div{
+    color: #fff;
+    background-color: #f95590;
+    border-radius: 50px;
+
+    height: 70px;
+    width: 70rem;
+
+    margin: 0 auto;
+    margin-top: 70px !important;
+    padding: 15px 50px;
+}
+
+.cont{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+.sec-div .line{
+    width: 350px;
+    height: 10px;
+    background: #fff;
+    border-radius: 5px;
+}
+
+.sec-div h2{
+    font-size: 30px;
+}
+
 /* NAVIGATION BAR */
 
 .navPos{
@@ -58,6 +90,11 @@ header{
     display: flex;
     align-items: center;
     cursor: pointer;
+}
+
+.logo a{
+    display: flex;
+    flex-direction: row !important;
 }
 
 .logo img{
@@ -131,6 +168,7 @@ header{
     background-image: linear-gradient(to bottom right, #3c8ce7 10%, #00cfff 80%);;
     color: white;
 
+    display: grid;
     grid-template-columns: repeat(2, 1fr);
     align-items: center;
     justify-content: center;
@@ -174,6 +212,15 @@ header{
 .btn-wp:hover{
     background-color: #fff;
     color: #f95590 !important;
+}
+
+.container .left{
+    margin-top: -150px;
+}
+
+.container .icon{
+    width: 450px;
+    translate: 120px 0;
 }
 
 /* ABOUT US */
@@ -230,6 +277,15 @@ header{
     width: 100%;
 }
 
+.top .right, .bottom .left{
+    translate: 0 -80px;
+}
+
+.about-img-1, .about-img-2{
+    width: 300px !important;
+    translate: 100px -70px;
+}
+
 /* PRODUCTS */
 
 .products{
@@ -246,7 +302,7 @@ header{
     height: 50rem;
 
     margin: 0 auto;
-    margin-top: 4rem;
+    margin-top: 1.5rem;
     margin-bottom: 1rem;
 
     padding: 3.5rem 10rem;
@@ -394,6 +450,26 @@ footer ul{
 
 @media only screen and (max-width: 1020px){
 
+    /* Section Divider */
+
+    .sec-div{
+        width: 92vw;
+        height: 55px;
+    }
+
+    .cont{
+        justify-content: center;
+    }
+
+    .sec-div h2{
+        font-size: 25px;
+        margin-top: -5px;
+    }
+
+    .sec-div .line{
+        display: none;
+    }
+
     /* NAVIGATIOON BAR - RESPONSIVE */
 
     .hamburger{
@@ -470,12 +546,13 @@ footer ul{
     /* LANDING CONTAINER - RESPONSIVE */
 
     .container{
+        display: flex;
         max-width: 93vw;
         width: 100%;
         height: 220px;
         padding: 1.8rem;
         border-radius: 40px;
-        margin-top: -0.5rem;
+        margin-top: -0.5rem !important;
     }
 
     .container .text{
@@ -504,7 +581,19 @@ footer ul{
         color: #f95590 !important;
     }
 
+    .container .left{
+        margin-top: -0.5rem;
+    }
+
+    .container .icon, .about-img-1, .aboout-img-2{
+        display: none;
+    }
+
     /* ABOUT US - RESPONSIVE */
+
+    .selector .sec-div{
+        margin-top: 20px !important;
+    }
 
     .selector{
         width: 93vw;
@@ -516,11 +605,6 @@ footer ul{
     
         align-items: center;
         justify-content: center;
-    }
-
-    .selector h1{
-        font-size: 1.8rem;
-        margin-top: -0.5rem;
     }
 
     .selector img{
@@ -548,18 +632,27 @@ footer ul{
         width: 93vw;
     }
 
+    .top .right, .bottom .left{
+        translate: 0;
+    }
+
     /* PRODUCTS - RESPONSIVE */
+
+    .products .sec-div{
+        translate: 0 70px !important;
+    }
 
     .products{
         width: 93vw;
         height: 330px;
     
         margin: 0 auto;
-        margin-top: 4rem;
+        margin-top: 15px;
         margin-bottom: 2rem;
     
         padding: 2rem 1rem;
         border-radius: 40px;
+        transition: 0.3s ease-in-out;
     }
     
     .products .btn-wp{
@@ -616,7 +709,7 @@ footer ul{
         /* Products - active styles */
 
     .products.active{
-        height: 520px;
+        height: 500px;
     }
 
     .standard.active, .avanzado.active, .premium.active{
@@ -624,7 +717,7 @@ footer ul{
         display: grid;
         grid-template-columns: repeat(2, 1fr);
         flex-direction: column;
-        transition: 0.3s ease-in;
+        transition: 0.3s ease-in-out;
     }
 
     .standard.active h3, .avanzado.active h3, .premium.active h3{
@@ -677,12 +770,12 @@ footer ul{
 
         height: 200px;
         width: 93vw;
-        padding: 1.5rem;
+        padding: 2rem;
         margin-left: 0.5rem;
      }
 
      .doc h1{
-        font-size: 25px;
+        font-size: 23px;
         color: #3c8ce7;
         margin-bottom: 8px;
      }
@@ -736,3 +829,68 @@ footer ul{
      }
     
 }
+
+
+
+/* RECENT WORKS */
+
+.container-works1{
+    background-image: linear-gradient(to bottom right, #3c8ce7 10%, #00cfff 80%);;
+    color: white;
+
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    max-width: 70rem;
+    width: 100%;
+    height: 8rem;
+
+    margin: 1rem auto;
+
+    padding: 2rem 5rem;
+    border-radius: 90px 90px 300px 90px;
+}
+
+
+/* Page Numbers - 1 */
+
+.numbers{
+    display: flex;
+    flex-direction: row;
+    align-items: center;
+    justify-content: space-around;
+
+    width: 200px;
+    height: 60px;
+
+    margin: 2rem auto;
+}
+
+.one-1, .one-2, .one-3{
+    border-radius: 12px;
+    border-style: solid;
+    border-width: 3px;
+    border-color: #000;
+
+    width: 45px;
+    height: 45px;
+
+    padding: 10px;
+    text-align: center;
+}
+
+.one-1 p, .one-2 p, .one-3 p{
+    font-size: 23px;
+    font-style: bold;
+    margin-top: -6.5px;    
+}
+
+.one-1, .one-1 p{
+    border-color: #3c8ce7;
+    color: #3c8ce7;
+}
+
+
+
