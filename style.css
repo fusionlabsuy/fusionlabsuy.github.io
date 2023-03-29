@@ -35,7 +35,6 @@ a{
     width: 70rem;
 
     margin: 0 auto;
-    margin-top: 70px !important;
     padding: 15px 50px;
 }
 
@@ -180,7 +179,7 @@ header{
 
     margin: 0 auto;
     margin-top: 0.6rem;
-    margin-bottom: 1rem;
+    margin-bottom: 70px;
 
     padding: 3rem 5rem;
     border-radius: 70px 70px 250px 70px;
@@ -232,7 +231,6 @@ header{
 
     margin: 0 auto;
     margin-top: 2rem;
-    margin-bottom: 2rem;
 
     align-items: center;
     justify-content: center;
@@ -455,6 +453,8 @@ footer ul{
     .sec-div{
         width: 92vw;
         height: 55px;
+        margin-top: 0px !important;
+        margin-bottom: 15px;
     }
 
     .cont{
@@ -553,6 +553,7 @@ footer ul{
         padding: 1.8rem;
         border-radius: 40px;
         margin-top: -0.5rem !important;
+        margin-bottom: 30px;
     }
 
     .container .text{
@@ -598,10 +599,7 @@ footer ul{
     .selector{
         width: 93vw;
         height: 450px;
-    
         margin: 0 0;
-        margin-top: 2rem;
-        margin-bottom: 2rem;
     
         align-items: center;
         justify-content: center;
