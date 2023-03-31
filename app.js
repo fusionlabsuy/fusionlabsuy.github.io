@@ -1,6 +1,6 @@
 // FusionLabs - juanigomez | landing page - JavaScript
 
-    //toggle responsive menu:
+//toggle responsive menu:
 
     hamburger = document.querySelector(".hamburger");
     navBar = document.querySelector(".nav-bar");
@@ -16,7 +16,7 @@
     }
     
     
-        //display plan content:
+//display plan content:
     
     products = document.querySelector(".products");
     plans = document.querySelector(".plans");
@@ -75,5 +75,30 @@
         products.classList.toggle("active");
         plans.classList.toggle("active");
     }
+
     
+// Send Email
+
+var csbtn = document.getElementById("btncs");
+
+csbtn.addEventListener('click', function(e){
+    e.preventDefault()
+
+    var name = document.getElementById('name').value;
+    var email = document.getElementById('email').value;
+    var msg = document.getElementById('msg').value;
+
+    body = 'name: ' +name + '<br/> email: ' +email + '<br/> message: ' +msg;
+
+    Email.send({
+        SecureToken : "09c36a42-e397-48c2-a1a7-7a86178c331c",
+        To : 'fusion.labs.uy@gmail.com',
+        From : 'fusion.labs.uy@gmail.com',
+        Subject : "Contact Message",
+        Body : body
+    }).then(
+      message => alert(message)
+    );
+
+})    
     

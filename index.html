@@ -207,19 +207,20 @@
             </div>
             <div class="form">
                 <h1>Envianos un mensaje</h1>
+                <form>
                     <div class="inp-box">
-                        <input type="text" class="inp" required>
+                        <input type="text"  id="name" class="inp" required>
                         <label>Name</label>
                     </div>
                     <div class="inp-box">
-                        <input type="mail" class="inp" required>
+                        <input type="mail" id="email" class="inp" required>
                         <label>Email</label>
                     </div>
                     <div class="inp-box">
-                        <textarea name="" class="inp" required id="message" cols="30" rows="10"></textarea> 
+                        <textarea name="" class="inp" required id="msg" cols="30" rows="10"></textarea> 
                         <label>Message</label>
                     </div>
-                    <input type="submit" class="btn-cs" value="mandar">
+                    <button type="submit" class="btn-cs" id="btncs">mandar</button>
                 </form>
             </div>
         </div>   
@@ -279,6 +280,8 @@
         </footer>
 
     </main>
+
+    <script src="https://smtpjs.com/v3/smtp.js"></script>
 
     <script src="app.js"></script>
     

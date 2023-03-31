@@ -327,8 +327,6 @@ header{
 .plans ul{
     margin-bottom: 5px;
     text-align: left !important;
-    list-style-position: inside;
-    list-style-image: url(images/tick.png) !important;
 }
 
 .plans li{  
@@ -373,16 +371,6 @@ header{
 .premium:hover{
     background-color: #000 !important;
 }
-
-.plans.tick{
-    display: inline-block;
-    width: 30px;
-    justify-content: center;
-}
-.plans.cross img{
-    width: 18px;
-}
-
 
 /* DOC */
 
@@ -886,7 +874,7 @@ footer ul{
      }
 
      .inp-box{
-        width: 280px;
+        width: 75vw;
      }
 
 
@@ -964,7 +952,7 @@ footer ul{
     
 }
 
-
+/* ------------------------------------------------------------------------------------------------------------------- */
 
 /* RECENT WORKS */
 
