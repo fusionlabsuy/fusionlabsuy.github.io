@@ -245,13 +245,15 @@ header{
     margin: 2rem;
 }
 
-.selector h1{
-    margin-left: 1.5rem;
+.selector h3{
+    font-size: 30px;
+    margin-left: 50px;
+    margin-bottom: 10px;
     color: #3c8ce7;
 }
 
 .selector p{
-    padding: 0 4rem;
+    padding-left: 50px;
     font-size: 1.3rem;
     line-height: 1.5;
 }
@@ -327,6 +329,13 @@ header{
 
     padding: 30px;
     margin: 10px;
+
+    transition: 0.35s ease-in-out;
+}
+
+.serv.active{
+    background-color: #312f3a;
+    color: #fff;
 }
 
 .s-num{
@@ -493,7 +502,7 @@ header{
     width: 100%;
     background-color: transparent;
     border: 2px solid #3c8ce7;
-    border-radius: 10px;
+    border-radius: 20px;
     outline: none;
     padding-left: 10px;
     color: #312f3a;
@@ -533,21 +542,27 @@ textarea{
     padding-top: 10px;
 }
 
-.btn-cs{
+.btn-bw{
     position: relative;
     top: 100px;
     background-color: #3c8ce7;
     color: #fff;
     outline: none;
     border: none;
-    border-radius: 15px;
+    border-radius: 30px;
     height: 45px;
     font-size: 16px;
-    padding: 3px 20px;
+    padding: 3px 25px;
     cursor: pointer;
     font-weight: 500;
     font-family: 'Jost', sans-serif;
     transform: translateY(-100px);
+    transition: 0.2s;
+}
+
+.btn-bw:hover{
+    background-color: #312f3a;
+    color: #3c8ce7;
 }
 
 
@@ -690,13 +705,16 @@ footer ul{
         overflow: hidden;
     }
     .nav-bar.active{
-        height: 235px;
+        height: 100vh;
+        display: flex;
+        align-items: center;
+        justify-content: center;
         background: radial-gradient(circle at center, #fff 0%, #ddd 100%);
     }
     .nav-bar ul{
         display: block;
         width: fit-content;
-        margin: 35px auto 0 auto;
+        margin: 35px auto 100px auto;
         text-align: center;
         transition: 0.5s;
         opacity: 0;
@@ -766,10 +784,17 @@ footer ul{
     .selector{
         width: 93vw;
         height: 450px;
-        margin: 0 0;
+        margin: 0 auto;
+        margin-bottom: 30px !important;
     
         align-items: center;
         justify-content: center;
+    }
+
+    .selector h3{
+        font-size: 23px;
+        margin-bottom: 5px;
+        margin-left: 30px;
     }
 
     .selector img{
@@ -777,8 +802,15 @@ footer ul{
     }
 
     .selector p{
+        display: flex;
+        align-items: center;
+        justify-content: center;
         font-size: 16px;
         width: fit-content;
+        margin-left: 30px;
+        margin-right: 30px;
+        padding: 0;
+        padding-bottom: 5px !important;
     }
 
     .top, .bottom{
@@ -793,7 +825,7 @@ footer ul{
     
         border-radius: 40px;
     
-        height: 200px;
+        height: 210px;
         width: 93vw;
     }
 
@@ -808,6 +840,7 @@ footer ul{
         height: 1280px;
         border-radius: 40px;
         margin-bottom: 30px;
+        margin-top: 15px;
     }
 
     .options{
@@ -1004,11 +1037,8 @@ footer ul{
         align-items: center;
         justify-content: center;
 
-        padding: 0.5rem 1.5rem;
-        font-size: 20px;
-        font-weight: 600;
-
-        width: 120px;
+        padding: 3px 25px;
+        font-size: 16px;
      }
 
      .doc .btn-bw:hover{

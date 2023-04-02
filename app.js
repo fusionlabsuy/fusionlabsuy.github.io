@@ -1,6 +1,6 @@
 // FusionLabs - juanigomez | landing page - JavaScript
 
-//toggle responsive menu:
+//Toggle Responsive Menu:
 
     hamburger = document.querySelector(".hamburger");
     navBar = document.querySelector(".nav-bar");
@@ -15,8 +15,44 @@
         hamburger.classList.toggle("active");
     }
     
+
+// Services - hover effect:
+
+hosting = document.getElementById("host");
+Ecommerce = document.getElementById("e-comm")
+landing = document.getElementById("lp");
+asess = document.getElementById("as");
+
+hosting.onmouseover = function(){
+    hosting.classList.toggle("active");
+}
+hosting.onmouseout = function(){
+    hosting.classList.toggle("active");
+}
+
+Ecommerce.onmouseover = function(){
+    Ecommerce.classList.toggle("active");
+}
+Ecommerce.onmouseout = function(){
+    Ecommerce.classList.toggle("active");
+}
+
+landing.onmouseover = function(){
+    landing.classList.toggle("active");
+}
+landing.onmouseout = function(){
+    landing.classList.toggle("active");
+}
+
+asess.onmouseover = function(){
+    asess.classList.toggle("active");
+}
+asess.onmouseout = function(){
+    asess.classList.toggle("active");
+}
+
     
-//display plan content:
+//Display Plan Content:
     
     products = document.querySelector(".products");
     plans = document.querySelector(".plans");
@@ -87,15 +123,26 @@ csbtn.addEventListener('click', function(e){
 
     body = 'name: ' +name + '<br/> email: ' +email + '<br/> message: ' +msg;
 
-    Email.send({
-        SecureToken : "09c36a42-e397-48c2-a1a7-7a86178c331c",
-        To : 'fusion.labs.uy@gmail.com',
-        From : 'fusion.labs.uy@gmail.com',
-        Subject : "Contact Message",
-        Body : body
-    }).then(
-      message => alert(message)
-    );
+    if(email == ""){
+        alert("email --> obligatorio!");
+    }else if(name == ""){
+        alert("nombre --> obligatorio!")
+    }else if(msg == ""){
+        alert("message --> obligatorio!")
+    }
+    else{
+        Email.send({
+            SecureToken : "09c36a42-e397-48c2-a1a7-7a86178c331c",
+            To : 'fusion.labs.uy@gmail.com',
+            From : 'fusion.labs.uy@gmail.com',
+            Subject : "Contact Message",
+            Body : body
+        }).then(
+          message => alert("Tu mensaje fue enviado, pronto te llegara una respuesta!")
+        );
+    }
+
+    
 
 })    
     
