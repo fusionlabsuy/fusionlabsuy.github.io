@@ -785,7 +785,7 @@ footer ul{
         width: 93vw;
         height: 450px;
         margin: 0 auto;
-        margin-bottom: 30px !important;
+        margin-bottom: 20px !important;
     
         align-items: center;
         justify-content: center;
@@ -819,9 +819,7 @@ footer ul{
 
         box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.3);
     
-        margin-left: 0.5rem;
-        margin-bottom: 1rem;
-        margin-top: 1rem;
+        margin: 1rem auto;
     
         border-radius: 40px;
     
