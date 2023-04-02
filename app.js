@@ -24,8 +24,7 @@
     standard = document.querySelector(".standard");
     avanzado = document.querySelector(".avanzado");
     premium = document.querySelector(".premium");
-    
-    
+     
     // Standard - toggle functions
     
     standard.onmouseover = function(){
@@ -42,7 +41,6 @@
         plans.classList.toggle("active");
     }
     
-    
     // Avanzado - toggle functions
     
     avanzado.onmouseover = function(){
@@ -58,7 +56,6 @@
         products.classList.toggle("active");
         plans.classList.toggle("active");
     }
-    
     
     // Premium - toggle functions
     

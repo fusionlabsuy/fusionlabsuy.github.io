@@ -27,15 +27,18 @@ a{
 /* Section Divider */
 
 .sec-div{
-    color: #fff;
-    background-color: #f95590;
+    color: #f95590;
+    background-color: #fff;
+
+    border-style: solid;
+    border-color: #f95590;
     border-radius: 50px;
 
     height: 70px;
     width: 70rem;
 
     margin: 0 auto;
-    padding: 15px 50px;
+    padding: 12px 10px;
 }
 
 .cont{
@@ -47,7 +50,8 @@ a{
 .sec-div .line{
     width: 350px;
     height: 10px;
-    background: #fff;
+    background: #f95590;
+    margin: auto;
     border-radius: 5px;
 }
 
@@ -164,7 +168,7 @@ header{
 /* LANDING CONTAINER */
 
 .container{
-    background-image: linear-gradient(to bottom right, #3c8ce7 10%, #00cfff 80%);;
+    background-image: linear-gradient(to bottom right, #3c8ce7 10%, #00cfff 80%);
     color: white;
 
     display: grid;
@@ -284,6 +288,67 @@ header{
     translate: 100px -70px;
 }
 
+
+/* SERVICES */
+
+.services{
+    background-image: linear-gradient(to bottom right, #3c8ce7 10%, #00cfff 80%);
+    color: white;
+
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+
+    width: 70rem;
+    height: 25rem;
+
+    margin: 0 auto;
+    margin-top: 1.5rem;
+    margin-bottom: 70px;
+
+    padding: auto;
+    border-radius: 70px;
+}
+
+.options{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    margin: 0 auto;
+}
+
+.serv{
+    background-color: #fff;
+    color: #312f3a;
+    border-radius: 30px;
+
+    height: 350px;
+    width: 240px;
+
+    padding: 30px;
+    margin: 10px;
+}
+
+.s-num{
+    font-size: 20px;
+    padding: 1px 10px;
+    display: inline-block;
+
+    border-radius: 100%;
+    border-style: solid;
+    border-color: #f95590;
+    background-image: #fff;
+    color: #f95590;
+    margin-bottom: 10px;
+}
+
+.services h3{
+    color: #3c8ce7;
+    font-size: 25px;
+    margin-bottom: 10px;
+}
+
+
 /* PRODUCTS */
 
 .products{
@@ -301,7 +366,7 @@ header{
 
     margin: 0 auto;
     margin-top: 1.5rem;
-    margin-bottom: 1rem;
+    margin-bottom: 3.5rem;
 
     padding: 3.5rem 10rem;
     border-radius: 100px;
@@ -370,12 +435,6 @@ header{
 
 .premium:hover{
     background-color: #000 !important;
-}
-
-/* DOC */
-
-.doc-container{
-    display: none;
 }
 
 
@@ -489,6 +548,13 @@ textarea{
     font-weight: 500;
     font-family: 'Jost', sans-serif;
     transform: translateY(-100px);
+}
+
+
+/* DOC */
+
+.doc-container{
+    display: none;
 }
 
 
@@ -733,6 +799,26 @@ footer ul{
 
     .top .right, .bottom .left{
         translate: 0;
+    }
+
+    /* SERVICES RESPONSIVE */
+
+    .services{
+        width: 93vw;
+        height: 1280px;
+        border-radius: 40px;
+        margin-bottom: 30px;
+    }
+
+    .options{
+        flex-direction: column;
+    }
+
+    .serv{
+        width: 80vw;
+        height: 300px;
+        margin: 5px;
+        padding:  15x 25px;
     }
 
     /* PRODUCTS - RESPONSIVE */
