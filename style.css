@@ -710,6 +710,7 @@ footer ul{
         align-items: center;
         justify-content: center;
         background: radial-gradient(circle at center, #fff 0%, #ddd 100%);
+        transform: translateY(5px);
     }
     .nav-bar ul{
         display: block;
