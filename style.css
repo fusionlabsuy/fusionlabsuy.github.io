@@ -3,6 +3,27 @@
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 
+/* GLOBAL SETTINGS */
+
+/* Color Pallette */
+
+:root{
+    --contrastPink: #f95590;
+    --primaryBlue: #3c8ce7;
+    --gradientBlue: #5bacdf;
+
+    --primaryWhite: #f6fafc;
+    --gradientWhite: #e1e5e8;
+
+    --bgColor: #f9fcfe;
+    --navBarWhite: #fff;
+    --lightGrey: #efefef;
+
+    --darkOne: #312f3a;
+    --darkTwo: #1b1c1e;
+    --footerDark: #111;
+}
+
 *, 
 *::before,
 *::after{
@@ -13,7 +34,7 @@
 
 body{
     font-family: "Jost", sans-serif;
-    background-color: #fefefe;
+    background-color: var(--bgColor);
 }
 
 img{
@@ -27,15 +48,16 @@ a{
 /* Section Divider */
 
 .sec-div{
-    color: #f95590;
-    background-color: #fff;
+    color: var(--contrastPink);
+    background-color: var(--bgColor);
 
     border-style: solid;
-    border-color: #f95590;
+    border-color: var(--contrastPink);
     border-radius: 50px;
 
     height: 70px;
-    width: 70rem;
+    max-width: 70rem;
+    width: 100%;
 
     margin: 0 auto;
     padding: 12px 10px;
@@ -50,7 +72,7 @@ a{
 .sec-div .line{
     width: 350px;
     height: 10px;
-    background: #f95590;
+    background: var(--contrastPink);
     margin: auto;
     border-radius: 5px;
 }
@@ -78,7 +100,7 @@ header{
     align-items: center;
 
     position: fixed;
-    background-color: #fff;
+    background-color: var(--navBarWhite);
     z-index: 20;
     margin-top: -1rem;
     padding: 0.5rem;
@@ -107,7 +129,7 @@ header{
 }
 
 .logo h3{
-    color: #000;
+    color: var(--darkTwo);
     font-family: "Montserrat", sans-serif;
     font-size: 23px;
     font-weight: 500;
@@ -133,14 +155,14 @@ header{
 }
 
 .nav-bar a:hover{
-    color: #f95590;
+    color: var(--contrastPink);
     transform: scale(1.01);
-    transition: 0.2s;
+    transition: 0.1s;
 }
 
 .nav-bar ul li a{
     display: block;
-    color: #312f3a;
+    color: var(--darkOne);
     font-size: 19px;
     font-weight: 600;
     margin-left: 5rem;
@@ -151,11 +173,11 @@ header{
     display: inline-block;
     padding: 7px 21px;
 
-    color: #000 !important;
+    color: var(--darkOne) !important;
     background-color: transparent;
 
     border-style: solid;
-    border-color: #000;
+    border-color: var(--darkOne);
     border-width: 2px;
     border-radius: 40px;
 
@@ -165,8 +187,8 @@ header{
 }
 
 .btn-nav:hover{
-    color: #fff !important;
-    background-color: #312f3a;
+    color: var(--primaryWhite) !important;
+    background-color: var(--darkOne);
     
     transform: scale(1);
 }
@@ -175,8 +197,8 @@ header{
 /* LANDING CONTAINER */
 
 .container{
-    background-image: linear-gradient(to bottom right, #3c8ce7 10%, #00cfff 80%);
-    color: white;
+    background-image: linear-gradient(to bottom right, var(--primaryBlue) 10%, var(--gradientBlue) 80%);
+    color: var(--primaryWhite);
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -210,8 +232,8 @@ header{
 .btn-wp{
     display: inline-block;
     padding: 0.6rem 2.6rem;
-    color: #fff !important;
-    background-color: #f95590;
+    color: var(--primaryWhite) !important;
+    background-color: var(--contrastPink);
     font-size: 20px;
     font-weight: 600 !important;
     border-radius: 40px;
@@ -220,8 +242,8 @@ header{
 }
 
 .btn-wp:hover{
-    background-color: #fff;
-    color: #f95590 !important;
+    background-color: var(--primaryWhite);
+    color: var(--contrastPink) !important;
 }
 
 .container .left{
@@ -256,7 +278,7 @@ header{
     font-size: 30px;
     margin-left: 50px;
     margin-bottom: 10px;
-    color: #3c8ce7;
+    color: var(--primaryBlue);
 }
 
 .selector p{
@@ -272,7 +294,7 @@ header{
     align-items: center;
     justify-content: center;
 
-    background: radial-gradient(circle at center, #fff 0%, #ddd 100%);
+    background: radial-gradient(circle at center, var(--primaryWhite) 0%, var(--gradientWhite) 100%);
     box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.3);
 
     margin-left: auto;
@@ -301,14 +323,15 @@ header{
 /* SERVICES */
 
 .services{
-    background-image: linear-gradient(to bottom right, #3c8ce7 10%, #00cfff 80%);
-    color: white;
+    background-image: linear-gradient(to bottom right, var(--primaryBlue) 10%, var(--gradientBlue) 80%);
+    color: var(--primaryWhite);
 
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    width: 70rem;
+    max-width: 70rem;
+    width: 100%;
     height: 25rem;
 
     margin: 0 auto;
@@ -327,8 +350,8 @@ header{
 }
 
 .serv{
-    background-color: #fff;
-    color: #312f3a;
+    background-color: var(--primaryWhite);
+    color: var(--darkOne);
     border-radius: 30px;
 
     height: 350px;
@@ -341,8 +364,8 @@ header{
 }
 
 .serv.active{
-    background-color: #312f3a;
-    color: #fff;
+    background-color: var(--darkOne);
+    color: var(--primaryWhite);
 }
 
 .s-num{
@@ -352,14 +375,14 @@ header{
 
     border-radius: 100%;
     border-style: solid;
-    border-color: #f95590;
-    background-image: #fff;
-    color: #f95590;
+    border-color: var(--contrastPink);
+    background-image: var(--primaryWhite);
+    color: var(--contrastPink);
     margin-bottom: 10px;
 }
 
 .services h3{
-    color: #3c8ce7;
+    color: var(--primaryBlue);
     font-size: 25px;
     margin-bottom: 10px;
 }
@@ -373,8 +396,8 @@ header{
     justify-content: center;
     position: relative;
 
-    background-image: linear-gradient(to bottom right, #3c8ce7 10%, #00cfff 80%);;
-    color: white;
+    background-image: linear-gradient(to bottom right, var(--primaryBlue) 10%, var(--gradientBlue) 80%);;
+    color: var(--primaryWhite);
 
     max-width: 70rem;
     width: 100%;
@@ -411,7 +434,7 @@ header{
 }
 
 .plans li{  
-    color: #312f3a;
+    color: var(--darkOne);
     font-size: 18px;
     display: inline-block;
     margin-bottom: 15px;
@@ -419,18 +442,18 @@ header{
 
 .plans h2{
     font-size: 2rem;
-    color: #312f3a;
+    color: var(--darkOne);
 }
 
 .plans h3{
     font-size: 2.5rem;
-    color: #3c8ce7;
+    color: var(--primaryBlue);
     margin-bottom: 10px;
 }
 
 .plans h4{
     font-size: 1.4rem;
-    color: #3c8ce7;
+    color: var(--primaryBlue);
 }
 
 .plans h2, h3, h4{
@@ -439,7 +462,7 @@ header{
 
 .standard, .avanzado, .premium{
     display: inline-block;
-    background: radial-gradient(circle at center, #fff 0%, #efefef 100%);
+    background: radial-gradient(circle at center, var(--primaryWhite) 0%, var(--gradientWhite) 100%);
     border-radius: 50px;
 
     width: 250px;
@@ -449,17 +472,13 @@ header{
     cursor: pointer;
 }
 
-.premium:hover{
-    background-color: #000 !important;
-}
-
 
 /* CONTACT US */
 
 .contact-us{
-    background-color: #eee;
+    background-color: var(--lightGrey);
     box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.3);
-    color: #3c8ce7;
+    color: var(--primaryBlue);
 
     display: grid;
     grid-template-columns: repeat(2, 1fr);
@@ -488,6 +507,10 @@ header{
 }
 
 .form{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
     padding: 30px 30px;
     height: 100%;
     width: 100%;
@@ -508,11 +531,11 @@ header{
     height: 100%;
     width: 100%;
     background-color: transparent;
-    border: 2px solid #3c8ce7;
+    border: 2px solid var(--primaryBlue);
     border-radius: 20px;
     outline: none;
     padding-left: 10px;
-    color: #312f3a;
+    color: var(--darkOne);
     font-size: 16px;
     font-family: 'Jost', sans-serif;
 }
@@ -525,7 +548,7 @@ header{
     transform: translateY(-10px);
     font-size: 13px;
     font-weight: 500;
-    color: #3c8ce7;
+    color: var(--primaryBlue);
     transition: 0.2s;
 }
 
@@ -533,7 +556,7 @@ header{
 .inp-box .inp:valid ~ label{
     top: -1px;
     left: 12px;
-    background-color: #eee;
+    background-color: var(--lightGrey);
     font-weight: 500;
     font-size: 12px;
     padding: 3.5px;
@@ -552,8 +575,8 @@ textarea{
 .btn-bw{
     position: relative;
     top: 100px;
-    background-color: #3c8ce7;
-    color: #fff;
+    background-color: var(--primaryBlue);
+    color: var(--primaryWhite);
     outline: none;
     border: none;
     border-radius: 30px;
@@ -568,8 +591,8 @@ textarea{
 }
 
 .btn-bw:hover{
-    background-color: #312f3a;
-    color: #3c8ce7;
+    background-color: var(--darkOne);
+    color: var(--primaryBlue);
 }
 
 
@@ -583,8 +606,8 @@ textarea{
 /* RECENT WORKS */
 
 .container-works1{
-    background-image: linear-gradient(to bottom right, #3c8ce7 10%, #00cfff 80%);;
-    color: white;
+    background-image: linear-gradient(to bottom right, var(--primaryBlue) 10%, var(--gradientBlue) 80%);;
+    color: var(--primaryWhite);
 
     display: grid;
     grid-template-columns: 2fr 1fr;
@@ -623,10 +646,10 @@ textarea{
 
 .work{
     border-style: solid;
-    border-color: #dedede;
+    border-color: var(--primaryWhite);
     border-radius: 30px;
 
-    background: radial-gradient(circle at center, #fff 0%, #ddd 100%);
+    background: radial-gradient(circle at center, var(--primaryWhite) 0%, var(--gradientWhite) 100%);
     box-shadow: 12px 12px 5px rgba(0, 0, 0, 0.3);
 
     width: 34rem;
@@ -652,17 +675,17 @@ textarea{
     font-size: 18px;
     margin: 10px 25px;
 
-    color: #fff;
-    background-color: #f95590;
-    border-color: #f95590;
+    color: var(--primaryWhite);
+    background-color: var(--contrastPink);
+    border-color: var(--contrastPink);
     border-style: solid;
     border-width: 2px;
     border-radius: 20px;
 }
 
 .btn-vw:hover{
-    color: #f95590;
-    background-color: #efefef;
+    color: var(--contrastPink);
+    background-color: var(--primaryWhite);
 }
 
 .allworks img{
@@ -670,7 +693,7 @@ textarea{
     margin-bottom: 10px;
     border-radius: 30px;
     border-style: solid;
-    border-color: #000;
+    border-color: var(--darkOne);
 }
 
 
@@ -692,7 +715,7 @@ textarea{
     border-radius: 12px;
     border-style: solid;
     border-width: 3px;
-    border-color: #000;
+    border-color: var(--darkOne);
 
     width: 45px;
     height: 45px;
@@ -708,16 +731,16 @@ textarea{
 }
 
 .one-1, .one-1 p{
-    border-color: #3c8ce7;
-    color: #3c8ce7;
+    border-color: var(--primaryBlue);
+    color: var(--primaryBlue);
 }
 
 
 /* FOOTER */
 
 footer{
-    color: #efefef;
-    background-color: #111;
+    color: var(--primaryWhite);
+    background-color: var(--footerDark);
 
     margin-top: 4rem;
     padding: 3rem;
@@ -807,7 +830,7 @@ footer ul{
     .hamburger span{
         width: 30px;
         height: 3px;
-        background: #000;
+        background: var(--darkTwo);
         border-radius: 5px;
         display: block;
         position: absolute;
@@ -840,7 +863,7 @@ footer ul{
         left: 0;
         right: 0;
         width: 100vw;
-        background: #fefefe;
+        background: var(--primaryWhite);
         transition: 0.4s;
         overflow: hidden;
     }
@@ -849,7 +872,7 @@ footer ul{
         display: flex;
         align-items: center;
         justify-content: center;
-        background: radial-gradient(circle at center, #fff 0%, #ddd 100%);
+        background: radial-gradient(circle at center, var(--primaryWhite) 0%, var(--gradientWhite) 100%);
         transform: translateY(6px);
     }
     .nav-bar ul{
@@ -894,8 +917,8 @@ footer ul{
     .container .btn-wp{
         display: inline-block;
         padding: 0.6rem 2rem;
-        color: #fff !important;
-        background-color: #f95590;
+        color: var(--primaryWhite) !important;
+        background-color: var(--contrastPink);
         font-size: 16.5px;
         font-weight: 600 !important;
         border-radius: 40px;
@@ -904,8 +927,8 @@ footer ul{
     }
 
     .container .btn-wp:hover{
-        background-color: #fff;
-        color: #f95590 !important;
+        background-color: var(--primaryWhite);
+        color: var(--contrastPink) !important;
     }
 
     .container .left{
@@ -1038,13 +1061,13 @@ footer ul{
     
     .plans h2{
         font-size: 1.2rem;
-        color: #312f3a;
+        color: var(--darkOne);
     }
     
     .standard, .avanzado, .premium{
         display: flex;
 
-        background: radial-gradient(circle at center, #fff 0%, #efefef 100%);
+        background: radial-gradient(circle at center, var(--primaryWhite) 0%, var(--gradientWhite) 100%);
         border-radius: 20px;
         transition: 0.4s;
     
@@ -1080,19 +1103,19 @@ footer ul{
     .standard.active h3, .avanzado.active h3, .premium.active h3{
         display: flex;
         font-size: 1.2rem;
-        color: #3c8ce7;
+        color: var(--primaryBlue);
     }
 
     .standard.active h4, .avanzado.active h4, .premium.active h4{
         display: flex;
         font-size: 15px;
-        color: #312f3a;
+        color: var(--darkOne);
         margin-top: -85px;
         padding: 0 45px;
     }
 
     .standard.active li, .avanzado.active li, .premium.active li{
-        color: #000;
+        color: var(--darkTwo);
         font-size: 12px;
         display: flex;
         line-height: 0.5;
@@ -1144,7 +1167,7 @@ footer ul{
         align-items: left;
         justify-content: center;
 
-        background: radial-gradient(circle at center, #fff 0%, #ddd 100%);
+        background: radial-gradient(circle at center, var(--primaryWhite) 0%, var(--gradientWhite) 100%);
         box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.3);
         border-radius: 40px;
 
@@ -1156,19 +1179,19 @@ footer ul{
 
      .doc h1{
         font-size: 23px;
-        color: #3c8ce7;
+        color: var(--primaryBlue);
         margin-bottom: 8px;
      }
 
      .doc p{
         font-size: 16px;
-        color: #312f3a;
+        color: var(--darkOne);
         margin-bottom: 10px;
      }
 
     .doc .btn-bw{
-        color: #fff;
-        background-color: #3c8ce7;
+        color: var(--primaryWhite);
+        background-color: var(--primaryBlue);
         border-radius: 40px;
         transition: 0.2s;
 
@@ -1181,8 +1204,8 @@ footer ul{
      }
 
     .doc .btn-bw:hover{
-        color: #3c8ce7;
-        background-color: #312f3a;
+        color: var(--primaryBlue);
+        background-color: var(--darkOne);
      }
 
      
