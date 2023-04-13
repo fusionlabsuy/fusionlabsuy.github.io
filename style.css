@@ -873,7 +873,7 @@ footer ul{
         align-items: center;
         justify-content: center;
         background: radial-gradient(circle at center, var(--primaryWhite) 0%, var(--gradientWhite) 100%);
-        transform: translateY(6px);
+        transform: translateY(8px);
     }
     .nav-bar ul{
         display: block;
