@@ -19,7 +19,7 @@
 // Services - hover effect:
 
 hosting = document.getElementById("host");
-Ecommerce = document.getElementById("e-comm")
+Ecommerce = document.getElementById("e-comm");
 landing = document.getElementById("lp");
 asess = document.getElementById("as");
 
@@ -115,7 +115,7 @@ asess.onmouseout = function(){
 var csbtn = document.getElementById("btncs");
 
 csbtn.addEventListener('click', function(e){
-    e.preventDefault()
+    e.preventDefault();
 
     var name = document.getElementById('name').value;
     var email = document.getElementById('email').value;
@@ -126,9 +126,9 @@ csbtn.addEventListener('click', function(e){
     if(email == ""){
         alert("email --> obligatorio!");
     }else if(name == ""){
-        alert("nombre --> obligatorio!")
+        alert("nombre --> obligatorio!");
     }else if(msg == ""){
-        alert("message --> obligatorio!")
+        alert("message --> obligatorio!");
     }
     else{
         Email.send({
