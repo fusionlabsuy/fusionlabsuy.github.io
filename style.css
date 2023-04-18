@@ -579,7 +579,7 @@ textarea{
     color: var(--primaryWhite);
     outline: none;
     border: none;
-    border-radius: 30px;
+    border-radius: 15px;
     height: 45px;
     font-size: 16px;
     padding: 3px 25px;
@@ -782,7 +782,7 @@ footer{
     }
 }
 
-@media only screen and (max-width: 1050px){
+@media only screen and (max-width: 1055px){
 
     /* Section Divider */
 
@@ -854,7 +854,6 @@ footer{
         left: 0;
         right: 0;
         width: 100vw;
-        background: var(--primaryWhite);
         transition: 0.4s;
         overflow: hidden;
     }
@@ -909,7 +908,7 @@ footer{
 
     .container .btn-wp{
         display: inline-block;
-        padding: 0.6rem 2rem;
+        padding: 0.6rem 1.5rem;
         color: var(--primaryWhite) !important;
         background-color: var(--contrastPink);
         font-size: 16.5px;
@@ -975,9 +974,7 @@ footer{
         padding: 0;
 
         box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.3);
-    
         margin: 1rem auto;
-    
         border-radius: 40px;
     
         height: 210px;
@@ -1132,7 +1129,7 @@ footer{
      /* CONTACT US - RESPONSIVE */
 
      .contact-us{
-        width: 92vw;
+        width: 93vw;
         display: flex;
         border-radius: 40px;
         box-shadow: 6px 6px 5px rgba(0, 0, 0, 0.3);
@@ -1158,7 +1155,7 @@ footer{
     }
 
     .allworks img{
-        width: 93vw;
+        width: 340px;
         margin-top: -10px;
         margin-bottom: 7px;
         border-radius: 25px;
@@ -1169,8 +1166,8 @@ footer{
      }
 
     .work{
-        width: 93vw;
-        height: 220px;
+        width: 345px;
+        height: 225px;
         margin: 0;
         margin-bottom: 15px;
         border-radius: 25px;
@@ -1207,7 +1204,7 @@ footer{
         justify-self: center;
 
         width: 340px;
-        margin-left: 90px;
+        margin-left: 95px;
         margin-bottom: 20px;
         margin-top: -20px;
      }
