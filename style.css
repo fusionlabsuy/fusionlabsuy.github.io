@@ -320,12 +320,19 @@ header{
 }
 
 
-/* SERVICES */
+/* SERVICES and STEP BY STEP*/
 
 .services{
     background-image: linear-gradient(to bottom right, var(--primaryBlue) 45%, var(--gradientBlue) 80%);
     color: var(--primaryWhite);
+}
 
+.step-by-step{
+    background-color: var(--contrastPink);
+    color: var(--primaryWhite);
+}
+
+.services, .step-by-step{
     display: flex;
     align-items: center;
     justify-content: space-between;
@@ -342,7 +349,7 @@ header{
     border-radius: 70px;
 }
 
-.options{
+.options, .steps{
     display: flex;
     align-items: center;
     justify-content: center;
@@ -352,6 +359,14 @@ header{
 .serv{
     background-color: var(--primaryWhite);
     color: var(--darkOne);
+}
+
+.step{
+    background-color: var(--primaryWhite);
+    color: var(--darkOne);
+}
+
+.serv, .step{
     border-radius: 30px;
 
     height: 350px;
@@ -368,20 +383,29 @@ header{
     color: var(--primaryWhite);
 }
 
-.s-num{
+.services .num{
+    border-color: var(--contrastPink);
+    background-image: var(--primaryWhite);
+    color: var(--contrastPink);
+}
+
+.step-by-step .num{
+    border-color: var(--darkOne);
+    background-image: var(--primaryWhite);
+    color: var(--darkOne);
+}
+
+.num{
     font-size: 20px;
     padding: 1px 10px;
     display: inline-block;
 
     border-radius: 100%;
     border-style: solid;
-    border-color: var(--contrastPink);
-    background-image: var(--primaryWhite);
-    color: var(--contrastPink);
     margin-bottom: 10px;
 }
 
-.services h3{
+.services h3, .step-by-step h3{
     color: var(--primaryBlue);
     font-size: 25px;
     margin-bottom: 10px;
@@ -985,9 +1009,9 @@ footer{
         translate: 0;
     }
 
-    /* SERVICES RESPONSIVE */
+    /* SERVICES and STEP BY STEP RESPONSIVE */
 
-    .services{
+    .services, .step-by-step{
         width: 93vw;
         height: 1280px;
         border-radius: 40px;
@@ -995,11 +1019,11 @@ footer{
         margin-top: 15px;
     }
 
-    .options{
+    .options, .steps{
         flex-direction: column;
     }
 
-    .serv{
+    .serv, .step{
         width: 80vw;
         height: 300px;
         margin: 5px;
