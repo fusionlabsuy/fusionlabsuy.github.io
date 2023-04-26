@@ -1034,7 +1034,7 @@ footer{
     }
     .wrapper .dynamic-txts{
         margin-left: 10px;
-        height: 42.75px;
+        height: 45px;
         line-height: 46px;
     }
     .dynamic-txts li{
@@ -1043,7 +1043,7 @@ footer{
     }
     @keyframes slide {
         100%{
-            top: -138px;
+            top: -137.75px;
         }
     }
     .dynamic-txts li span::after{
