@@ -109,6 +109,42 @@ asess.onmouseout = function(){
         plans.classList.toggle("active");
     }
 
+
+// Steps - hover effect:
+
+first = document.getElementById("first");
+second = document.getElementById("second");
+third = document.getElementById("third");
+fourth = document.getElementById("fourth");
+
+first.onmouseover = function(){
+    first.classList.toggle("active");
+}
+first.onmouseout = function(){
+    first.classList.toggle("active");
+}
+
+second.onmouseover = function(){
+    second.classList.toggle("active");
+}
+second.onmouseout = function(){
+    second.classList.toggle("active");
+}
+
+third.onmouseover = function(){
+    third.classList.toggle("active");
+}
+third.onmouseout = function(){
+    third.classList.toggle("active");
+}
+
+fourth.onmouseover = function(){
+    fourth.classList.toggle("active");
+}
+fourth.onmouseout = function(){
+    fourth.classList.toggle("active");
+}    
+
     
 // Send Email
 
