@@ -978,7 +978,7 @@ footer{
     /* LANDING CONTAINER - RESPONSIVE */
 
     .container{
-        background-image: linear-gradient(to bottom right, var(--gradientBlue) 0.001%, var(--primaryBlue) 100%);
+        background-image: linear-gradient(to bottom right, var(--primaryBlue) 0.001%, var(--primaryBlue) 100%);
 
         display: flex;
         align-items: center;
@@ -986,7 +986,7 @@ footer{
         max-width: 93vw;
         width: 100%;
         height: 205px;
-        padding: 1.6rem 21.75px;
+        padding: 1.6rem 21.25px;
         border-radius: 40px;
         margin-top: -0.5rem !important;
         margin-bottom: 30px;
@@ -1048,7 +1048,7 @@ footer{
     }
     .dynamic-txts li span::after{
         border-left: 2px solid var(--primaryWhite);
-        background-color: #3c9fe7;
+        background-color: var(--primaryBlue);
         animation: typing 3s steps(10) infinite;
     }
     @keyframes typing {
