@@ -451,10 +451,9 @@ header{
     transition: 0.35s ease-in-out;
 }
 
-.services .num{
-    border-color: var(--contrastPink);
-    background-image: var(--primaryWhite);
-    color: var(--contrastPink);
+.img-serv{
+    width: 50px;
+    margin-bottom: 5px;
 }
 
 .step-by-step .num{
