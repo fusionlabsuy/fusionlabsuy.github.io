@@ -24,8 +24,9 @@
     --darkTwo: #1b1c1e;
     --footerDark: #111;
 
-    --purpleGradient: linear-gradient(to bottom right, var(--contrastPink) 5%, var(--primaryPurple) 80%);
-    --blueGradient: linear-gradient(to bottom right, var(--primaryBlue) 45%, var(--gradientBlue) 80%);
+    --purpleGradient: linear-gradient(to bottom right, var(--contrastPink) 5%, var(--primaryBlue) 80%);
+    --blueGradient: linear-gradient(to bottom right, var(--primaryBlue) 40%, var(--gradientBlue) 80%);
+    --blueGradientOp: linear-gradient(to bottom right, var(--gradientBlue) 40%, var(--primaryBlue) 80%);
     --whiteGradient: radial-gradient(circle at center, var(--primaryWhite) 50%, var(--gradientWhite) 100%);
 }
 
@@ -76,7 +77,7 @@ a{
 
 .sec-div .line{
     width: 350px;
-    height: 10px;
+    height: 8px;
     background: var(--contrastPink);
     margin: auto;
     border-radius: 5px;
@@ -225,6 +226,10 @@ header{
 
 .title{
     font-size: 1.2rem;
+}
+
+.rdh1{
+    display: none;
 }
 
 .text{
@@ -424,14 +429,14 @@ header{
     color: var(--primaryWhite);
 }
 
-.step{
-    background-color: var(--darkOne);
-    color: var(--primaryWhite);
-}
-
 .step.active{
     background-color: var(--primaryWhite);
     color: var(--darkOne);
+}
+
+.step{
+    background-color: var(--darkOne);
+    color: var(--primaryWhite);
 }
 
 .serv, .step{
@@ -453,9 +458,9 @@ header{
 }
 
 .step-by-step .num{
-    border-color: var(--primaryBlue);
+    border-color: var(--contrastPink);
     background-image: var(--primaryWhite);
-    color: var(--primaryBlue);
+    color: var(--contrastPink);
 }
 
 .num{
@@ -478,7 +483,7 @@ header{
 }
 
 .step-by-step h3{
-    color: var(--contrastPink);
+    color: var(--primaryBlue);
 }
 
 /* PRODUCTS */
@@ -489,7 +494,7 @@ header{
     justify-content: center;
     position: relative;
 
-    background-image: var(--blueGradient);
+    background-image: var(--blueGradientOp);
     color: var(--primaryWhite);
 
     max-width: 70rem;
@@ -978,15 +983,13 @@ footer{
     /* LANDING CONTAINER - RESPONSIVE */
 
     .container{
-        background-image: linear-gradient(to bottom right, var(--primaryBlue) 0.001%, var(--primaryBlue) 100%);
-
         display: flex;
         align-items: center;
         justify-content: left;
         max-width: 93vw;
         width: 100%;
         height: 205px;
-        padding: 1.6rem 21.25px;
+        padding: 1.6rem 30px;
         border-radius: 40px;
         margin-top: -0.5rem !important;
         margin-bottom: 30px;
@@ -1028,6 +1031,14 @@ footer{
 
     /* Typing Animation - responsive */
 
+    .rdh1{
+        display: flex;
+    }
+
+    .wrapper{
+        display: none;
+    }
+
     .wrapper .static-txt{
         font-size: 32px;
         margin-left: 5px;
@@ -1035,7 +1046,7 @@ footer{
     .wrapper .dynamic-txts{
         margin-left: 10px;
         height: 45px;
-        line-height: 46px;
+        line-height: 46.70px;
     }
     .dynamic-txts li{
         font-size: 32px;
@@ -1043,7 +1054,7 @@ footer{
     }
     @keyframes slide {
         100%{
-            top: -137.75px;
+            top: -140px;
         }
     }
     .dynamic-txts li span::after{
