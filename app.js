@@ -153,32 +153,55 @@ var csbtn = document.getElementById("btncs");
 csbtn.addEventListener('click', function(e){
     e.preventDefault();
 
-    var name = document.getElementById('name').value;
-    var email = document.getElementById('email').value;
-    var msg = document.getElementById('msg').value;
+    nameLabel = document.querySelector(".name-label");
+    emailLabel = document.querySelector(".email-label");
+    msgLabel = document.querySelector(".msg-label");
 
-    body = 'name: ' +name + '<br/> email: ' +email + '<br/> message: ' +msg;
+    nombre = document.getElementById('name');
+    email = document.getElementById('email');
+    msg = document.getElementById('msg');
 
-    if(email == ""){
-        alert("email --> obligatorio!");
-    }else if(name == ""){
-        alert("nombre --> obligatorio!");
-    }else if(msg == ""){
-        alert("message --> obligatorio!");
+    nameValue = nombre.value;
+    emailValue = email.value;
+    msgValue = msg.value;
+
+    body = 'name: ' + nameValue + '<br/> email: ' + emailValue + '<br/> message: ' + msgValue;
+
+    function clearInputs(){
+        nombre.value = "";
+        email.value = "";
+        msg.value = "";
     }
-    else{
+
+    if(nombre.validity.valid == false){
+        nombre.classList.add("invalid");
+        nameLabel.classList.add("invalid");
+    }else if(email.validity.valid == false){
+        email.value = "";
+        email.classList.add("invalid");
+        emailLabel.classList.add("invalid");
+        nombre.classList.remove("invalid");
+        nameLabel.classList.remove("invalid");
+    }else if(msg.validity.valid == false){
+        msg.classList.add("invalid");
+        msgLabel.classList.add("invalid");
+        email.classList.remove("invalid");
+        emailLabel.classList.remove("invalid");
+    }else{
+        msg.classList.remove("invalid");
+        msgLabel.classList.remove("invalid");
         Email.send({
             SecureToken : "09c36a42-e397-48c2-a1a7-7a86178c331c",
             To : 'fusion.labs.uy@gmail.com',
             From : 'fusion.labs.uy@gmail.com',
-            Subject : "Contact Message",
+            Subject : "FusionLabs | Contact Message",
             Body : body
         }).then(
           message => alert("Tu mensaje fue enviado, pronto te llegara una respuesta!")
         );
+        
+        clearInputs();
     }
-
-
 
 })    
     

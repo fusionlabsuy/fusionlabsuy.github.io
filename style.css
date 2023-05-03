@@ -91,12 +91,10 @@ a{
 
 .navPos{
     max-width: 70rem;
-    height: 2.6rem;
+    height: 2.75rem;
     width: 100%;
 
-    margin: 0 auto;
-    margin-top: 1rem;
-    margin-bottom: 1rem;
+    margin: 1rem auto;
     z-index: 0;
 }
 
@@ -631,7 +629,7 @@ header{
     border: 2px solid var(--primaryBlue);
     border-radius: 20px;
     outline: none;
-    padding-left: 10px;
+    padding-left: 12px;
     color: var(--darkOne);
     font-size: 16px;
     font-family: 'Jost', sans-serif;
@@ -652,17 +650,25 @@ header{
 .inp-box .inp:focus ~ label,
 .inp-box .inp:valid ~ label{
     top: -1px;
-    left: 12px;
+    left: 15px;
     background-color: var(--lightGrey);
     font-weight: 500;
     font-size: 12px;
-    padding: 3.5px;
+    padding: 1px 3px;
 }
 
 .inp-box textarea{
     resize: none;
     height: 100px;
     overflow: auto;
+}
+
+.inp.invalid{
+    border-color: var(--contrastPink);
+}
+
+.name-label.invalid, .email-label.invalid, .msg-label.invalid{
+    color: var(--contrastPink);
 }
 
 textarea{
