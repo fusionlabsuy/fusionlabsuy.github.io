@@ -173,6 +173,16 @@ csbtn.addEventListener('click', function(e){
         msg.value = "";
     }
 
+    function correctValidation(){
+        nombre.classList.remove("invalid");
+        email.classList.remove("invalid");
+        msg.classList.remove("invalid");
+
+        nameLabel.classList.remove("invalid");
+        emailLabel.classList.remove("invalid");
+        msgLabel.classList.remove("invalid");
+    }
+
     if(nombre.validity.valid == false){
         nombre.classList.add("invalid");
         nameLabel.classList.add("invalid");
@@ -190,6 +200,7 @@ csbtn.addEventListener('click', function(e){
     }else{
         msg.classList.remove("invalid");
         msgLabel.classList.remove("invalid");
+
         Email.send({
             SecureToken : "09c36a42-e397-48c2-a1a7-7a86178c331c",
             To : 'fusion.labs.uy@gmail.com',
@@ -201,6 +212,7 @@ csbtn.addEventListener('click', function(e){
         );
         
         clearInputs();
+        correctValidation();
     }
 
 })    
