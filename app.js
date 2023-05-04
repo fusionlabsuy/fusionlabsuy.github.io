@@ -1,6 +1,6 @@
 // FusionLabs - juanigomez | landing page - JavaScript
 
-//Toggle Responsive Menu:
+// NavBar - toggle Responsive Menu:
 
     hamburger = document.querySelector(".hamburger");
     navBar = document.querySelector(".nav-bar");
@@ -18,96 +18,54 @@
 
 // Services - hover effect:
 
-hosting = document.getElementById("host");
-Ecommerce = document.getElementById("e-comm");
-landing = document.getElementById("lp");
-asess = document.getElementById("as");
+Ecommerce = document.getElementById("e-commerce");
+hosting = document.getElementById("hosting");
+landing = document.getElementById("landing");
+advice = document.getElementById("advice");
 
-hosting.onmouseover = function(){
-    hosting.classList.toggle("active");
-}
-hosting.onmouseout = function(){
-    hosting.classList.toggle("active");
-}
-
-Ecommerce.onmouseover = function(){
-    Ecommerce.classList.toggle("active");
-}
-Ecommerce.onmouseout = function(){
-    Ecommerce.classList.toggle("active");
+function servicesHover(servName){
+    servName.onmouseover = function(){
+        servName.classList.toggle("active");
+    }
+    servName.onmouseout = function(){
+        servName.classList.toggle("active");
+    }
 }
 
-landing.onmouseover = function(){
-    landing.classList.toggle("active");
-}
-landing.onmouseout = function(){
-    landing.classList.toggle("active");
-}
-
-asess.onmouseover = function(){
-    asess.classList.toggle("active");
-}
-asess.onmouseout = function(){
-    asess.classList.toggle("active");
-}
+servicesHover(Ecommerce);
+servicesHover(hosting);
+servicesHover(landing);
+servicesHover(advice);
 
     
-//Display Plan Content:
+// Products - display Plan Content:
     
-    products = document.querySelector(".products");
-    plans = document.querySelector(".plans");
-    
-    standard = document.querySelector(".standard");
-    avanzado = document.querySelector(".avanzado");
-    premium = document.querySelector(".premium");
-     
-    // Standard - toggle functions
-    
-    standard.onmouseover = function(){
-        standard.classList.toggle("active");
-    
-        products.classList.toggle("active");
-        plans.classList.toggle("active");
-    }
-    
-    standard.onmouseout = function(){
-        standard.classList.toggle("active");
+products = document.querySelector(".products");
+plans = document.querySelector(".plans");
+
+standard = document.querySelector(".standard");
+avanzado = document.querySelector(".avanzado");
+premium = document.querySelector(".premium");
+
+function displayPlanContent(planName){
+    planName.onmouseover = function(){
+        planName.classList.toggle("active");
     
         products.classList.toggle("active");
         plans.classList.toggle("active");
     }
     
-    // Avanzado - toggle functions
-    
-    avanzado.onmouseover = function(){
-        avanzado.classList.toggle("active");
+    planName.onmouseout = function(){
+        planName.classList.toggle("active");
     
         products.classList.toggle("active");
         plans.classList.toggle("active");
     }
+}
     
-    avanzado.onmouseout = function(){
-        avanzado.classList.toggle("active");
-    
-        products.classList.toggle("active");
-        plans.classList.toggle("active");
-    }
-    
-    // Premium - toggle functions
-    
-    premium.onmouseover = function(){
-        premium.classList.toggle("active");
-    
-        products.classList.toggle("active");
-        plans.classList.toggle("active");
-    }
-    
-    premium.onmouseout = function(){
-        premium.classList.toggle("active");
-    
-        products.classList.toggle("active");
-        plans.classList.toggle("active");
-    }
+displayPlanContent(standard);
+displayPlanContent(avanzado);
+displayPlanContent(premium);
 
 
 // Steps - hover effect:
@@ -117,33 +75,19 @@ second = document.getElementById("second");
 third = document.getElementById("third");
 fourth = document.getElementById("fourth");
 
-first.onmouseover = function(){
-    first.classList.toggle("active");
-}
-first.onmouseout = function(){
-    first.classList.toggle("active");
-}
-
-second.onmouseover = function(){
-    second.classList.toggle("active");
-}
-second.onmouseout = function(){
-    second.classList.toggle("active");
+function stepsHover(stepName){
+    stepName.onmouseover = function(){
+        stepName.classList.toggle("active");
+    }
+    stepName.onmouseout = function(){
+        stepName.classList.toggle("active");
+    }
 }
 
-third.onmouseover = function(){
-    third.classList.toggle("active");
-}
-third.onmouseout = function(){
-    third.classList.toggle("active");
-}
-
-fourth.onmouseover = function(){
-    fourth.classList.toggle("active");
-}
-fourth.onmouseout = function(){
-    fourth.classList.toggle("active");
-}    
+stepsHover(first);
+stepsHover(second);
+stepsHover(third);
+stepsHover(fourth);
 
     
 // Send Email
