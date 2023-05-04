@@ -10,9 +10,11 @@
 :root{
     --contrastPink: #f95590;
     --primaryPurple: #941bb9;
+    --invalidRed: #e14135;
 
     --primaryBlue: #3c8ce7;
     --gradientBlue: #3cbfe7;
+    --validGreen: #00e065;
 
     --primaryWhite: #f6fafc;
     --gradientWhite: #e1e5e8;
@@ -664,11 +666,11 @@ header{
 }
 
 .inp.invalid{
-    border-color: var(--contrastPink);
+    border-color: var(--invalidRed);
 }
 
 .name-label.invalid, .email-label.invalid, .msg-label.invalid{
-    color: var(--contrastPink);
+    color: var(--invalidRed);
 }
 
 textarea{
@@ -696,6 +698,45 @@ textarea{
 .btn-bw:hover{
     background-color: var(--darkOne);
     color: var(--primaryBlue);
+}
+
+.btn-val{
+    display: flex;
+}
+
+.alert-msg .inv-msg, .val-msg{
+    display: none;
+}
+
+.alert-msg{
+    list-style: none;
+    font-family: 'Montserrat', sans-serif;
+    font-weight: 700;
+    margin: auto;
+}
+
+.alert-msg.invalid .val-msg{
+    display: none;
+}
+
+.alert-msg.invalid .inv-msg{
+    display: block;
+}
+
+.alert-msg.invalid{
+    color: var(--invalidRed);
+}
+
+.alert-msg.valid .inv-msg{
+    display: none;
+}
+
+.alert-msg.valid .val-msg{
+    display: block;
+}
+
+.alert-msg.valid{
+    color: var(--validGreen);
 }
 
 /* RECENT WORKS */

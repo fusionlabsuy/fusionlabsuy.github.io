@@ -148,10 +148,16 @@ fourth.onmouseout = function(){
     
 // Send Email
 
+function wait(time){
+    return new Promise(resolve => setTimeout(resolve, time));
+}
+
 var csbtn = document.getElementById("btncs");
 
 csbtn.addEventListener('click', function(e){
     e.preventDefault();
+
+    alertMsg = document.getElementById('alert');
 
     nameLabel = document.querySelector(".name-label");
     emailLabel = document.querySelector(".email-label");
@@ -161,11 +167,7 @@ csbtn.addEventListener('click', function(e){
     email = document.getElementById('email');
     msg = document.getElementById('msg');
 
-    nameValue = nombre.value;
-    emailValue = email.value;
-    msgValue = msg.value;
-
-    body = 'name: ' + nameValue + '<br/> email: ' + emailValue + '<br/> message: ' + msgValue;
+    body = 'name: ' + nombre.value + '<br/> email: ' + email.value + '<br/> message: ' + msg.value;
 
     function clearInputs(){
         nombre.value = "";
@@ -183,23 +185,29 @@ csbtn.addEventListener('click', function(e){
         msgLabel.classList.remove("invalid");
     }
 
-    if(nombre.validity.valid == false){
-        nombre.classList.add("invalid");
-        nameLabel.classList.add("invalid");
-    }else if(email.validity.valid == false){
-        email.value = "";
-        email.classList.add("invalid");
-        emailLabel.classList.add("invalid");
-        nombre.classList.remove("invalid");
-        nameLabel.classList.remove("invalid");
-    }else if(msg.validity.valid == false){
-        msg.classList.add("invalid");
-        msgLabel.classList.add("invalid");
-        email.classList.remove("invalid");
-        emailLabel.classList.remove("invalid");
+    function checkValidation(inputName, inputLabel){
+        if(inputName.validity.valid == false){
+            inputName.value = "";
+            inputName.classList.add("invalid");
+            inputLabel.classList.add("invalid");
+        }else{
+            inputName.classList.remove("invalid");
+            inputLabel.classList.remove("invalid");
+            alertMsg.classList.add('invalid');
+        }
+    }
+
+    checkValidation(nombre, nameLabel);
+    checkValidation(email, emailLabel);
+    checkValidation(msg, msgLabel);
+    
+    if(nombre.validity.valid == false || email.validity.valid == false || msg.validity.valid == false){
+        alertMsg.classList.add('invalid');
     }else{
-        msg.classList.remove("invalid");
-        msgLabel.classList.remove("invalid");
+        alertMsg.classList.remove('invalid');
+        alertMsg.classList.add('valid');
+        correctValidation();
+        clearInputs();
 
         Email.send({
             SecureToken : "09c36a42-e397-48c2-a1a7-7a86178c331c",
@@ -210,9 +218,10 @@ csbtn.addEventListener('click', function(e){
         }).then(
           message => alert("Tu mensaje fue enviado, pronto te llegara una respuesta!")
         );
-        
-        clearInputs();
-        correctValidation();
+
+        wait(2000).then(() => {
+            alertMsg.classList.remove('valid');
+        });
     }
 
 })    
