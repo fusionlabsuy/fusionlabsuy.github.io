@@ -27,7 +27,7 @@
     --footerDark: #111;
 
     --purpleGradient: linear-gradient(to bottom right, var(--contrastPink) 5%, var(--primaryBlue) 80%);
-    --blueGradient: linear-gradient(to bottom right, var(--primaryBlue) 40%, var(--gradientBlue) 80%);
+    --blueGradient: linear-gradient(to bottom right, var(--primaryBlue) 40%, var(--gradientBlue) 90%);
     --blueGradientOp: linear-gradient(to bottom right, var(--gradientBlue) 40%, var(--primaryBlue) 80%);
     --whiteGradient: radial-gradient(circle at center, var(--primaryWhite) 50%, var(--gradientWhite) 100%);
 
@@ -67,7 +67,7 @@ a{
     border-radius: 50px;
 
     height: 70px;
-    max-width: 70rem;
+    max-width: 75rem;
     width: 100%;
 
     margin: 0 auto;
@@ -81,7 +81,7 @@ a{
 }
 
 .sec-div .line{
-    width: 350px;
+    width: 430px;
     height: 8px;
     background: var(--contrastPink);
     margin: auto;
@@ -206,7 +206,7 @@ header{
 /* LANDING CONTAINER */
 
 .container{
-    background-image: var(--blueGradient);
+    background-image: var(--blueGradientOp);
     color: var(--primaryWhite);
 
     display: grid;
@@ -215,15 +215,15 @@ header{
     justify-content: center;
     position: relative;
 
-    max-width: 70rem;
+    max-width: 75rem;
     width: 100%;
-    height: 25rem;
+    height: 30rem;
 
     margin: 0 auto;
     margin-top: -10px;
     margin-bottom: 70px;
 
-    padding: 3rem 5rem;
+    padding: 5rem 6rem;
     border-radius: 70px 70px 250px 70px;
 }
 
@@ -260,11 +260,11 @@ header{
 }
 
 .container .left{
-    margin-top: -150px;
+    margin-top: -200px;
 }
 
 .container .icon{
-    width: 450px;
+    width: 500px;
     translate: 120px 0;
 }
 
@@ -308,7 +308,7 @@ header{
     left: 0;
     height: 100%;
     width: 100%;
-    background: var(--primaryBlue);
+    background: var(--gradientBlue);
     border-left: 2px solid var(--primaryWhite);
     animation: typing 3s steps(10) infinite;
   }
@@ -325,7 +325,7 @@ header{
 /* ABOUT US */
 
 .selector{
-    max-width: 70rem;
+    max-width: 75rem;
     width: 100%;
     height: 46rem;
 
@@ -371,11 +371,11 @@ header{
     margin-bottom: 1.5rem;
     margin-top: 1.5rem;
 
-    padding: 3rem;
+    padding: 3rem 5rem;
     border-radius: 50px;
 
     height: 20rem;
-    max-width: 70rem;
+    max-width: 75rem;
     width: 100%;
 }
 
@@ -391,24 +391,13 @@ header{
 
 /* SERVICES and STEP BY STEP*/
 
-.services{
-    background-image: var(--blueGradient);
-    color: var(--primaryWhite);
-}
-
-.step-by-step{
-    background-image: var(--purpleGradient);
-    color: var(--primaryWhite);
-}
-
 .services, .step-by-step{
     display: flex;
     align-items: center;
     justify-content: space-between;
 
-    max-width: 70rem;
+    max-width: 75rem;
     width: 100%;
-    height: 25rem;
 
     margin: 0 auto;
     margin-top: 1.5rem;
@@ -418,6 +407,18 @@ header{
     border-radius: 45px;
 }
 
+.services{
+    background-image: var(--blueGradient);
+    color: var(--primaryWhite);
+    height: 26rem;
+}
+
+.step-by-step{
+    background-image: var(--purpleGradient);
+    color: var(--primaryWhite);
+    height: 23rem;
+}
+
 .options, .steps{
     display: flex;
     align-items: center;
@@ -425,9 +426,21 @@ header{
     margin: 0 auto;
 }
 
+.serv, .step{
+    border-radius: 30px;
+    font-size: 16px;
+
+    width: 275px;
+    padding: 30px;
+    margin: 10px;
+
+    transition: 0.35s ease-in-out;
+}
+
 .serv{
     background-color: var(--primaryWhite);
     color: var(--darkOne);
+    height: 365px;
 }
 
 .serv.active{
@@ -435,26 +448,15 @@ header{
     color: var(--primaryWhite);
 }
 
-.step.active{
-    background-color: var(--primaryWhite);
-    color: var(--darkOne);
-}
-
 .step{
     background-color: var(--darkOne);
     color: var(--primaryWhite);
+    height: 320px;
 }
 
-.serv, .step{
-    border-radius: 30px;
-
-    height: 350px;
-    width: 250px;
-
-    padding: 30px;
-    margin: 10px;
-
-    transition: 0.35s ease-in-out;
+.step.active{
+    background-color: var(--primaryWhite);
+    color: var(--darkOne);
 }
 
 .img-serv{
@@ -491,6 +493,26 @@ header{
     color: var(--primaryBlue);
 }
 
+.btn-serv{
+    background-color: var(--contrastPink);
+    color: var(--primaryWhite);
+    border-radius: 7.5px;
+    cursor: pointer;
+
+    height: 45px;
+    padding: 7.5px 30px;
+    margin: 5px left;
+    top: 25px;
+
+    font-size: 16px;
+    font-weight: 500;
+    font-family: 'Jost', sans-serif;
+
+    position: relative;
+    transform: translateY(-100px);
+    transition: 0.2s;
+}
+
 /* PRODUCTS */
 
 .products{
@@ -502,7 +524,7 @@ header{
     background-image: var(--blueGradientOp);
     color: var(--primaryWhite);
 
-    max-width: 70rem;
+    max-width: 75rem;
     width: 100%;
     height: 46rem;
 
@@ -510,7 +532,7 @@ header{
     margin-top: 1.5rem;
     margin-bottom: 3.5rem;
 
-    padding: 45px 180px;
+    padding: 45px 200px;
     border-radius: 80px;
     z-index: 10;
 }
@@ -589,7 +611,7 @@ header{
     justify-content: center;
     position: relative;
 
-    max-width: 70rem;
+    max-width: 75rem;
     width: 100%;
     height: 25rem;
 
@@ -623,7 +645,7 @@ header{
 }
 
 .inp-box{
-    width: 450px;
+    width: 460px;
     margin: 15px 0;
     position: relative;
 }
@@ -764,8 +786,8 @@ textarea{
     background-color: var(--darkOne);
     border-radius: 30px;
 
-    width: 34rem;
-    height: 330px;
+    width: 36.25rem;
+    height: 345px;
     margin: 1rem;
     padding: 10px;
 
@@ -807,7 +829,7 @@ textarea{
 }
 
 .allworks img{
-    width: 34rem;
+    width: 36rem;
     margin-bottom: 2px;
     border-radius: 30px;
     border-style: solid;
@@ -1186,10 +1208,18 @@ footer{
 
     .services, .step-by-step{
         width: 93vw;
-        height: 1280px;
+        height: 1430px;
         border-radius: 40px;
         margin-bottom: 30px;
         margin-top: 15px;
+    }
+
+    .services{
+        height: 1430px;
+    }
+
+    .step-by-step{
+        height: 1280px;
     }
 
     .options, .steps{
@@ -1198,9 +1228,16 @@ footer{
 
     .serv, .step{
         width: 80vw;
-        height: 300px;
         margin: 5px;
         padding:  15x 25px;
+    }
+
+    .serv{
+        height: 340px;
+    }
+
+    .step{
+        height: 300px;
     }
 
     /* PRODUCTS - RESPONSIVE */
