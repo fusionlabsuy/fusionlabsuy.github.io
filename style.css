@@ -27,7 +27,7 @@
     --footerDark: #111;
 
     --purpleGradient: linear-gradient(to bottom right, var(--contrastPink) 5%, var(--primaryBlue) 80%);
-    --blueGradient: linear-gradient(to bottom right, var(--primaryBlue) 40%, var(--gradientBlue) 90%);
+    --blueGradient: linear-gradient(to bottom right, var(--primaryBlue) 30%, var(--gradientBlue) 90%);
     --blueGradientOp: linear-gradient(to bottom right, var(--gradientBlue) 40%, var(--primaryBlue) 80%);
     --whiteGradient: radial-gradient(circle at center, var(--primaryWhite) 50%, var(--gradientWhite) 100%);
 
@@ -124,6 +124,7 @@ header{
     display: flex;
     align-items: center;
     cursor: pointer;
+    transform: translateX(-18px);
 }
 
 .logo a{
@@ -511,6 +512,11 @@ header{
     position: relative;
     transform: translateY(-100px);
     transition: 0.2s;
+}
+
+.btn-serv:hover{
+    background-color: var(--primaryWhite);
+    color: var(--contrastPink);
 }
 
 /* PRODUCTS */
@@ -1018,6 +1024,10 @@ footer{
     }
     .hamburger.active .line-3{
         transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    .logo{
+        transform: translateX(3px);
     }
    
     .nav-bar{
