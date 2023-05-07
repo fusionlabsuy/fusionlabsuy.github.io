@@ -5,6 +5,31 @@
 
 /* GLOBAL SETTINGS */
 
+*, 
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body{
+    font-family: "Jost", sans-serif;
+    background-color: var(--bgColor);
+}
+
+html{
+    scroll-behavior: smooth;
+}
+
+img{
+    width: 100%;
+}
+
+a{
+    text-decoration: none;
+}
+
 /* Color Pallette */
 
 :root{
@@ -33,27 +58,6 @@
 
     --shadowFd: 12px 12px 10px rgba(70, 80, 80, 0.2);
     --shadowRd: 5px 5px 20px rgba(70, 80, 80, 0.3);
-}
-
-*, 
-*::before,
-*::after{
-  padding: 0;
-  margin: 0;
-  box-sizing: border-box;
-}
-
-body{
-    font-family: "Jost", sans-serif;
-    background-color: var(--bgColor);
-}
-
-img{
-    width: 100%;
-}
-
-a{
-    text-decoration: none;
 }
 
 /* Section Divider */
