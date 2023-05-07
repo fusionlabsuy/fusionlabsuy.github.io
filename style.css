@@ -502,6 +502,8 @@ header{
     background-color: var(--contrastPink);
     color: var(--primaryWhite);
     border-radius: 7.5px;
+    border-style: solid;
+    border-color: var(--contrastPink);
     cursor: pointer;
 
     height: 45px;
