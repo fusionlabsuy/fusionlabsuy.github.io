@@ -16,28 +16,6 @@ navBar.onclick = function(){
 }
 
 
-// Services - hover effect:
-
-Ecommerce = document.getElementById("e-commerce");
-hosting = document.getElementById("hosting");
-landing = document.getElementById("landing");
-advice = document.getElementById("advice");
-
-function servicesHover(servName){
-servName.onmouseover = function(){
-    servName.classList.toggle("active");
-}
-servName.onmouseout = function(){
-    servName.classList.toggle("active");
-}
-}
-
-servicesHover(Ecommerce);
-servicesHover(hosting);
-servicesHover(landing);
-servicesHover(advice);
-
-
 // Products - display Plan Content:
 
 products = document.querySelector(".products");
@@ -53,19 +31,41 @@ planName.onmouseover = function(){
 
     products.classList.toggle("active");
     plans.classList.toggle("active");
-}
+  }
 
 planName.onmouseout = function(){
     planName.classList.toggle("active");
 
     products.classList.toggle("active");
     plans.classList.toggle("active");
-}
+  }
 }
 
 displayPlanContent(standard);
 displayPlanContent(avanzado);
 displayPlanContent(premium);
+
+
+// Services - hover effect:
+
+Ecommerce = document.getElementById("e-commerce");
+hosting = document.getElementById("hosting");
+landing = document.getElementById("landing");
+advice = document.getElementById("advice");
+
+function servicesHover(servName){
+servName.onmouseover = function(){
+    servName.classList.toggle("active");
+  }
+servName.onmouseout = function(){
+    servName.classList.toggle("active");
+  }
+}
+
+servicesHover(Ecommerce);
+servicesHover(hosting);
+servicesHover(landing);
+servicesHover(advice);
 
 
 // Steps - hover effect:
@@ -78,10 +78,10 @@ fourth = document.getElementById("fourth");
 function stepsHover(stepName){
 stepName.onmouseover = function(){
     stepName.classList.toggle("active");
-}
+  }
 stepName.onmouseout = function(){
     stepName.classList.toggle("active");
-}
+  } 
 }
 
 stepsHover(first);

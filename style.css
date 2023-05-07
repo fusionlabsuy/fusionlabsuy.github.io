@@ -1027,7 +1027,7 @@ footer{
     }
 
     .logo{
-        transform: translateX(3px);
+        transform: translateX(-5px);
     }
    
     .nav-bar{
