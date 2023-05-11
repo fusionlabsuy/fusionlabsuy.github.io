@@ -282,7 +282,7 @@ header{
 
 
 .container .left{
-    margin-top: -50px; /* -200px */
+    margin-top: -50px; 
 }
 
 .container .icon{
@@ -1285,7 +1285,7 @@ footer{
 
     .container .icon{
         width: 280px;
-        translate: -75px 110px;
+        translate: -75px 105px;
     }
 
     /* Typing Animation - responsive */
