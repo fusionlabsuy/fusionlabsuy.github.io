@@ -1287,22 +1287,22 @@ footer{
 
     .container .icon{
         width: 280px;
-        translate: -75px 111px;
+        translate: -75px 110px;
     }
 
     /* Typing Animation - responsive */
 
     .wrapper .static-txt{
-        font-size: 31px;
+        font-size: 30px;
         margin-left: 5px;
     }
     .wrapper .dynamic-txts{
         margin-left: 10px;
         height: 45px;
-        line-height: 46.70px;
+        line-height: 46px;
     }
     .dynamic-txts li{
-        font-size: 32px;
+        font-size: 30px;
         animation: slide 9s steps(3) infinite;
     }
     @keyframes slide {
@@ -1698,8 +1698,13 @@ footer{
      /* RECENT WORKS - RESPONSIVE */
 
      #works-page .sec-title h1{
-        font-size: 28px;
+        font-size: 26px;
+        margin: 0;
     } 
+
+    #works-page .sec-title .line{
+        width: 2.5rem;
+    }
 
     .w-icon{
         display: none;
