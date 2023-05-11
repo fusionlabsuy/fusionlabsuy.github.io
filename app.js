@@ -17,6 +17,19 @@ navBar.onclick = function(){
     hamburger.classList.toggle("active");
 }
 
+const header = document.getElementById('navigationBar');
+
+window.addEventListener('scroll', () => {
+  if (window.scrollY > 0) {
+    header.classList.add('scrolled');
+  } else {
+    header.classList.remove('scrolled');
+  }
+});
+
+
+
+
   
 // INDEX PAGE: 
 
