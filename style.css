@@ -353,6 +353,11 @@ header{
 
 /* SERVICES */
 
+.services-page .sec-title{
+    margin-top: 5rem;
+    margin-bottom: -1.5rem;
+}
+
 .services-page .sec-title .line{
     width: 17rem;
     margin: 0;
@@ -375,7 +380,7 @@ header{
 .services{
     background-image: transparent;
     color: var(--primaryWhite);
-    height: 30rem;
+    height: 35rem;
     transform: translateY(-1rem);
 }
 
@@ -463,14 +468,13 @@ header{
     background-color: var(--divColor);
     max-width: 100rem;
     width: 100%;
-    height: 57rem;
+    height: 64rem;
     padding: 1.5rem 0;
-    margin-bottom: 6rem;
+    margin-bottom: 6.5rem;
 }
 
 .about-us-page .sec-title{
-    margin: 2rem auto;
-    margin-bottom: 3.5rem;
+    margin: 3.5rem auto;
 }
 
 .about-us-page .sec-title h1{
@@ -579,8 +583,9 @@ header{
 
     max-width: 100rem;
     width: 100%;
-    height: 25rem;
+    height: 30rem;
     margin: auto;
+    transform: translateY(-30px);
     
     padding: 5rem auto;
 }
@@ -674,7 +679,7 @@ header{
 
     max-width: 100rem;
     width: 100%;
-    height: 38rem;
+    height: 40rem;
 }
 
 .contact-us{
@@ -718,7 +723,7 @@ header{
 
 .inp-box{
     width: 460px;
-    margin: 15px 0;
+    margin: 15px 0px;
     position: relative;
 }
 
@@ -773,10 +778,6 @@ header{
 
 .name-label.invalid, .email-label.invalid, .msg-label.invalid{
     color: var(--invalidRed);
-}
-
-textarea{
-    padding-top: 10px;
 }
 
 .btn-bw{
@@ -1191,7 +1192,7 @@ footer{
         display: flex;
         align-items: center;
         justify-content: center;
-        background: radial-gradient(circle at center, var(--primaryWhite) 0%, var(--gradientWhite) 100%);
+        background-color: var(--divColor);
         transform: translateY(8px);
     }
     .nav-bar ul{
@@ -1333,7 +1334,7 @@ footer{
     /* SERVICES RESPONSIVE */
 
     .services-page .sec-title{
-        margin: 60px auto;
+        margin: 5rem auto;
         margin-bottom: 2rem;
         justify-content: space-around;
     }
@@ -1362,19 +1363,10 @@ footer{
     }
 
     /* ABOUT US - RESPONSIVE */
-
-    .about-us-page{
-        background-color: var(--divColor);
-        max-width: 100rem;
-        width: 100%;
-        height: 85rem;
-        padding: 15px 0;
-        margin-bottom: 0;
-    }
     
     .about-us-page .sec-title{
-        margin: 20px auto;
-        margin-bottom: 21.5rem;
+        margin: 3rem auto;
+        margin-bottom: 22rem;
         justify-content: space-around;
     }
     
@@ -1387,6 +1379,15 @@ footer{
     .about-us-page .sec-title .line{
         width: 100%;
         max-width: 3rem; 
+    }
+
+    .about-us-page{
+        background-color: var(--divColor);
+        max-width: 100rem;
+        width: 100%;
+        height: 88rem;
+        padding: 15px 0;
+        margin-bottom: 0;
     }
     
     .selector{
@@ -1469,8 +1470,7 @@ footer{
     /* STEP BY STEP - RESPONSIVE */
 
     .steps-page .sec-title{
-        margin: 2rem auto;
-        margin-bottom: 0.3rem;
+        margin: 3rem auto;
         justify-content: space-around;
     }
     
