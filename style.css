@@ -1638,7 +1638,6 @@ footer{
         align-items: center;
         justify-content: center;
         margin-top: 50px;
-        transform: translateX(-0.5rem);
     }
     
     .plans li, .plans h4, .plans h3{  
