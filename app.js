@@ -159,9 +159,9 @@ if (document.getElementById('landing-page')) {
 
   }) 
   
-// PLANS PAGE:  
+// E-COMMERCE PAGE:  
 
-}else if(document.getElementById('plans-page')){
+}else if(document.getElementById('ecommerce-page')){
 
   // Products - display Plan Content:
 

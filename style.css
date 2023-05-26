@@ -63,6 +63,7 @@ a{
     --shadowRd: 5px 5px 20px rgba(70, 80, 80, 0.3);
 }
 
+
 /* Section Divider - Title */
 
 .sec-title{
@@ -89,11 +90,12 @@ a{
     border-radius: 5px;
 }
 
+
 /* NAVIGATION BAR */
 
 .navPos{
     max-width: 70rem;
-    height: 2.75rem;
+    height: 1rem;
     width: 100%;
 
     margin: 1rem auto;
@@ -223,6 +225,49 @@ header{
     padding: 5rem 6rem;
 }
 
+.container .title{
+    font-size: 1.2rem;
+}
+
+.container .rdh1{
+    display: none;
+}
+
+.container p{
+    font-size: 1rem;
+    margin: 1.9rem 0 2.5rem;
+    max-width: 600px;
+    line-height: 2;
+}
+
+.btn-wp{
+    display: inline-block;
+    padding: 0.6rem 2.6rem;
+    color: var(--primaryWhite) !important;
+    background-color: var(--contrastPink);
+    font-size: 20px;
+    font-weight: 600 !important;
+    border-radius: 40px;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+
+.btn-wp:hover{
+    background-color: var(--primaryWhite);
+    color: var(--contrastPink) !important;
+}
+
+.container .left{
+    margin-top: -50px; 
+}
+
+.container .icon{
+    width: 400px;
+    translate: 120px -30px;
+}
+
+/* Landing container - Wave divider */
+
 .container-wave-fd{
     position: absolute;
     bottom: 0;
@@ -247,48 +292,6 @@ header{
 
 .container-wave-rd svg{
     display: none;
-}
-
-.title{
-    font-size: 1.2rem;
-}
-
-.rdh1{
-    display: none;
-}
-
-.text{
-    font-size: 1rem;
-    margin: 1.9rem 0 2.5rem;
-    max-width: 600px;
-    line-height: 2;
-}
-
-.btn-wp{
-    display: inline-block;
-    padding: 0.6rem 2.6rem;
-    color: var(--primaryWhite) !important;
-    background-color: var(--contrastPink);
-    font-size: 20px;
-    font-weight: 600 !important;
-    border-radius: 40px;
-    text-transform: capitalize;
-    transition: 0.2s;
-}
-
-.btn-wp:hover{
-    background-color: var(--primaryWhite);
-    color: var(--contrastPink) !important;
-}
-
-
-.container .left{
-    margin-top: -50px; 
-}
-
-.container .icon{
-    width: 400px;
-    translate: 120px -30px;
 }
 
 /* Typing Animation */
@@ -591,21 +594,10 @@ header{
     padding: 5rem auto;
 }
 
-.steps-wave-fd svg{
-    position: inherit;
-    display: block;
-    width: 100%;
-    max-width: 100rem;
-    height: 130px;
-    transform: rotateY(180deg);
-}
-
-.steps-wave-fd .shape-fill {
-    fill: var(--divColor);
-}
-
-.steps-wave-rd svg{
-    display: none;
+.step-by-step h3{
+    font-size: 25px;
+    margin-bottom: 10px;
+    color: var(--primaryBlue);
 }
 
 .steps{
@@ -617,8 +609,6 @@ header{
 
 .step{
     border-radius: 30px;
-    border-style: solid;
-    border-color: var(--darkOne);
     font-size: 16px;
 
     background-color: var(--darkOne);
@@ -632,12 +622,10 @@ header{
     transition: 0.35s ease-in-out;
 }
 
-
 .step.active{
     background-color: var(--primaryWhite);
-    border-color: var(--darkOne);
-    border-width: 3px;
     color: var(--darkOne);
+    box-shadow: var(--shadowRd);
 }
 
 .step-by-step .num{
@@ -657,15 +645,24 @@ header{
     margin-bottom: 10px;
 }
 
-.step-by-step h3{
-    font-size: 25px;
-    margin-bottom: 10px;
+/* Steps page - Wave divider */
+
+.steps-wave-fd svg{
+    position: inherit;
+    display: block;
+    width: 100%;
+    max-width: 100rem;
+    height: 130px;
+    transform: rotateY(180deg);
 }
 
-.step-by-step h3{
-    color: var(--primaryBlue);
+.steps-wave-fd .shape-fill {
+    fill: var(--divColor);
 }
 
+.steps-wave-rd svg{
+    display: none;
+}
 
 /* CONTACT US */
 
@@ -822,23 +819,18 @@ header{
 .alert-msg.invalid .val-msg{
     display: none;
 }
-
 .alert-msg.invalid .inv-msg{
     display: block;
 }
-
 .alert-msg.invalid{
     color: var(--invalidRed);
 }
-
 .alert-msg.valid .inv-msg{
     display: none;
 }
-
 .alert-msg.valid .val-msg{
     display: block;
 }
-
 .alert-msg.valid{
     color: var(--validGreen);
 }
@@ -856,6 +848,8 @@ header{
 .top-container .sec-title h1, .top-container .sec-title .line{
     z-index: 6;
 }
+
+/* E-commerce Page - Wave divider */
 
 .wave-plans {
     position: absolute;
@@ -888,7 +882,6 @@ header{
 
     background-image: var(--blueGradientOp);
     color: var(--primaryWhite);
-
 
     width: 100%;
     height: 65rem;
@@ -1151,12 +1144,14 @@ footer{
         display: block;
         cursor: pointer;
     }
+
     .hamburger div{
         width: 30px;
         height: 30px;
         margin: 1px;
         position: relative;
     }
+
     .hamburger span{
         width: 30px;
         height: 3px;
@@ -1169,6 +1164,7 @@ footer{
         transform: translate(-50%, -50%);
         transition: 0.4s;
     }
+
     .hamburger .line-1{
         transform: translate(-50%, -10px);
     }
@@ -1200,6 +1196,7 @@ footer{
         transition: 0.4s;
         overflow: hidden;
     }
+
     .nav-bar.active{
         height: 100vh;
         display: flex;
@@ -1208,6 +1205,7 @@ footer{
         background-color: var(--divColor);
         transform: translateY(8px);
     }
+
     .nav-bar ul{
         display: block;
         width: fit-content;
@@ -1217,13 +1215,16 @@ footer{
         opacity: 0;
         overflow: hidden;
     }
+
     .nav-bar.active ul{
         opacity: 1 !important;
     }
+
     .nav-bar ul li a{
         margin-bottom: 12px;
         margin-left: 0 !important;
     }
+
 
     /* LANDING CONTAINER - RESPONSIVE */
 
@@ -1241,33 +1242,7 @@ footer{
         margin-bottom: 30px;
     }
 
-    .container-wave-fd svg{
-        display: none;
-    }
-
-    .container-wave-rd{
-        position: absolute;
-        bottom: 0;
-        left: 0;
-        width: 100%;
-        overflow: hidden;
-        line-height: 0;
-        transform: rotate(180deg);
-    }
-
-    .container-wave-rd svg{
-        position: relative;
-        display: block;
-        width: calc(150% + 1.3px);
-        height: 70px;
-        transform: rotateY(180deg);
-    }
-    
-    .container-wave-rd .shape-fill{
-        fill: var(--bgColor);
-    }
-
-    .container .text{
+    .container p{
         display: none;
     }
 
@@ -1302,9 +1277,37 @@ footer{
         translate: -75px 104px;
     }
 
+    /* Responsive Landing container - Wave divider */
+
+    .container-wave-fd svg{
+        display: none;
+    }
+
+    .container-wave-rd{
+        position: absolute;
+        bottom: 0;
+        left: 0;
+        width: 100%;
+        overflow: hidden;
+        line-height: 0;
+        transform: rotate(180deg);
+    }
+
+    .container-wave-rd svg{
+        position: relative;
+        display: block;
+        width: calc(150% + 1.3px);
+        height: 70px;
+        transform: rotateY(180deg);
+    }
+    
+    .container-wave-rd .shape-fill{
+        fill: var(--bgColor);
+    }
+
     /* Typing Animation - responsive */
 
-    .rdh1{
+    .container .rdh1{
         display: flex;
     }
 
@@ -1344,6 +1347,7 @@ footer{
         }
     }
 
+
     /* SERVICES RESPONSIVE */
 
     .services-page .sec-title{
@@ -1374,6 +1378,7 @@ footer{
     .options{
         flex-direction: column;
     }
+
 
     /* ABOUT US - RESPONSIVE */
     
@@ -1480,6 +1485,7 @@ footer{
         background-color: transparent;
     }
 
+
     /* STEP BY STEP - RESPONSIVE */
 
     .steps-page .sec-title{
@@ -1542,6 +1548,7 @@ footer{
         height: 300px;
     }
 
+
     /* CONTACT US - RESPONSIVE */
 
     .contact-us-page{
@@ -1560,7 +1567,8 @@ footer{
     }
     
     .contact-us-page .sec-title .line{
-        width: 4rem;
+        width: 3.75rem;
+        height: 3px;
     }
 
     .contact-us{
@@ -1584,12 +1592,13 @@ footer{
 
     /* PRODUCTS - RESPONSIVE */
 
-    #plans-page .sec-title .line{
+    #ecommerce-page .sec-title .line{
         width: 3rem;
     }
 
     .top-container{
         height: 30px;
+        margin-top: 1.75rem;
     }
 
     .wave-plans{
@@ -1777,6 +1786,7 @@ footer{
     .numbers{
         display: none;
     }
+
 
     /* FOOTER - RESPONSIVE */
 
