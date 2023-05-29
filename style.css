@@ -920,7 +920,7 @@ header{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 5rem;
+    margin-top: 2rem;
 }
 
 .plans ul{
@@ -1630,8 +1630,7 @@ footer{
     .products .btn-wp{
         display: inline-block;
         font-size: 16px;
-        padding: 5px 10px;
-        margin-bottom: 10px;
+        padding: 10px 15px;
     }
     
     .products h1{
@@ -1648,7 +1647,7 @@ footer{
         flex-direction: column;
         align-items: center;
         justify-content: center;
-        margin-top: 50px;
+        margin-top: 30px;
     }
     
     .plans li, .plans h4, .plans h3{  
