@@ -1,0 +1,154 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Pure CSS Accordion</title>
+    <!-- Font Awesome Icons -->
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.0/css/all.min.css"
+      integrity="sha512-iecdLmaskl7CVkqkXNQ/ZH/XLlvWZOJyj7Yy7tcenmpD1ypASozpmT/E0iPtmFIB46ZmdtAc9eNBvH0H/ZpiBw=="
+      crossorigin="anonymous"
+      referrerpolicy="no-referrer"
+    />
+    <!-- Google Fonts -->
+    <link
+      href="https://fonts.googleapis.com/css2?family=Poppins:wght@400;500&display=swap"
+      rel="stylesheet"
+    />
+    <!-- Stylesheet -->
+    <link rel="stylesheet" href="style.css" />
+  </head>
+  <body id="FAQs-page">
+    <main>
+
+      <!-- Navigation Bar -->
+
+      <header>
+        <div class="logo">
+            <a href="index.html">
+                <img src="images/logo/logo.s.w.png" alt="logo">
+                <h3>FusionLabs</h3>
+            </a>
+        </div>
+        <div class="hamburger">
+            <div>
+                <span class="line-1"></span>
+                <span class="line-2"></span>
+                <span class="line-3"></span>
+            </div>
+        </div>
+        <nav class="nav-bar">
+            <ul>
+                <li><a href="index.html#services">Servicios</a></li>
+                <li><a href="index.html#about-us">Sobre nosostros</a></li>
+                <li><a href="index.html#contact-us">Contacto</a></li>
+                <li><a href="works.html" class="btn-nav">Trabajos Recientes</a></li>
+            </ul>
+        </nav>
+      </header>
+
+      <div class="navPos"></div>
+
+      <!-- Wave container -->
+
+      <div class="top-container">
+        <div class="sec-title">
+            <span class="line"></span>
+            <h1>FAQs</h1>
+            <span class="line"></span>
+        </div>
+        <div class="wave-plans">
+            <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
+                <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
+            </svg>
+        </div>
+      </div>
+
+      <!-- FAQs -->
+
+      <div class="FAQs">
+        <div class="accordion">
+          
+          <!-- Item 1 -->
+          <div class="accordion-item">
+            <input type="checkbox" id="item-1" />
+            <label for="item-1" class="accordion-header">
+              <span>Accordion Item 1</span>
+              <span class="arrow">
+                <i class="fa-solid fa-caret-right"></i>
+              </span>
+            </label>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                nostrum omnis, cumque laborum tempora quia earum animi nulla soluta,
+                reiciendis non placeat dolorum hic temporibus odit voluptatum et nam
+                nesciunt.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 2 -->
+          <div class="accordion-item">
+            <input type="checkbox" id="item-2" />
+            <label for="item-2" class="accordion-header">
+              <span>Accordion Item 2</span>
+              <span class="arrow">
+                <i class="fa-solid fa-caret-right"></i>
+              </span>
+            </label>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                nostrum omnis, cumque laborum tempora quia earum animi nulla soluta,
+                reiciendis non placeat dolorum hic temporibus odit voluptatum et nam
+                nesciunt.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 3 -->
+          <div class="accordion-item">
+            <input type="checkbox" id="item-3" />
+            <label for="item-3" class="accordion-header">
+              <span>Accordion Item 3</span>
+              <span class="arrow">
+                <i class="fa-solid fa-caret-right"></i>
+              </span>
+            </label>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                nostrum omnis, cumque laborum tempora quia earum animi nulla soluta,
+                reiciendis non placeat dolorum hic temporibus odit voluptatum et nam
+                nesciunt.
+              </p>
+            </div>
+          </div>
+
+          <!-- Item 4 -->
+          <div class="accordion-item">
+            <input type="checkbox" id="item-4" />
+            <label for="item-4" class="accordion-header">
+              <span>Accordion Item 4</span>
+              <span class="arrow">
+                <i class="fa-solid fa-caret-right"></i>
+              </span>
+            </label>
+            <div class="accordion-content">
+              <p>
+                Lorem ipsum dolor sit amet consectetur adipisicing elit. Voluptates
+                nostrum omnis, cumque laborum tempora quia earum animi nulla soluta,
+                reiciendis non placeat dolorum hic temporibus odit voluptatum et nam
+                nesciunt.
+              </p>
+            </div>
+          </div>
+
+        </div>
+      </div>
+
+    </main>
+  </body>
+</html>
