@@ -838,7 +838,7 @@ header{
 
 /* PRODUCTS */
 
-.top-container{
+#ecommerce-page .top-container{
     background-color: var(--navBarWhite);
     max-width: 100rem;
     width: 100%;
@@ -846,13 +846,13 @@ header{
     margin-top: 1.75rem;
 }
 
-.top-container .sec-title h1, .top-container .sec-title .line{
+#ecommerce-page .top-container .sec-title h1, .top-container .sec-title .line{
     z-index: 6;
 }
 
 /* E-commerce Page - Wave divider */
 
-.wave-plans {
+#ecommerce-page .wave {
     position: absolute;
     top: 10rem;
     left: 0;
@@ -863,7 +863,7 @@ header{
     z-index: 5;
 }
 
-.wave-plans svg {
+#ecommerce-page .wave svg {
     position: relative;
     display: block;
     width: calc(140% + 1.3px);
@@ -871,7 +871,7 @@ header{
     
 }
 
-.wave-plans .shape-fill {
+#ecommerce-page .wave .shape-fill {
     fill: var(--navBarWhite);
 }
 
@@ -1046,6 +1046,43 @@ header{
 
 
 /* FAQs */
+
+#FAQs-page .top-container{
+    background-color: var(--navBarWhite);
+    max-width: 100rem;
+    width: 100%;
+    height: 4rem;
+    margin-top: 1.75rem;
+}
+
+#FAQs-page .top-container .sec-title h1, .top-container .sec-title .line{
+    z-index: 6;
+}
+
+/* FAQs - Wave divider */
+
+#FAQs-page .wave {
+    position: absolute;
+    top: 10rem;
+    left: 0;
+    width: 100%;
+    overflow: hidden;
+    line-height: 0;
+    transform: rotate(180deg) translateY(4rem);
+    z-index: 5;
+}
+
+#FAQs-page .wave svg {
+    position: relative;
+    display: block;
+    width: calc(140% + 1.3px);
+    height: 140px;
+    
+}
+
+#FAQs-page .wave .shape-fill {
+    fill: var(--navBarWhite);
+}
 
 .FAQs{
     width: 100vw;
@@ -1659,49 +1696,22 @@ footer{
     }
 
 
-    /* FAQs - RESPONSIVE */
-
-    #FAQs-page .sec-title .line{
-        width: 6rem;
-        margin: 20px;
-    }
-
-    .top-container{
-        height: 30px;
-        margin-top: 1.75rem;
-    }
-
-    .wave-plans{
-        margin-top: -1.5rem;
-        transform: rotate(180deg) translateY(3rem);
-    }
-
-    .wave-plans svg{
-        height: 50px;
-        width: calc(140% + 1.3px);
-        
-    }
-
-    .accordion{
-        transform: translateY(-50%, -50%);
-    }
-
     /* PRODUCTS - RESPONSIVE */
 
     #ecommerce-page .sec-title .line{
         width: 3rem;
     }
 
-    .top-container{
+    #ecommerce-page .top-container{
         height: 30px;
         margin-top: 1.75rem;
     }
 
-    .wave-plans{
+    #ecommerce-page .wave{
         transform: rotate(180deg) translateY(3rem);
     }
 
-    .wave-plans svg{
+    #ecommerce-page .wave svg{
         height: 50px;
         width: calc(140% + 1.3px);
     }
@@ -1884,6 +1894,33 @@ footer{
 
     .numbers{
         display: none;
+    }
+
+
+    /* FAQs - RESPONSIVE */
+
+    #FAQs-page .sec-title .line{
+        width: 6rem;
+        margin: 20px;
+    }
+
+    #FAQs-page .top-container{
+        height: 30px;
+        margin-top: 1.75rem;
+    }
+
+    #FAQs-page.wave{
+        margin-top: -1.5rem;
+        transform: rotate(180deg) translateY(3rem);
+    }
+
+    #FAQs-page.wave svg{
+        height: 50px;
+        width: calc(140% + 1.3px);
+    }
+
+    .accordion{
+        transform: translateY(-50%, -50%);
     }
 
 
