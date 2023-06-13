@@ -17,23 +17,23 @@ navBar.onclick = function(){
     hamburger.classList.toggle("active");
 }
 
-const header = document.getElementById('navigationBar');
-
-window.addEventListener('scroll', () => {
-  if (window.scrollY > 0) {
-    header.classList.add('scrolled');
-  } else {
-    header.classList.remove('scrolled');
-  }
-});
-
-
-
-
   
 // INDEX PAGE: 
 
 if (document.getElementById('landing-page')) {
+
+  // NavBar - transparency:
+
+  const header = document.getElementById('navigationBar');
+
+  window.addEventListener('scroll', () => {
+    if (window.scrollY > 0) {
+      header.classList.add('scrolled');
+    } else {
+      header.classList.remove('scrolled');
+    }
+  });
+
 
   // Services - hover effect:
 
@@ -159,6 +159,8 @@ if (document.getElementById('landing-page')) {
 
   }) 
   
+
+
 // E-COMMERCE PAGE:  
 
 }else if(document.getElementById('ecommerce-page')){
@@ -173,14 +175,14 @@ if (document.getElementById('landing-page')) {
   premium = document.querySelector(".premium");
 
   function displayPlanContent(planName){
-  planName.onmouseover = function(){
+    planName.onmouseover = function(){
       planName.classList.toggle("active");
 
       products.classList.toggle("active");
       plans.classList.toggle("active");
     }
 
-  planName.onmouseout = function(){
+    planName.onmouseout = function(){
       planName.classList.toggle("active");
 
       products.classList.toggle("active");
@@ -192,5 +194,40 @@ if (document.getElementById('landing-page')) {
   displayPlanContent(avanzado);
   displayPlanContent(premium);
 
-}
 
+
+// FAQs PAGE:
+
+}else if(document.getElementById('FAQs-page')){
+
+  faqPage = document.querySelector(".FAQs");
+  questions = document.querySelector(".questions");
+
+  faq1 = document.getElementById("faq1");
+  faq2 = document.getElementById("faq2");
+  faq3 = document.getElementById("faq3");
+  faq4 = document.getElementById("faq4");
+
+  FAQs = [faq1, faq2, faq3, faq4];
+
+  function displayFAQsContent(faq){
+    faq.onmouseover = function(){
+      faq.classList.toggle("active");
+
+      faqPage.classList.toggle("active");
+      questions.classList.toggle("active");
+    }
+
+    faq.onmouseout = function(){
+      faq.classList.toggle("active");
+
+      faqPage.classList.toggle("active");
+      questions.classList.toggle("active");
+    }
+  }
+
+  for (let i = 0; i < FAQs.length; i++) {
+    displayFAQsContent(FAQs[i]);
+  }
+
+}

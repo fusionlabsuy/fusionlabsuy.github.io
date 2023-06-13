@@ -1077,7 +1077,6 @@ header{
     display: block;
     width: calc(140% + 1.3px);
     height: 140px;
-    
 }
 
 #FAQs-page .wave .shape-fill {
@@ -1086,67 +1085,57 @@ header{
 
 .FAQs{
     width: 100vw;
-    height: 100vh;
-    background-color: var(--primaryBlue);
+    height: 35rem;
+    background-image: var(--blueGradientOp);
 }
 
-.accordion {
-    width: min(90vw, 500px);
-    position: absolute;
-    transform: translate(-50%, -10%);
-    left: 50%;
-    top: 50%;
+.FAQs.active{
+    height: 40rem;
 }
 
-input[type="checkbox"] {
-    display: none;
-    appearance: none;
-}
-
-.accordion-item {
-    padding: 1em;
-    background-color: #ffffff;
-    border-radius: 20px;
-}
-.accordion-item:not(:last-child) {
-    margin-bottom: 1em;
-}
-.accordion-content {
-    color: #606060;
-    font-size: 0.8em;
-    line-height: 1.8em;
-}
-
-#FAQs-page label {
-    font-size: 1em;
+.FAQs .questions{
     display: flex;
-    justify-content: space-between;
-    color: #000000;
-    cursor: pointer;
-    font-weight: 500;
-    padding: 1em 0;
+    align-items: center;
+    justify-content: center;
+    flex-direction: column;
+    transform: translateY(10rem);
 }
 
-input[type="checkbox"] ~ label .arrow {
-    display: inline-block;
-    transition: 0.2s;
+.FAQs .questions .item{
+    height: 65px;
+    width: 50rem;
+    margin: 10px;
+    padding: 20px 30px;
+    background-color: var(--primaryWhite);
+    border-radius: 15px;
+    transition: 0.25s;
 }
 
-input[type="checkbox"]:checked ~ label .arrow {
-    transform: rotate(90deg);
+.FAQs .questions .item.active{
+    height: 160px;
 }
-input[type="checkbox"]:checked ~ label {
+
+.FAQs .questions .item .faq-header{
+    display: flex;
+    align-items: center;
+    justify-content: flex-start;
+}
+
+.FAQs .questions .item.active .faq-header h3{
     color: var(--primaryBlue);
 }
-input[type="checkbox"] ~ .accordion-content {
-    max-height: 0;
-    overflow: hidden;
-    transition: 0.3s;
-}
-input[type="checkbox"]:checked ~ .accordion-content {
-    max-height: 100vh;
 
-    transition: 0.5s;
+.FAQs .questions .item.active .faq-header .arrow{
+    transform: rotate(90deg);
+}
+
+.FAQs .questions .item .faq-content{
+    display: none;
+}
+
+.FAQs .questions .item.active .faq-content{
+    display: flex;
+    margin: 20px auto;
 }
 
 /* FOOTER */
@@ -1156,7 +1145,7 @@ footer{
     background-color: var(--footerDark);
 
     width: 100vw;
-    margin-top: 4rem;
+    margin-top: 0;
     padding: 3rem;
     padding-right: 160px;
 }
@@ -1905,30 +1894,46 @@ footer{
     }
 
     #FAQs-page .top-container{
-        height: 30px;
+        height: 80px;
         margin-top: 1.75rem;
+        margin-bottom: 0;
+    }
+    
+    #FAQs-page .top-container h1{
+        margin: auto 15px;
+        font-size: 25px;
     }
 
-    #FAQs-page.wave{
-        margin-top: -1.5rem;
-        transform: rotate(180deg) translateY(3rem);
+    #FAQs-page .top-container .wave{
+        transform: rotate(180deg) translateY(2rem);
     }
 
-    #FAQs-page.wave svg{
-        height: 50px;
+    #FAQs-page .top-container .wave svg{
+        height: 60px;
         width: calc(140% + 1.3px);
     }
 
-    .accordion{
-        transform: translateY(-50%, -50%);
+    #FAQs-page .FAQs{
+        height: 42rem;
+    }
+
+    #FAQs-page .questions .item{
+        width: 93vw;
+        height: 95px;
+        margin: 5px;
+        transform: translateY(-4.5rem);
+    }
+
+    #FAQs-page .questions .item.active{
+        height: 240px;
+    }
+
+    #FAQs-page .questions .item p{
+        font-size: 14px;
     }
 
 
     /* FOOTER - RESPONSIVE */
-
-    .footer{
-        margin-top: 0 !important;
-    }
 
     .img-footer{
         display: flex;
