@@ -32,6 +32,20 @@ a{
     text-decoration: none;
 }
 
+/* On Scroll effect */
+
+.reveal{
+    position: relative;
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
 /* Color Pallette */
 
 :root{
@@ -1227,13 +1241,13 @@ footer{
     /* Section Divider Title - RESPONSIVE */
 
     .sec-title h1{
-        font-size: 30px;
+        font-size: 50px;
+        font-weight: 600;
         margin: 0 5px;
     }
 
     .sec-title .line{
-        width: 6vw;
-        margin: 5px;
+        display: none;
     }
 
 
