@@ -20,7 +20,7 @@ navBar.onclick = function(){
   
 // INDEX PAGE: 
 
-if (document.getElementById('landing-page')) {
+if (document.getElementById('index-page')) {
 
   // NavBar - transparency:
 

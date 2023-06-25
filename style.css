@@ -217,7 +217,7 @@ header{
 }
 
 
-/* LANDING CONTAINER */
+/* HERO CONTAINER */
 
 .container{
     background-image: var(--blueGradientOp);
@@ -280,7 +280,7 @@ header{
     translate: 120px -30px;
 }
 
-/* Landing container - Wave divider */
+/* Hero container - Wave divider */
 
 .container-wave-fd{
     position: absolute;
@@ -850,7 +850,7 @@ header{
 }
 
 
-/* PRODUCTS */
+/* ECOMMERCE */
 
 #ecommerce-page .top-container{
     background-color: var(--navBarWhite);
@@ -979,6 +979,138 @@ header{
 
     padding: 25px;
     cursor: pointer;
+}
+
+
+/* LANDING PAGES */
+
+.container-landing{
+    display: grid;
+    grid-template-columns: repeat(2, 1fr);
+    align-items: center;
+    justify-content: center;
+    position: relative;
+
+    max-width: 100rem;
+    width: 100%;
+    height: 40rem;
+
+    margin: 0 auto;
+    margin-top: -30px;
+
+    padding: 5rem 6rem;
+    background-color: var(--divColor);
+}
+
+.landing-icon {
+    width: 5rem;
+}
+
+.header-landing{
+    font-size: 1.2rem;
+    margin: 10px;
+}
+
+.header-landing h1{
+    color: var(--primaryBlue);
+}
+
+.header-landing p{
+    font-size: 1rem;
+    padding-right: 10px;
+    margin: 1rem 0 2.5rem;
+    max-width: 600px;
+    line-height: 2;
+}
+
+.header-landing .btn-lp{
+    display: inline-block;
+    padding: 0.5rem 2rem;
+    color: var(--primaryWhite);
+    background-color: var(--contrastPink);
+    font-size: 20px;
+    border-radius: 10px;
+    text-transform: capitalize;
+    transition: 0.2s;
+}
+
+.header-landing .btn-lp:hover{
+    background-color: var(--primaryWhite);
+    color: var(--contrastPink);
+}
+
+.content-landing ul{
+    list-style: none;
+}
+
+.content-landing .landing-row{
+    display: flex;
+}
+
+.card-landing{
+    background: var(--primaryWhite);
+    color: var(--darkOne);
+
+    border-radius: 10px;
+    margin: 5px;
+    padding: 20px;
+
+    text-align: center;
+    box-shadow: 0 3px 12px hsla(233, 77%, 10%, 0.06);
+    transition: 0.25s ease;
+}
+
+.card-landing:hover{
+    background: var(--darkOne);
+    color: var(--primaryWhite);
+    transform: translateY(-5px);
+    box-shadow: 0 5px 18px hsla(245, 67%, 59%, 0.4);
+}
+
+.card-landing .card-icon{
+    background: var(--contrastPink);
+    color: var(--primaryWhite);
+    box-shadow: 0 0 0 8px hsla(0, 0%, 100%, 0.2);
+
+    width: 50px;
+    height: 50px;
+    font-size: 28px;
+    font-weight: 700;
+    border-radius: 50%;
+    
+    display: grid;
+    place-items: center;
+    margin-inline: auto;
+    margin-bottom: 20px;
+    transition: 0.25s ease;
+}
+
+.card-landing:hover .card-icon{
+    background-color: var(--primaryBlue);
+    color: var(--primaryWhite);
+    box-shadow: 0 0 0 8px hsla(0, 0%, 100%, 0.05);
+}
+
+.card-landing .card-title{
+    margin-bottom: 10px;
+    transition: 0.25s ease;
+    color: var(--gradientBlue);
+}
+  
+.card-landing:hover .card-title{ 
+    color: var(--primaryWhite); 
+}
+  
+.card-landing .card-text{
+    color: var(--darkOne);
+    font-size: 15px;
+    font-weight: 500;
+    line-height: 1.8;
+    transition: 0.25s ease;
+}
+  
+.card-landing:hover .card-text{ 
+    color: var(--primaryWhite); 
 }
 
 
@@ -1187,12 +1319,13 @@ footer{
     font-size: 18px;
     font-weight: 200 !important;
     cursor: pointer;
-    transition: 0.12s;
+    transition: 0.4s;
     color: var(--primaryWhite);
 }
 
 .footer-selector li:hover, .footer-selector li a:hover{
-    color: var(--contrastPink);
+    color: var(--gradientBlue);
+    transform: translateX(5px);
 }
 
 .footer-selector h4{
@@ -1251,7 +1384,7 @@ footer{
     }
 
 
-    /* NAVIGATIOON BAR - RESPONSIVE */
+    /* NAVIGATION BAR - RESPONSIVE */
 
     .hamburger{
         display: block;
@@ -1339,7 +1472,7 @@ footer{
     }
 
 
-    /* LANDING CONTAINER - RESPONSIVE */
+    /* HERO CONTAINER - RESPONSIVE */
 
     .container{
         display: flex;
@@ -1390,7 +1523,7 @@ footer{
         translate: -75px 104px;
     }
 
-    /* Responsive Landing container - Wave divider */
+    /* Responsive Hero container - Wave divider */
 
     .container-wave-fd svg{
         display: none;
@@ -1703,7 +1836,12 @@ footer{
     }
 
 
-    /* PRODUCTS - RESPONSIVE */
+    /* ECOMMERCE - RESPONSIVE */
+
+    #ecommerce-page .sec-title h1{
+        font-size: 35px;
+        margin-top: 10px;
+    }
 
     #ecommerce-page .sec-title .line{
         width: 3rem;
@@ -1792,7 +1930,7 @@ footer{
         margin: 0 auto;
     }
 
-    /* Products - active styles */  
+    /* Ecommerce - active styles */  
 
     .products.active{
         height: 900px;
@@ -1845,6 +1983,54 @@ footer{
         margin-top: -25px;
      }
 
+
+    /* LANDING PAGES - RESPONSIVE */
+
+    .container-landing{
+        display: flex;
+        align-items: center;
+        justify-content: left;
+        flex-direction: column;
+
+        max-width: 100vw;
+        width: 100%;
+        height: 1320px;
+        padding: 1.6rem 30px;
+        margin-top: -0.5rem !important;
+    }
+
+    .content-landing .landing-row{
+        flex-direction: column;
+    }
+
+    .landing-icon{
+        width: 4rem;
+    }
+
+    .container-landing h1{
+        font-size: 25px;
+    }
+
+    .container-landing p{
+        font-size: 15px;
+        margin: 10px 0;
+        padding: 0;
+    }
+
+    .container-landing .btn-lp{
+        display: inline-block;
+        padding: 0.6rem 1.5rem;
+        margin-top: 15px;
+        font-size: 16.5px;
+        font-weight: 600 !important;
+        border-radius: 10px;
+        text-transform: capitalize;
+        transition: 0.2s;
+    }
+
+    .content-landing{
+        margin-top: 30px;
+    }
      
      /* RECENT WORKS - RESPONSIVE */
 
@@ -1853,8 +2039,8 @@ footer{
     }
 
      #works-page .sec-title h1{
-        font-size: 26px;
-        margin: 0;
+        font-size: 30px;
+        margin: 15px;
     } 
 
     #works-page .sec-title .line{
@@ -1972,7 +2158,7 @@ footer{
         justify-content: center;
         margin: 0 10px;
     }
-
+ 
     .pages-footer{
         margin-left: -55px;
         margin-bottom: 0;
