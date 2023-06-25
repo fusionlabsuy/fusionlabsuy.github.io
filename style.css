@@ -456,8 +456,6 @@ header{
     background-color: var(--gradientBlue);
     color: var(--primaryWhite);
     border-radius: 7.5px;
-    border-style: solid;
-    border-color: var(--gradientBlue);
     cursor: pointer;
 
     height: 45px;
