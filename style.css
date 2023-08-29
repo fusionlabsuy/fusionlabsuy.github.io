@@ -60,7 +60,7 @@ a{
     --primaryWhite: #f6fafc;
     --gradientWhite: #ecefef;
     --bgColor: #f9fcfe;
-    --divColor: #e9f1fe;
+    --divColor: #dff1fe;
     --navBarWhite: #fff;
     --lightGrey: #f1f6f6;
 
@@ -746,7 +746,7 @@ header{
     width: 100%;
     background-color: transparent;
     border: 2px solid var(--primaryBlue);
-    border-radius: 15px;
+    border-radius: 10px;
     outline: none;
     padding-left: 12px;
     color: var(--darkOne);
@@ -782,11 +782,21 @@ header{
     overflow: auto;
 }
 
+.noun-info{
+    display: flex;
+    justify-content: space-between;
+    transform: translateY(15px);
+}
+
+.noun-info .inp-box{
+    width: 225px;
+}
+
 .inp.invalid{
     border-color: var(--invalidRed);
 }
 
-.name-label.invalid, .email-label.invalid, .msg-label.invalid{
+.name-label.invalid, .business-label.invalid, .email-label.invalid, .msg-label.invalid{
     color: var(--invalidRed);
 }
 
@@ -1124,7 +1134,7 @@ header{
 }
 
 .allworks{
-    margin-top: 20px;
+    margin: 20px 0 40px 0;
 }
 
 .col{
@@ -1796,7 +1806,7 @@ footer{
     /* CONTACT US - RESPONSIVE */
 
     .contact-us-page{
-        height: 30rem;
+        height: 36rem;
         margin-bottom: 0;
     }
 
@@ -1831,6 +1841,19 @@ footer{
 
     .inp-box{
         width: 75vw;
+    }
+
+    .noun-info{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+
+    .noun-info .inp-box{
+        width: 75vw;
+    }
+
+    .noun-info #name-inpBox{
+        transform: translateY(15px);
     }
 
 

@@ -114,27 +114,33 @@ if (document.getElementById('index-page')) {
   alertMsg = document.getElementById('alert');
 
   nameLabel = document.querySelector(".name-label");
+  businessLabel = document.querySelector(".business-label");
   emailLabel = document.querySelector(".email-label");
   msgLabel = document.querySelector(".msg-label");
 
   nombre = document.getElementById('name');
+  empresa = document.getElementById('business');
   email = document.getElementById('email');
   msg = document.getElementById('msg');
 
-  body = 'name: ' + nombre.value + '<br/> email: ' + email.value + '<br/> message: ' + msg.value;
+  body = '<b> Nombre:</b> ' + nombre.value + '<br/> <b> Empresa:</b> ' + business.value + 
+         '<br/> <b> Email:</b> ' + email.value + '<br/> <b> Mensaje:</b> ' + msg.value;
 
   function clearInputs(){
       nombre.value = "";
+      empresa.value = "";
       email.value = "";
       msg.value = "";
   }
 
   function correctValidation(){
       nombre.classList.remove("invalid");
+      empresa.classList.remove("invalid");
       email.classList.remove("invalid");
       msg.classList.remove("invalid");
 
       nameLabel.classList.remove("invalid");
+      businessLabel.classList.remove("invalid");
       emailLabel.classList.remove("invalid");
       msgLabel.classList.remove("invalid");
   }
@@ -152,10 +158,12 @@ if (document.getElementById('index-page')) {
   }
 
   checkValidation(nombre, nameLabel);
+  checkValidation(empresa, businessLabel);
   checkValidation(email, emailLabel);
   checkValidation(msg, msgLabel);
 
-  if(nombre.validity.valid == false || email.validity.valid == false || msg.validity.valid == false){
+  if(nombre.validity.valid == false || business.validity.valid == false || 
+     email.validity.valid == false || msg.validity.valid == false){
       alertMsg.classList.add('invalid');
   }else{
       alertMsg.classList.remove('invalid');
