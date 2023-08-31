@@ -882,7 +882,6 @@ header{
     text-align: center;
     align-items: center;
     justify-content: center;
-    position: relative;
 
     color: var(--primaryWhite);
     background-color: var(--bgColor);
@@ -1897,7 +1896,7 @@ footer{
 
     .products{
         width: 100vw;
-        height: 105rem;
+        height: 106rem;
     
         margin: 0 auto;
         margin-top: 15px;
@@ -1933,10 +1932,11 @@ footer{
     }
 
     .plans{
-        transform: translate(-2.5rem, 30rem);
+        transform: translateY(30rem);
         background-image: var(--bgColor) !important;
         flex-direction: column;
         margin: 0;
+        padding: 0;
 }
 
     .standard, .avanzado, .premium{
