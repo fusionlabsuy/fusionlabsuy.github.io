@@ -1,10 +1,12 @@
 /* FusionLabs - juanigomez | landing page - CSS */
 
+
+
+/* ----- GLOBAL SETTINGS ----- */
+
 @import url('https://fonts.googleapis.com/css2?family=Jost:wght@500;600;700&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@400&display=swap');
 @import url('https://fonts.googleapis.com/css2?family=Poppins:wght@400&display=swap');
-
-/* GLOBAL SETTINGS */
 
 *, 
 *::before,
@@ -78,6 +80,10 @@ a{
 }
 
 
+
+
+/* ----- GLOBAL COMPONENTS ----- */
+
 /* Section Divider - Title */
 
 .sec-title{
@@ -105,7 +111,9 @@ a{
 }
 
 
-/* NAVIGATION BAR */
+
+
+/* ----- NAVIGATION BAR ----- */
 
 .navPos{
     max-width: 70rem;
@@ -215,6 +223,11 @@ header{
     
     transform: scale(1);
 }
+
+
+
+
+/* ----- INDEX ----- */
 
 
 /* HERO CONTAINER */
@@ -676,6 +689,7 @@ header{
     display: none;
 }
 
+
 /* CONTACT US */
 
 .contact-us-page{
@@ -858,44 +872,11 @@ header{
 }
 
 
+
+
+/* ----- SERVICES ----- */
+
 /* ECOMMERCE */
-
-#ecommerce-page .top-container{
-    background-color: var(--navBarWhite);
-    max-width: 100rem;
-    width: 100%;
-    height: 4rem;
-    margin-top: 1.75rem;
-}
-
-#ecommerce-page .top-container .sec-title h1, .top-container .sec-title .line{
-    z-index: 6;
-}
-
-/* E-commerce Page - Wave divider */
-
-#ecommerce-page .wave {
-    position: absolute;
-    top: 10rem;
-    left: 0;
-    width: 100%;
-    overflow: hidden;
-    line-height: 0;
-    transform: rotate(180deg) translateY(4rem);
-    z-index: 5;
-}
-
-#ecommerce-page .wave svg {
-    position: relative;
-    display: block;
-    width: calc(140% + 1.3px);
-    height: 140px;
-    
-}
-
-#ecommerce-page .wave .shape-fill {
-    fill: var(--navBarWhite);
-}
 
 .products{
     text-align: center;
@@ -903,46 +884,68 @@ header{
     justify-content: center;
     position: relative;
 
-    background-image: var(--blueGradientOp);
     color: var(--primaryWhite);
+    background-color: var(--bgColor);
 
     width: 100%;
-    height: 65rem;
-
+    height: 52rem;
     margin: 0 auto;
     margin-bottom: 1rem;
-    transform: translateY(-0.25rem);
-
-    padding: 45px 200px;
-    padding-top: 10rem;
-    z-index: 0;
+    padding: 50px 0;
 }
 
-.products .btn-wp{
-    padding: 0.6rem 1rem;
-    font-size: 18px;
-    border-radius: 15px;
-    margin: 7.5px;
+.ecom-header{
+    display: flex; 
+    flex-direction: column;
+    align-items: center;
 }
 
-.products h1{
-    font-size: 42px;
-    margin-bottom: -10px;
-    margin-left: 10px;
-    text-align: left;
+.ecom-header .ecommerce-icon{
+    width: 5rem;
+    margin: 5px 20px 5px 20px;
 }
 
-.e-paragraph{
-    text-align: left;
-    font-size: 16px;
-    margin: 30px 6px;
+/* Sec-title general style */
+
+.content{
+    margin: 15px 5px;
 }
 
 .plans{
     display: flex;
     align-items: center;
     justify-content: space-around;
-    margin-top: 2rem;
+    margin-top: 10rem;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 0px 220px;
+    background-image: var(--blueGradientOp);
+    height: 300px;
+    width: 100vw;
+}
+
+.plans .btn-ec{
+    height: 45px;
+    width: 125px;
+
+    padding: 10px 20px;
+    margin-top: 20px;
+    margin-bottom: 15px;
+
+    font-size: 16px;
+    font-weight: 400;
+    border-radius: 5px;
+
+    color: var(--primaryWhite);
+    background-color: var(--gradientBlue);
+
+    display: inline-block;
+    transition: 0.2s;
+}
+
+.plans .btn-ec:hover{
+    color: var(--gradientBlue);
+    background-color: var(--darkOne);
 }
 
 .plans ul{
@@ -958,7 +961,7 @@ header{
 }
 
 .plans h2{
-    font-size: 28px;
+    font-size: 30px;
     color: var(--darkOne);
 }
 
@@ -969,7 +972,7 @@ header{
 }
 
 .plans h4{
-    font-size: 25px;
+    font-size: 20px;
     color: var(--primaryBlue);
 }
 
@@ -979,14 +982,25 @@ header{
 
 .standard, .avanzado, .premium{
     display: inline-block;
-    background: var(--whiteGradient);
-    border-radius: 30px;
+    background: var(--primaryWhite);
+    box-shadow: var(--shadowFd);
 
-    width: 240px;
-    height: 465px;
+    border-style: solid;
+    border-color: var(--gradientBlue);
+    border-radius: 10px;
+
+    width: 235px;
+    height: 450px;
 
     padding: 25px;
     cursor: pointer;
+}
+
+.avanzado{
+    transform: translateY(-3rem);
+    border-style: solid;
+    border-color: var(--contrastPink);
+    border-width: 3px;
 }
 
 
@@ -1121,6 +1135,10 @@ header{
     color: var(--primaryWhite); 
 }
 
+
+
+
+/* ----- OTHER PAGES ----- */
 
 /* RECENT WORKS */
 
@@ -1296,7 +1314,10 @@ header{
     margin: 20px auto;
 }
 
-/* FOOTER */
+
+
+
+/* ----- FOOTER ----- */
 
 footer{
     color: var(--primaryWhite);
@@ -1360,7 +1381,11 @@ footer{
 }
 
 
-/* RESPONSIVE */
+
+
+
+/* ---------- RESPONSIVE DESIGN ---------- */
+
 
 @media only screen and (max-width: 1320px){
     header{
@@ -1379,6 +1404,8 @@ footer{
 
 @media only screen and (max-width: 1055px){
 
+    /* ----- GLOBAL COMPONENTS - RESPONSIVE ----- */
+
     /* Section Divider Title - RESPONSIVE */
 
     .sec-title h1{
@@ -1392,7 +1419,9 @@ footer{
     }
 
 
-    /* NAVIGATION BAR - RESPONSIVE */
+
+
+    /* ----- NAVIGATION BAR - RESPONSIVE ----- */
 
     .hamburger{
         display: block;
@@ -1479,6 +1508,10 @@ footer{
         margin-left: 0 !important;
     }
 
+
+
+
+    /* ----- INDEX - RESPONSIVE ----- */
 
     /* HERO CONTAINER - RESPONSIVE */
 
@@ -1857,152 +1890,62 @@ footer{
     }
 
 
+
+    /* ----- SERVICES - RESPONSIVE ----- */
+
     /* ECOMMERCE - RESPONSIVE */
-
-    #ecommerce-page .sec-title h1{
-        font-size: 35px;
-        margin-top: 10px;
-    }
-
-    #ecommerce-page .sec-title .line{
-        width: 3rem;
-    }
-
-    #ecommerce-page .top-container{
-        height: 30px;
-        margin-top: 1.75rem;
-    }
-
-    #ecommerce-page .wave{
-        transform: rotate(180deg) translateY(3rem);
-    }
-
-    #ecommerce-page .wave svg{
-        height: 50px;
-        width: calc(140% + 1.3px);
-    }
 
     .products{
         width: 100vw;
-        height: 740px;
+        height: 105rem;
     
         margin: 0 auto;
         margin-top: 15px;
-        margin-bottom: 2rem;
-    
-        padding: 2rem 1rem;
-        padding-top: 4rem;
+
         transform: translateY(0.8rem);
-
-        transition: 0.3s ease-in-out;
-    }
-    
-    .products .btn-wp{
-        display: inline-block;
-        font-size: 16px;
-        padding: 10px 15px;
-    }
-    
-    .products h1{
-        font-size: 1.8rem;
-        margin-bottom: 10px;
+        background-color: var(--divColor);
     }
 
-    .e-paragraph{
-        margin: 20px 15px;
+    .ecom-header{
+        transform: translateY(-5rem);
+    }
+
+    .ecommerce-icon{
+        transform: translateY(4rem);
+    }
+
+    .ecom-header .sec-title{
+        margin: 5rem auto;
+        margin-bottom: 3rem;
+        justify-content: space-around;
+    }
+    
+    .ecom-header .sec-title h1{
+        margin: 0 2px;
+        font-size: 32px;
+        word-wrap: break-word;
+        color: var(--primaryBlue);
+    }
+    
+    .ecom-header .sec-title .line{
+        width: 100%;
+        max-width: 2.3rem; 
     }
 
     .plans{
-        display: flex;
+        transform: translate(-2.5rem, 30rem);
+        background-image: var(--bgColor) !important;
         flex-direction: column;
-        align-items: center;
-        justify-content: center;
-        margin-top: 30px;
-    }
-    
-    .plans li, .plans h4, .plans h3{  
-        display: none;
-    }
-    
-    .plans h2{
-        font-size: 1.2rem;
-        color: var(--darkOne);
-    }
-    
+        margin: 0;
+}
+
     .standard, .avanzado, .premium{
-        display: flex;
-
-        background: radial-gradient(circle at center, var(--primaryWhite) 0%, var(--gradientWhite) 100%);
-        border-radius: 15px;
-        transition: 0.4s;
-    
-        width: 85vw;
-        height: 50px;
-    
-        padding: 0.6rem 0;
-        margin-bottom: 10px;
+        margin-bottom: 25px;
     }
 
-    .peek{
-        display: flex;
-        flex-direction: column;
-        justify-content: center;
-        align-items: center;
-        margin: 0 auto;
+    .avanzado{
+        transform: translateY(0);
     }
-
-    /* Ecommerce - active styles */  
-
-    .products.active{
-        height: 900px;
-    }
-
-    .products.plans-page{
-        height: 850px;
-    }
-
-    .standard.active, .avanzado.active, .premium.active{
-        height: 220px;
-        display: grid;
-        grid-template-columns: repeat(2, 1fr);
-        flex-direction: column;
-        transition: 0.3s ease-in-out;
-    }
-
-    .standard.active h3, .avanzado.active h3, .premium.active h3{
-        display: flex;
-        font-size: 1.2rem;
-        color: var(--primaryBlue);
-    }
-
-    .standard.active h4, .avanzado.active h4, .premium.active h4{
-        display: flex;
-        font-size: 15px;
-        color: var(--darkOne);
-        margin-top: -85px;
-        padding: 0 45px;
-    }
-
-    .standard.active li, .avanzado.active li, .premium.active li{
-        color: var(--darkTwo);
-        font-size: 12px;
-        display: flex;
-        line-height: 0.5;
-        margin-top: 20px;
-    }
-
-    .plans .content{
-       align-items: center;
-    }
-
-    .products.no li{
-        text-decoration: line-through;
-        text-decoration-style: double;
-    }
-
-    .standard.active .peek, .avanzado.active .peek, .premium.active .peek{
-        margin-top: -25px;
-     }
 
 
     /* LANDING PAGES - RESPONSIVE */
@@ -2053,7 +1996,11 @@ footer{
         margin-top: 30px;
     }
      
-     /* RECENT WORKS - RESPONSIVE */
+    
+    
+    /* ----- OTHER PAGES - RESPONSIVE ----- */
+
+    /* RECENT WORKS - RESPONSIVE */
 
      #works-page .sec-title{
         margin-top: 1.75rem;
@@ -2159,7 +2106,9 @@ footer{
     }
 
 
-    /* FOOTER - RESPONSIVE */
+    
+
+    /* ----- FOOTER - RESPONSIVE ----- */
 
     .img-footer{
         display: flex;
