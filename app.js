@@ -18,6 +18,7 @@ navBar.onclick = function(){
 }
 
   
+
 // INDEX PAGE: 
 
 if (document.getElementById('index-page')) {
@@ -257,6 +258,26 @@ if (document.getElementById('index-page')) {
 
   for (let i = 0; i < FAQs.length; i++) {
     displayFAQsContent(FAQs[i]);
+  }
+
+}else if(document.getElementById('works-page')){
+
+  toggleSwitch = document.querySelector(".toggle-switch");
+
+  landingExamples = document.querySelector(".landing-examples");
+  ecommerceExamples = document.querySelector(".ecom-examples");
+
+  landingText = document.querySelector(".landingH3");
+  ecommerceText = document.querySelector(".ecomH3");
+
+  toggleSwitch.onclick = function(){
+      toggleSwitch.classList.toggle("active");
+
+      landingExamples.classList.toggle("active");
+      landingText.classList.toggle("active");
+      
+      ecommerceExamples.classList.toggle("active");
+      ecommerceText.classList.toggle("active");
   }
 
 }
