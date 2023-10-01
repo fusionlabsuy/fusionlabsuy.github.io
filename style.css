@@ -2390,11 +2390,11 @@ footer{
   }
   .chat-input span {
     align-self: flex-end;
+    display: flex;
+    align-items: center;
     color: var(--primaryPurple);
     cursor: pointer;
     height: 55px;
-    display: flex;
-    align-items: center;
     visibility: hidden;
     font-size: 1.35rem;
   }
@@ -2423,6 +2423,9 @@ footer{
     }
     .chatbot header span {
       display: block;
+    }
+    .chat-input textarea {
+        width: 99vw !important;
     }
   }
 
