@@ -58,6 +58,7 @@ a{
     --primaryBlue: #3c8ce7;
     --gradientBlue: #3cbfe7;
     --validGreen: #00e065;
+    --wppGreen: #11be50;
 
     --primaryWhite: #f6fafc;
     --gradientWhite: #ecefef;
@@ -837,6 +838,26 @@ header{
 .btn-bw:hover{
     background-color: var(--darkOne);
     color: var(--primaryBlue);
+}
+
+.contact-btns{
+    display: flex;
+}
+
+.btn-cs-wp{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--wppGreen);
+    height: 45px;
+    width: 60px;
+    margin-left: 10px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.btn-cs-wp img{
+    width: 30px;
 }
 
 .btn-val{
@@ -2235,8 +2256,6 @@ footer{
     }
 }
 
-
-/* -------------------------------------------------------------- */
 
 /* CHATBOT STYLING */
 
