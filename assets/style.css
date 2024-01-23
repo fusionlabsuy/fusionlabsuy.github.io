@@ -380,6 +380,7 @@ nav .menu a:hover::after {
 
 #growth-partner .reveal .features img{
     max-width: 45vw;
+    transform: translate(-2.5vw, -5vh);
 }
 
 /* LANDING PAGES */
@@ -934,14 +935,54 @@ footer .bottom .text{
     }
 
 
+    /* GROWTH PARTNER | RESPONSIVE */
+
+    #growth-partner .reveal{
+        flex-direction: column-reverse;
+        height: auto;
+        padding: 0 8vw;
+        padding-top: 7.5vh;
+        padding-left: 10vw
+    }
+    #growth-partner .reveal .text, #growth-partner .reveal .features{
+        width: 80vw;
+        padding: 0 auto;
+    }
+
+    /* Growth Partner | Responsive - paragraph */
+
+    #growth-partner .reveal .paragraph{
+        color: var(--light);
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+    }
+
+    /* Growth Partner | Responsive - features */
+
+    #growth-partner .reveal .features img{
+        max-width: 150vw;
+        transform: translate(0, 0);
+    }
+
+    /* Growth Partner | Responsive - button */
+
+    #growth-partner .btn2{
+        width: 80vw;
+        margin: 5vh auto;
+        color: var(--dark);
+        background-color: var(--light);
+    }
+
+
     /* LANDING PAGES | RESPONSIVE */
 
     #landing-pages {
         flex-direction: column;
         height: auto;
-        padding: 0 auto;
+        padding: 0 8vw;
         padding-left: 10vw;
-        margin-top: 100vh;
+        margin-top: 175vh;
     }
     #landing-pages .text, #landing-pages .features{
         width: 80vw;
