@@ -1,0 +1,1111 @@
+/* FusionLabs | Uy Software Company - landing page */
+
+
+/* ----- GLOBAL SETTINGS ----- */
+
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@500;600;700&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@500;600;700&display=swap');
+
+
+*, 
+*::before,
+*::after{
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+body{
+    overflow-x: hidden;
+    font-family: "Poppins", sans-serif;
+    background-color: var(--dark);
+}
+html{
+    scroll-behavior: smooth;
+}
+img{
+    width: 100%;
+}
+a{
+    text-decoration: none;
+}
+
+main{
+    width: 100vw;
+}
+section{
+    height: 100vh;
+    width: 100vw;
+    padding-top: 15vh;
+    position: relative;
+}
+
+/* On Scroll effect */
+
+.reveal{
+    transform: translateY(150px);
+    opacity: 0;
+    transition: all 1s ease;
+}
+
+.reveal.active{
+    transform: translateY(0px);
+    opacity: 1;
+}
+
+/* Text Styles */
+
+h1{
+    font-size: 50px;
+}
+p{
+    font-size: 15px;
+    font-weight: 100;
+}
+
+/* Color Pallette */
+
+:root{
+    --blue: #39c4e7;
+    --green: #3bc2a0;
+    --dark: #191818;
+    --grey: #222;
+    --light: #efefef;
+    
+    --gradient1: linear-gradient(to left, var(--blue) 20%, var(--green) 80%);
+    --gradient2: linear-gradient(to left, var(--green) 20%, var(--blue) 80%);
+
+    --shadow: 5px 5px 20px rgba(70, 80, 80, 0.3);
+}
+
+
+/* BUTTONS STYLINGS */
+
+.btn, .btn1, .btn2{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    cursor: pointer;
+}
+.btn1, .btn2{
+    margin-top: 4vh;
+}
+
+/* Button */
+
+.btn{
+    width: 14vw;
+    height: 8vh;
+    border-radius: 6px;
+
+    background-image: var(--gradient1);
+    color: var(--light);
+    transition: 0.5s ease-in-out;
+}
+.btn:hover{
+    background-image: var(--gradient2);
+}
+
+/* Button 1 */
+
+.btn1{
+    width: 10vw;
+    height: 8vh;
+
+    border-style: solid;
+    border-color: var(--light);
+    border-radius: 2px;
+
+    color: var(--dark);
+    background-color: var(--light);
+    transition: 0.3s ease-in-out;
+}
+.btn1:hover{
+    background-color: transparent;
+    color: var(--light);
+}
+
+/* Button 2 */
+
+.btn2{
+    width: 10vw;
+    height: 8vh;
+
+    border-style: solid;
+    border-color: var(--light);
+    border-radius: 2px;
+
+    color: var(--light);
+    transition: 0.3s ease-in-out;
+}
+.btn2:hover{
+    background-color: var(--light);
+    color: var(--dark);
+}
+
+
+/* TITLE STYLE */
+
+.title{
+    display: relative;
+    text-align: center;
+    margin-bottom: -10vh;
+}
+.title h2{
+    font-size: 70px;
+    color: white;
+    opacity: 0.25;
+}
+.title h3{
+    font-size: 70px;
+    color: var(--light);
+    transform: translate(0, -14vh);
+}
+
+
+/* SUBTITLE STYLE */
+
+.subtitle{
+    display: relative;
+    text-align: left;
+    margin-bottom: -7.5vh;
+}
+.subtitle h2{
+    font-size: 50px;
+    color: white;
+    opacity: 0.25;
+}
+.subtitle h3{
+    font-size: 50px;
+    color: var(--light);
+    transform: translate(0, -10.5vh);
+}
+
+
+/* NAVIGATION BAR */
+nav{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    position: fixed;
+
+    width: 100vw;
+    height: 15vh;
+    padding: 2vh 4vw;
+    margin-bottom: 20vh;
+    z-index: 1;
+
+    background-color: var(--dark);
+}
+
+/* Navigation Bar - logo */
+
+nav .logo{
+    display: flex;
+}
+nav .logo img{
+    width: 50px;
+}
+nav .logo h2{
+    font-family: 'Montserrat';
+    font-weight: 100;
+    color: var(--light);
+    transform: translateY(10px);
+}
+
+/* Navigation Bar - burger */
+
+.burger{
+    display: none;
+}
+
+/* Navigation Bar - menu */
+
+nav .menu{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+nav .menu a {
+    color: var(--light);
+    margin: 0 1vw;
+    text-decoration: none;
+    position: relative;
+}
+nav .menu a::after {
+    content: '';
+    position: absolute;
+    left: 0;
+    bottom: -3px;
+    width: 0%; 
+    height: 2px;
+    background-image: var(--gradient1);
+    transition: 0.25s ease-in-out; 
+}
+nav .menu a:hover::after {
+    width: 100%; 
+}
+  
+
+/* HERO SECTION */
+
+#hero {
+    display: flex;
+    background-color: var(--dark);
+    color: var(--light);
+}
+#hero .text, .image{
+    display: flex;
+    justify-content: space-evenly;
+    width: 50vw;
+    padding: 2vh 6vw;
+}
+#hero .text{
+    flex-direction: column;
+    text-align: left;
+    justify-content: space-around;
+    padding-bottom: 12vh;
+}
+#hero .image{
+    align-items: center;
+}
+#hero .image img{
+    width: 40vw;
+    margin: 0 auto;
+}
+
+/* Hero Section - buttons */
+
+#hero .hero-btns{
+    display: flex;
+}
+
+#hero .hero-btns .btn1{
+    margin-right: 10px;
+}
+
+
+/* SERVICES */
+
+#services{
+    height: 140vh;
+    color: var(--light);
+    background-color: var(--dark);
+}
+
+/* Services - text */
+
+#services .text .paragraph{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+
+    padding: 0 4vw;
+    margin: 0 2vw;
+    margin-bottom: 12.5vh;
+}
+#services .text .paragraph p:first-child{
+    margin-right: 1vw;
+}
+
+/* Services - services */
+
+#services .all-services{
+    display: flex;
+    align-items: center;
+    justify-content: space-around;
+    height: 60vh;
+    padding: 0 5vw;
+}
+#services .all-services .service{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+    
+    height: 60vh;
+    width: 21vw;
+    margin: 0 1vw;
+    padding: 1vh 1vw;
+
+    background-color: var(--grey);
+    color: var(--light);
+    border-radius: 5px;
+    transition: 0.4s ease-in-out;
+}
+
+/* Services - hover */
+
+#services .all-services .service:hover{
+    color: var(--dark);
+    background-color: var(--light);
+    transform: translateY(-2.5vh);
+}
+#services .all-services .service:hover .btn2{
+    border-color: var(--dark);
+    color: var(--dark);
+}
+#services .all-services .service:hover .btn2:hover{
+    background-color: var(--dark);
+    color: var(--light);
+}
+
+/* Services - icon */
+
+#services .all-services .service i{
+    font-size: 5vw;
+}
+
+/* GROWTH PARTNER */
+
+#growth-partner .reveal{
+    display: flex;
+    padding: 0 6vw;
+    padding-top: 7.5vh;
+}
+#growth-partner .reveal .text, #growth-partner .reveal .features{
+    width: 50vw;
+}
+
+/* Growth Partner - paragraph */
+
+#growth-partner .reveal .paragraph{
+    color: var(--light);
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Growth Partner - features */
+
+#growth-partner .reveal .features img{
+    max-width: 45vw;
+}
+
+/* LANDING PAGES */
+
+#landing-pages {
+    display: flex;
+    padding: 0 6vw;
+    padding-top: 7.5vh;
+}
+#landing-pages .text, #landing-pages .features{
+    width: 50vw;
+}
+
+/* Landing Pages - text */
+
+#landing-pages .text{
+    color: var(--light);
+    margin-top: -5vh;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+
+/* Landing Pages - features */
+
+#landing-pages .features{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+}
+#landing-pages .features .top, #landing-pages .features .bottom{
+    display: flex;
+}
+#landing-pages .features .feature{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+
+    height: 32vh;
+    width: 18vw;
+    margin: 2.25vh 0.85vw;
+    padding: 1vh 1.25vw;
+
+    border-radius: 4px;
+    color: var(--light);
+    background-color: var(--grey);
+    transition: 0.25s ease-in-out;
+}
+#landing-pages .features .feature:hover{
+    background-color: var(--light);
+    color: var(--dark);
+    transform: translateY(-2vh);
+}
+
+/* Landing Pages - icon */
+
+#landing-pages .features .feature i{
+    font-size: 4vw;
+}
+
+
+/* ROADMAP */
+
+#roadmap{
+    display: flex;
+    flex-direction: column;
+}
+
+/* Roadmap - timeline */
+
+#roadmap .timeline{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    margin: 2vh auto;
+}
+#roadmap .timeline .line{
+    height: 2px;
+    width: 70vw;
+    background-color: var(--light);
+}
+#roadmap .timeline .numbers{
+    display: flex;
+    justify-content: space-between;
+    width: 70.5vw;
+    margin-top: -2vh;
+}
+#roadmap .timeline .numbers .num{
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    background-color: var(--light);
+    border-radius: 50%;
+    width: 30px;
+    height: 30px;
+    font-size: 20px;
+}
+
+/* Roadmap - steps */
+
+#roadmap .all-steps{
+    display: flex;
+    align-items: center;
+    justify-content: space-evenly;
+}
+#roadmap .all-steps .step{
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    text-align: center;
+    justify-content: space-evenly;
+
+    width: 15vw;
+    height: 45vh;
+    padding: 4vh 2vw;
+    
+    border-radius: 4px;
+    border-style: solid;
+    background-color: var(--dark);
+    color: var(--light);
+}
+#roadmap .all-steps .step i{
+    font-size: 5vw;
+}
+
+
+/* CONTACT US */
+
+#contact-us {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    margin-bottom: 24vh;
+}
+
+/* Contact Us - Form */
+
+#contact-us .form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    justify-content: center;
+    height: 60vh;
+    width: 85vw;
+    margin: 0 auto;
+    color: var(--light);
+    border-radius: 4px; 
+}
+#contact-us .form .top input[type="text"],
+#contact-us .form input[type="email"],
+#contact-us .form textarea {
+    color: var(--light);
+    background-color: transparent;
+    border: solid var(--light);
+    border-radius: 2px;
+    font-family: 'Poppins', sans-serif;
+    padding: 2vh 1vw;
+    margin: 1vh 0.5vw;
+}
+#contact-us .form .top input[type="text"]{
+    width: 27.45vw;
+}
+#contact-us .form input[type="email"]{
+    width: 85vw;
+}
+#contact-us .form textarea {
+    resize: none; 
+    width: 85vw;
+    height: 20vh;
+    margin-bottom: -2.5vh;
+}
+
+/* Contact Us - Buttons */
+
+#contact-us .form .contact-buttons{
+    display: flex;
+    margin-left: 0.5vw;
+}
+#contact-us .form .contact-buttons .btn1{
+    font-family: 'Poppins', sans-serif;
+}
+#contact-us .form .contact-buttons .btn2{
+    width: 6vw;
+    margin-left: 1vw;
+}
+#contact-us .form .contact-buttons .btn2 img{
+    width: 3vw;
+}
+#contact-us .form .contact-buttons .btn2:hover{
+    background-color: transparent;
+}
+
+
+/* FOOTER */
+
+footer {
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+    padding: 5vh 4vw;
+    width: 100vw;
+    height: 45vh;
+    color: var(--light);
+    background-color: var(--grey);
+}
+footer .top{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+}
+
+/* Footer - logo */
+
+footer .top .logo{
+    display: flex;
+}
+footer .top .logo img{
+    width: 90px;
+    object-fit: contain;
+}
+footer .top .logo h3{
+    font-family: 'Montserrat', sans-serif;
+    font-size: 40px;
+    font-weight: 100;
+    transform: translateY(70px);
+}
+
+/* Footer - sections */
+
+footer .row{
+    display: flex;
+    align-items: top;
+    justify-content: space-between;
+    width: 30vw;
+    margin-bottom: 2.5vh;
+}
+footer .row .section:last-child{
+    margin-right: 0vw;
+}
+footer .top .section h4{
+    font-size: 25px;
+    margin-bottom: 5px;
+}
+footer .top .section ul{
+    list-style: none;
+}
+footer .top .section ul li a{
+    color: var(--light);
+}
+footer .top .row .section ul li img{
+    width: 18px;
+    margin-right: 5px;
+}
+footer .top .section:last-child img{
+    width: 30px;
+    margin-top: 5px;
+}
+
+/* Footer - copyright */
+
+footer .bottom{
+    display: flex;
+    flex-direction: column;
+}
+footer .bottom .line{
+    width: 92vw;
+    height: 1px;
+    margin: 3vh auto;
+    background-color: var(--light);
+}
+footer .bottom .text{
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+}
+
+
+  
+
+
+
+
+/* ------------------------------------------------------ */
+                    /* RESPONSIVE */
+/* ------------------------------------------------------ */
+
+
+@media only screen and (max-width: 900px) {
+
+    /* NAVIGATION BAR | RESPONSIVE */
+
+    /* Navigation Bar | Responsive - burger */
+
+    nav .burger {
+      display: block;
+      cursor: pointer;
+    }
+    nav .burger div {
+      position: relative;
+      margin-right: 30px;
+    }
+    nav .burger span {
+      width: 30px;
+      height: 2px;
+      display: block;
+      position: absolute;
+      top: 50%;
+      left: 50%;
+      transform: translate(-50%, -50%);
+      background: var(--light);
+      transition: 0.4s;
+    }
+    nav .burger .line-1 {
+      transform: translate(-50%, -10px);
+    }
+    nav .burger .line-3 {
+      transform: translate(-50%, 7px);
+    }
+    nav .burger.active .line-1 {
+      transform: translate(-50%, -50%) rotate(-45deg);
+    }
+    nav .burger.active .line-2 {
+      width: 0;
+    }
+    nav .burger.active .line-3 {
+      transform: translate(-50%, -50%) rotate(45deg);
+    }
+
+    /* Navigation Bar | Responsive - menu */
+
+    nav .menu {
+      height: 0;
+      width: 100vw;
+      left: 0;
+      right: 4.5vw;
+      top: 15vh;
+      display: flex;
+      flex-direction: column;
+      align-items: center;
+      justify-content: center;
+      position: absolute;
+      overflow: hidden;
+      opacity: 0;
+      transition: 0.4s;
+      background-color: var(--dark);
+    }
+    nav .menu.active {
+      height: 85vh;
+      opacity: 1;
+    }
+    nav .menu a {
+      margin-bottom: 10px;
+      text-align: center;
+      padding: 10px 0;
+      width: 100%;
+      box-sizing: border-box;
+      color: var(--light);
+    }
+    nav .menu a:hover::after {
+        width: 0%; 
+    }
+
+    /* Navigation Bar | Responsive - button */ 
+    
+    nav .btn{
+        display: none;
+    }
+
+
+    /* FOOTER | RESPONSIVE */
+
+    footer {
+        padding: 5vh 8vw;
+        width: 100vw;
+        height: 90vh;
+        margin-top: 12vh;
+    }
+    footer .top{
+        flex-direction: column;
+    }
+
+    /* Footer | Responsive - logo */
+    footer .logo{
+        margin-bottom: 2.5vh;
+    }
+    footer .top .logo img{
+        width: 75px;
+    }
+    footer .top .logo h3{
+        font-size: 35px;
+        transform: translateY(15px);
+    }
+
+    /* Footer | Responsive - sections */
+
+    footer .top .row .section:first-child{
+        margin-right: 15vw;
+    }
+
+    /* Footer - copyright */
+
+    footer .bottom .line{
+        width: 84vw;
+    }
+    footer .bottom .text{
+        flex-direction: column;
+    }
+
+}
+
+@media only screen and (max-width: 685px) {
+
+    /* GENERAL SETTINGS | RESPONSIVE */
+
+    /* Text Styles | Responsive */
+
+    h1{
+        font-size: 35px;
+    }
+    p{
+        font-size: 12px;
+        font-weight: 100;
+    }
+
+    /* BUTTONS STYLINGS | RESPONSIVE */
+
+    .btn{
+        width: 30vw;
+        height: 8vh;
+    }
+    .btn1{
+        width: 25vw;
+    }
+    .btn2{
+        width: 25vw;
+    }
+
+    /* TITLE STYLE | RESPONSIVE */
+
+    .title{
+        margin-bottom: 0;
+    }
+    .title h2{
+        font-size: 35px;
+    }
+    .title h3{
+        font-size: 35px;
+        transform: translate(0, -6vh);
+    }
+
+    /* SUBTITLE STYLE | RESPONSIVE */
+
+    .subtitle{
+        text-align: center;
+        margin-bottom: 0vh;
+    }
+    .subtitle h2{
+        font-size: 32px;
+    }
+    .subtitle h3{
+        font-size: 32px;
+        transform: translate(0, -6vh);
+    }
+
+    /* HERO SECTION | RESPONSIVE */
+
+    #hero{
+        flex-direction: column;
+        align-items: center;
+    }
+    #hero .text, .image{
+        width: 100%;
+    }
+    #hero .text{
+        padding: 1vh 8vw;
+        padding-bottom: 7.5vh;
+    }
+    #hero .image img{
+        width: 80vw;
+    }
+    
+    /* Hero Section | Responsive - buttons */
+    
+    #hero .hero-btns{
+        display: flex;
+    }
+    
+    #hero .hero-btns .btn1{
+        margin-right: 10px;
+    }
+
+
+    /* SERVICES | RESPONSIVE */
+
+    #services{
+        height: auto;
+        margin-bottom: 0;
+    }
+
+    /* Services | Responsive - text */
+
+    #services .text .paragraph{
+        flex-direction: column;
+
+        padding: 0 8vw;
+        margin: 0;
+        margin-bottom: 10vh;
+    }
+
+    /* Services | Responsive - services */
+
+    #services .all-services{
+        flex-direction: column;
+        height: auto;
+        padding: 0 5vw;
+    }
+    #services .all-services .service{    
+        height: 40vh;
+        width: 80vw;
+        margin: 1vh 0;
+        padding: 2vh 5vw;
+    }
+
+    /* Services | Responsive - hover */
+
+    #services .all-services .service:hover{
+        transform: translateY(0);
+    }
+
+    /* Services | Responsive - buttons */
+
+    #services .all-services .service .btn2{
+        width: 70vw;
+        color: var(--dark);
+        background-color: var(--light);
+    }
+    #services .all-services .service .btn2:hover{
+        color: var(--light);
+        background-color: var(--dark);
+    }
+
+    /* Services | Responsive - icon */
+
+    #services .all-services .service i{
+        font-size: 12vw;
+    }
+
+
+    /* LANDING PAGES | RESPONSIVE */
+
+    #landing-pages {
+        flex-direction: column;
+        height: auto;
+        padding: 0 auto;
+        padding-left: 10vw;
+        margin-top: 100vh;
+    }
+    #landing-pages .text, #landing-pages .features{
+        width: 80vw;
+        padding: 0 auto;
+    }
+
+    /* Landing Pages | Responsive - text */
+
+    #landing-pages .text{
+        margin-top: -90vh;
+    }
+
+    /* Landing Pages | Responsive - features */
+
+    #landing-pages .features .feature{
+        height: 32vh;
+        width: 40vw;
+        margin: 1vh 1vw;
+        padding: 1vh 2vw;
+        text-align: center;
+    }
+    #landing-pages .features .feature:hover{
+        transform: translateY(0);
+    }
+
+    /* Landing Pages | Responsive - icon */
+
+    #landing-pages .features .feature i{
+        font-size: 10vw;
+    }
+
+    /* Landing Pages | Responsive - button */
+
+    #landing-pages .btn2{
+        width: 80vw;
+        margin: 2vh auto;
+        color: var(--dark);
+        background-color: var(--light);
+    }
+
+
+    /* ROADMAP */
+
+    #roadmap{
+        display: flex;
+        flex-direction: column;
+        padding: 0 8vw;
+        padding-top: 15vh;
+    }   
+    #roadmap .steps{
+        display: flex;
+    }
+
+    /* Roadmap - timeline */
+
+    #roadmap .timeline{
+        display: flex;
+        flex-direction: row;
+        align-items: center;
+        justify-content: left;
+        margin: 2vh auto;
+    }
+    #roadmap .timeline .line{
+        height: 60vh;
+        width: 2px;
+    }
+    #roadmap .timeline .numbers{
+        flex-direction: column;
+        width: 30px;
+        height: 65vh;
+        transform: translateX(-15px);
+    }
+
+    /* Roadmap - steps */
+
+    #roadmap .all-steps{
+        flex-direction: column;
+        justify-content: space-evenly;
+    }
+    #roadmap .all-steps .step{
+        width: 60vw;
+        height: 20vh;
+        padding: 2vh 3vw;
+        border-style: none;
+    }
+    #roadmap .all-steps .step i{
+        display: none;
+    }
+
+
+    /* CONTACT US */
+
+    #contact-us {
+        height: auto;
+        margin-top: 40vh;
+    }
+    #contact-us .title{
+        margin-bottom: 5vh;
+    }
+
+    /* Contact Us | Responsive - form */
+    
+    #contact-us .form {
+        height: 70vh;
+        width: 80vw;
+        border-style: none;
+        margin: 0 auto;
+        padding: 2vh 2vw;
+    }
+    
+    /* Contact Us | Responsive - inputs */
+
+    #contact-us .form .top input[type="text"],
+    #contact-us .form input[type="email"],
+    #contact-us .form textarea {
+        color: var(--light);
+        background-color: transparent;
+        border: solid var(--light);
+        border-radius: 2px;
+        font-family: 'Poppins', sans-serif;
+        padding: 2vh 5vw;
+        margin: 1vh 0.5vw;
+    }
+    #contact-us .form .top {
+        display: flex;
+        flex-direction: column;
+        width: 80vw;
+    }
+    #contact-us .form .top input[type="text"]{
+        width: 80vw;
+    }
+    #contact-us .form input[type="email"]{
+        width: 80vw;
+    }
+    #contact-us .form textarea {
+        resize: none; 
+        width: 80vw;
+        height: 20vh;
+        margin-bottom: -2.5vh;
+    }
+
+    /* Contact Us | Responsive - form */
+
+    #contact-us .form .contact-buttons{
+        flex-direction: column;
+        margin-left: 0.5vw;
+    }
+    #contact-us .form .contact-buttons .btn1{
+        width: 80vw;
+    }
+    #contact-us .form .contact-buttons .btn1:hover{
+        color: var(--dark);
+        background-color: var(--light);
+    }
+    #contact-us .form .contact-buttons .btn2{
+        width: 80vw;
+        margin-left: 0;
+    }
+    #contact-us .form .contact-buttons .btn2 img{
+        width: 8vw;
+    }
+    #contact-us .form .contact-buttons .btn2:hover{
+        background-color: transparent;
+    }
+
+
+}
