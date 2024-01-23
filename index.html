@@ -1,402 +1,364 @@
-<!-- FusionLabs - juanigomez | landing page - HTML -->
+<!-- FusionLabs | Uy Software Company - landing page -->
 
 <!DOCTYPE html>
 <html lang="en">
 <head>
     <meta charset="UTF-8">
-    <meta http-equiv="X-UA-Compatible" content="IE=edge">
-    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no">
 
     <title>FusionLabs | Uy Software Company</title>
 
-    <link rel="stylesheet" type="text/css" href="style.css">
-
     <link rel="icon" href="favicon.png" type="image/png">
-    <link rel="apple-touch-icon" href="images/logo/logo.s.w.png">
-    <meta property="og:image" content="images/logo/logo.c.b.png"/>
+    <link rel="apple-touch-icon" href="images/logo/icon.png">
+    <meta property="og:image" content="images/logo/black.png"/>
     <meta name="description" 
-          content="Vender online nunca fue tan facil. Asesorate de forma GRATUITA con nosotros ">
+          content="Te ayudamos a realizar una transicion digital con paginas web y creacion 
+                   de contenido para redes sociales acompañado de marketing digital.">
 
-    <!-- Chatbot Icons -->
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Outlined:opsz,wght,FILL,GRAD@48,400,0,0" />
-    <link rel="stylesheet" href="https://fonts.googleapis.com/css2?family=Material+Symbols+Rounded:opsz,wght,FILL,GRAD@48,400,1,0" />
-    
+    <link rel="stylesheet" href="assets/style.css">
+
+    <!-- PHOSPHORICONS -->
+	<script src="https://unpkg.com/phosphor-icons"></script>
 </head>
-<body id="index-page">
+<body>
     <main>
 
         <!-- Navigation Bar -->
-
-        <header id="navigationBar">
+        
+        <nav>
             <div class="logo">
-                <a href="index.html">
-                    <img src="images/logo/logo.s.w.png" alt="logo">
-                    <h3>FusionLabs</h3>
-                </a>
+                <img src="assets/images/logo/icon.png" alt="logo">
+                <h2>FusionLabs</h2>
             </div>
-            <div class="hamburger">
+            <div class="burger">
                 <div>
                     <span class="line-1"></span>
                     <span class="line-2"></span>
                     <span class="line-3"></span>
                 </div>
             </div>
-            <nav class="nav-bar">
-                <ul>
-                    <li><a href="#services">Servicios</a></li>
-                    <li><a href="#about-us">Sobre nosostros</a></li>
-                    <li><a href="#contact-us">Contacto</a></li>
-                    <li><a href="works.html" class="btn-nav">Trabajos Recientes</a></li>
-                </ul>
-            </nav>
-        </header>
-
-        <div class="navPos"></div>
-
-        <!-- Container -->
+            <div class="menu">
+                <a href="#">Home</a>
+                <span></span>
+                <a href="#services">Services</a>
+                <span></span>
+                <a href="#roadmap">Roadmap</a>
+                <span></span>
+                <a href="#contact-us">Contact Us</a>
+                <span></span>
+            </div>
+            <a class="btn">
+                Empezar Ahora
+            </a>
+        </nav>
         
-        <div class="container">
-            <div class="left">
-                <div class="title">
-                    <h1>Vender online</h1>
-                    <h1 class="rdh1">nunca fue tan facil</h1>
-                    <div class="wrapper">
-                        <div class="static-txt">nunca fue tan</div>
-                        <ul class="dynamic-txts">
-                            <li><span>rapido</span></li>
-                            <li><span>facil</span></li>
-                            <li><span>seguro</span></li>
-                        </ul>
+        <!-- Hero Section -->
+
+        <section id="hero">
+            <div class="text">
+                <h1>Digitaliza tu empresa</h1>
+                <p>
+                    Te ayudamos a realizar una transicion digital
+                    con paginas web y creacion de contenido para redes sociales acompañado de marketing digital.  
+                </p>
+                <div class="hero-btns">
+                    <a href="#" class="btn1">Empezar</a>
+                    <a href="#" class="btn2">Servicios</a>
+                </div>
+            </div>
+            <div class="image">
+                <img src="assets/images/hero-img.png" alt="">
+            </div>
+        </section>
+
+        <!-- Services -->
+
+        <section id="services">
+            <div class="reveal">
+                <div class="text">
+                    <div class="title">
+                        <h2>Nuestros Servicios</h2>
+                        <h3>Nuestros Servicios</h3>
+                    </div>
+                    <div class="paragraph">
+                        <p>
+                            En FusionLabs, realizamos un análisis detallado de tus necesidades y, 
+                            en base a ello, armamos una propuesta personalizada. Esta propuesta puede 
+                            incluir uno de nuestros servicios, como el desarrollo de una página web
+                        </p>
+                        <p>
+                            o una integración de varios servicios interconectados. De esta manera, 
+                            creamos un embudo de ventas para tu negocio, lo que aumenta tu tasa de 
+                            conversión y, por ende, tu facturación.
+                        </p>
                     </div>
                 </div>
-                <p>
-                    Hoy en día todo se digitalizo, no pierdas la chance de realizar esta transición con
-                    la ayuda de nuestro equipo altamente capacitado.  
-                </p>
-                <div>
-                    <a href="#services" class="btn-wp">Get Started</a>
-                </div>
-            </div>
-            <div class="right">
-                <img src="images/3Dicons/rocket.png" alt="icon" class="icon">
-            </div>
-
-            <div class="container-wave-fd">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-                </svg>
-            </div>
-
-            <div class="container-wave-rd">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
-            </div>
-        </div>   
-
-        <!-- Services: -->
-
-        <a id="services"></a>        
-
-        <div class="services-page reveal">
-
-            <div class="sec-title">
-                <span class="line"></span>
-                <h1>Nuestros Servicios</h1>
-                <span class="line"></span>
-            </div>
-    
-            <div class="services">
-                <div class="options">
-                    <div class="serv" id="e-commerce">
-                        <img src="images/icons/services/ecommerce.png" alt="ecom" class="img-serv">
+                <div class="all-services">
+                    <div class="service">
+                        <i class="ph ph-code"></i>
+                        <h3>Landing Pages</h3>
+                        <p>
+                            Pagina web que convierte leads en clientes.
+                        </p>
+                        <a href="#landing-pages" class="btn2">Empezar</a>
+                    </div>
+                    <div class="service">
+                        <i class="ph ph-note-pencil"></i>
+                        <h3>Content Creation</h3>
+                        <p>
+                            Contenido que aporta valor y genera confianza.
+                        </p>
+                        <a href="#" class="btn2">Empezar</a>
+                    </div>
+                    <div class="service">
+                        <i class="ph ph-rocket-launch"></i>
+                        <h3>Digital Marketing</h3>
+                        <p>
+                            Marketing que fortalece tu presencia en linea.
+                        </p>
+                        <a href="#" class="btn2">Empezar</a>
+                    </div>
+                    <div class="service">
+                        <i class="ph ph-shopping-cart"></i>
                         <h3>E-commerce</h3>
                         <p>
-                            Hace años que nuestro principal enfoque es la
-                            creación de soluciones e-commerce para llevar
-                            a su negocio al siguiente nivel con nuestra ayuda.
+                            Vende mas, mejor y sin limites con una tienda online.
                         </p>
-                        <a href="ecommerce.html" class="btn-serv">Empezar</a>
-                    </div>     
-                    <div class="serv" id="landing">
-                        <img src="images/icons/services/landing.png" alt="landing" class="img-serv">
-                        <h3>Landing Page</h3>
-                        <p>
-                            En FusionLabs entendemos la importancia de tener 
-                            una gran pagina web y por eso tenemos al mejor 
-                            equipo y herramientas para ayudar a tu empresa.
-                        </p>
-                        <a href="landing.html" class="btn-serv">Empezar</a>
-                    </div>
-                    <div class="serv" id="hosting">
-                        <img src="images/icons/services/hosting.png" alt="hosting" class="img-serv">
-                        <h3>Dominio/Hosting</h3>
-                        <p>
-                            Para tener cualquier sitio online es importante tener
-                            un dominio y donde hostearlo. En FusionLabs ofrecemos
-                            un servicio accesible pero sumamente eficaz.
-                        </p>
-                        <a href="#contact-us" class="btn-serv">Empezar</a>
-                    </div>
-                    <div class="serv" id="advice">
-                        <img src="images/icons/services/message.png" alt="asess" class="img-serv">
-                        <h3>Mail corporativo</h3>
-                        <p>
-                            Si lo que buscas es mejorar la imagen de tu empresa
-                            y darle el toque de profesionalismo que le falta, nosotros
-                            te ayudamos con las casillas de mail corporativas.
-                        </p>
-                        <a href="#contact-us" class="btn-serv">Empezar</a>
+                        <a href="#" class="btn2">Empezar</a>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- About Us -->
-        
-        <a id="about-us"></a>
+        <!-- Growth Partner -->
 
-        <div class="about-us-page reveal">
-
-            <div class="sec-title">
-                <span class="line"></span>
-                <h1>Sobre nosotros</h1>
-                <span class="line"></span>
-            </div>
-    
-            <div class="selector">
-    
-                <div class="top">
-                    <div class="left">
-                        <img src="images/3Dicons/cart.png" alt="about us (1)" class="about-img">
+        <section id="growth-partner">
+            <div class="reveal">
+                <div class="features">
+                    <img src="assets/images/growth-partner.png" alt="growth-partner">
+                </div>
+                <div class="text">
+                    <div class="subtitle">
+                        <h2>Growth Partner</h2>
+                        <h3>Growth Partner</h3>
                     </div>
-                    <div class="right">
-                        <h3>Quienes somos</h3>
-                        <p>  
-                           Somos una empresa de software dedicada a la creación
-                           de e-commerce. Nuestro objetivo es ayudar a todo
-                           tipo de empresas a potenciar sus ventas mediante el
-                           uso de la tecnologia.
+                    <div class="paragraph">
+                        <p>
+                            Consiste en un propuesta donde ofrecemos un paquete de servicios 
+                            conectados que incluyen creación de contenido, marketing digital y desarrollo 
+                            de una landing page.  
                         </p>
-                        <a href="#contact-us" class="btn-au">Contactanos</a>
+                        <br>
+                        <p>
+                            De esta manera, tendrías contenido activo, como historias, publicaciones y reels, 
+                            que se promocionaría en redes sociales a través de Meta Ads, aumentando el alcance 
+                            de tu contenido. Contarás con una página web en Internet que aporta valor y 
+                            transmite confianza a tus clientes. Los leads que captamos en Instagram y social media 
+                            en general son dirigidos a tu página web o directamente al medio donde cierres tus ventas, 
+                            ya sea WhatsApp,  dm Instagram, correo electrónico o donde tú lo prefieras.
+                        </p>
+                    </div>
+                    <a href="#" class="btn2">Empezar</a>
+                </div>
+            </div>
+        </section>
+
+        <!-- Landing Pages -->
+
+        <section id="landing-pages">
+            <div class="text">
+                <div class="subtitle">
+                    <h2>Paginas web</h2>
+                    <h3>Paginas web</h3>
+                </div>
+                <div class="paragraph">
+                    <p>
+                        Una landing page es una pagina web con el proposito de
+                        convertir a leads en clientes.
+                    </p>
+                    <br>
+                    <p>
+                        Para conseguir los resultados que buscas, diseñamos una
+                        web 100% personalizada con tus necesidades en mente.
+                    </p>
+                    <br>
+                    <p>
+                        El servicio que ofrecemos incluye el dominio, hosting, 
+                        reportes de rendimiento, mantenimiento y un certificado de 
+                        seguridad SSL.
+                    </p>
+                    <br>
+                </div>
+                <a href="ttps://wa.me/59893995536" class="btn2">Empezar</a>
+            </div>
+            <div class="features">
+                <div class="top">
+                    <div class="feature">
+                        <i class="ph ph-laptop"></i>
+                        <h3>Website</h3>
+                        <p>
+                            Pagina web que convierte leads en clientes.
+                        </p>
+                    </div>
+                    <div class="feature">
+                        <i class="ph ph-thumbs-up"></i>
+                        <h3>Dominio .com</h3>
+                        <p>
+                            ¿No tenes dominio? Nos encargamos.
+                        </p>
                     </div>
                 </div>
                 <div class="bottom">
-                    <div class="left">
-                        <h3>Como lo hacemos</h3>
+                    <div class="feature">
+                        <i class="ph ph-lock-key"></i>
+                        <h3>Certificado SSL</h3>
                         <p>
-                           Nuestro equipo de diseñadores y desarrolladores 
-                           trabaja con nuestros clientes para entender sus 
-                           necesidades y crear soluciones que se adaptan a 
-                           sus objetivos únicos.
+                            Protege tu web con un certificado SSL.
                         </p>
-                        <a href="#steps" class="btn-au">Paso a Paso</a>
                     </div>
-                    <div class="right">
-                        <img src="images/3Dicons/store.png" alt="about us (2)" class="about-img">
+                    <div class="feature">
+                        <i class="ph ph-database"></i>
+                        <h3>Hosting</h3>
+                        <p>
+                            Hostea tu sitio web de manera profesional.
+                        </p>
                     </div>
                 </div>
             </div>
-        </div>
+        </section>
 
-        <!-- Step by Step: -->
+        <!-- Roadmap -->
 
-        <a id="steps"></a>
-
-        <div class="steps-page reveal">
-
-            <div class="sec-title">
-                <span class="line"></span>
-                <h1>Paso a Paso</h1>
-                <span class="line"></span>
-            </div>
-    
-            <div class="step-by-step">
+        <section id="roadmap">
+            <div class="reveal">
+                <div class="title">
+                    <h2>Como lo hacemos</h2>
+                    <h3>Como lo hacemos</h3>
+                </div>
                 <div class="steps">
-                    <div class="step" id="first">
-                        <h5 class="num">1</h5>
-                        <h3>Nos Reunimos</h3>
-                        <p>
-                            Lo primero que haremos sera juntarse con el cliente
-                            para hacer una evaluacion de los problemas y necesidades
-                            asi podemos brindar la mejor solucion posible.  
-                        </p>
+                    <div class="timeline">
+                        <div class="line"></div>
+                        <div class="numbers">
+                            <div class="num">1</div>
+                            <div class="num">2</div>
+                            <div class="num">3</div>
+                            <div class="num">4</div>
+                        </div>
                     </div>
-                    <div class="step" id="second">
-                        <h5 class="num">2</h5>
-                        <h3>Diseñamos</h3>
-                        <p>
-                            Una vez se hayan establecido las necesidades del cliente,
-                            nuestro equipo empieza a diseñar un prototipo que le permitira
-                            a nuestros desarrolladores crear el producto final.
-                        </p>
-                    </div>
-                    <div class="step" id="third">
-                        <h5 class="num">3</h5>
-                        <h3>Producimos</h3>
-                        <p>
-                            Nuestros desarrolladores comienzan a crear el software en 
-                            base al diseño establecido previamente, pero principalmente
-                            orientado a brindar una solucion personalizada.
-                        </p>
-                    </div>
-                    <div class="step" id="fourth">
-                        <h5 class="num">4</h5>
-                        <h3>Entregamos</h3>
-                        <p>
-                            Se entrega el producto desarrollado. Luego nuestro equipo 
-                            seguira en contacto por gastos de mantenimiento, lo que permitira
-                            mejoras y cambios que se requieran a futuro.
-                        </p>
+                    <div class="all-steps">
+                        <div class="step">
+                            <i class="ph ph-chats-circle"></i>
+                            <h3>Nos Reunimos</h3>
+                            <p>Conocemos las necesidades de tu negocio.</p>
+                        </div>
+                        <div class="step">
+                            <i class="ph ph-pencil-simple-line"></i>
+                            <h3>Diseñamos</h3>
+                            <p>Ideamos una propuesta en base a sus necesidades.</p>
+                        </div>
+                        <div class="step">
+                            <i class="ph ph-trend-up"></i>
+                            <h3>Creamos</h3>
+                            <p>Trabajamos en conjunto para optimizar los resultados.</p>
+                        </div>
+                        <div class="step">
+                            <i class="ph ph-handshake"></i>
+                            <h3>Logramos</h3>
+                            <p>El cliente alcanzo sus metas empresariales.</p>
+                        </div>
                     </div>
                 </div>
             </div>
+        </section>
 
-            <div class="steps-wave-fd">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M985.66,92.83C906.67,72,823.78,31,743.84,14.19c-82.26-17.34-168.06-16.33-250.45.39-57.84,11.73-114,31.07-172,41.86A600.21,600.21,0,0,1,0,27.35V120H1200V95.8C1132.19,118.92,1055.71,111.31,985.66,92.83Z" class="shape-fill"></path>
-                </svg>
-            </div>
+        <!-- Contact Us -->
 
-            <div class="steps-wave-rd">
-                <svg data-name="Layer 1" xmlns="http://www.w3.org/2000/svg" viewBox="0 0 1200 120" preserveAspectRatio="none">
-                    <path d="M321.39,56.44c58-10.79,114.16-30.13,172-41.86,82.39-16.72,168.19-17.73,250.45-.39C823.78,31,906.67,72,985.66,92.83c70.05,18.48,146.53,26.09,214.34,3V0H0V27.35A600.21,600.21,0,0,0,321.39,56.44Z" class="shape-fill"></path>
-                </svg>
-            </div>
-
-        </div>   
-
-        <!-- Contact Us: -->
-
-        <a id="contact-us"></a>
-
-        <div class="contact-us-page">
-
-            <div class="sec-title">
-                <span class="line"></span>
-                <h1>Contactanos</h1>
-                <span class="line"></span>
-            </div>
-    
-            <div class="contact-us">
-                <div class="c-content">
-                    <img src="images/3Dicons/chat.svg" alt="icon" class="icon">
+        <section id="contact-us">
+            <div class="reveal">
+                <div class="title">
+                    <h2>Contactanos</h2>
+                    <h3>Contactanos</h3>
                 </div>
                 <div class="form">
                     <form>
-                        <div class="noun-info">
-                            <div class="inp-box" id="name-inpBox">
-                                <input type="text" id="name" class="inp" required>
-                                <label class="name-label">Nombre</label>
-                            </div>
-                            <div class="inp-box">
-                                <input type="text" id="business" class="inp" required>
-                                <label class="business-label">Empresa</label>
-                            </div>
+                        <div class="top">
+                            <input type="text" id="name" class="inp 1" required placeholder=Nombre>
+                            <input type="text" id="phone-number" class="inp 2" required placeholder="Celular">
+                            <input type="text" id="business" class="inp 3" required placeholder="Empresa">
                         </div>
-                        <div class="inp-box">
-                            <input type="email" id="email" class="inp" required>
-                            <label class="email-label">E-mail</label>
-                        </div>
-                        <div class="inp-box">
-                            <textarea class="inp" id="msg" cols="30" rows="10" required></textarea> 
-                            <label class="msg-label">Message</label>
-                        </div>
-                        <div class="btn-val">
-                            <div class="contact-btns">
-                                <button type="submit" class="btn-bw" id="btncs">Enviar</button>
-                                <a href="https://wa.me/59893995536" class="btn-cs-wp">
-                                    <img src="images/icons/whatsapp.png" alt="wpp">
-                                </a>
-                            </div>
-                            <ul class="alert-msg" id="alert">
-                                <li class="val-msg">MENSAJE ENVIADO</li>
-                                <li class="inv-msg">DATOS INVALIDOS</li>
-                            </ul>
+                        <input type="email" id="email" class="inp" required placeholder="E-mail">
+                        <textarea class="inp" id="msg" cols="30" rows="10" required placeholder="Mensaje"></textarea> 
+                        <div class="contact-buttons">
+                            <button type="submit" class="btn1" id="contact-btn">Enviar</button>
+                            <a href="https://wa.me/59893995536" class="btn2">
+                                <img src="assets/images/icons/whatsapp.png" alt="wpp">
+                            </a>
                         </div>
                     </form>
-                </div>
+                </div>    
             </div>
-
-        </div>
-
-        <!-- ChatBot -->
-
-        <button class="chatbot-toggler">
-            <span class="material-symbols-rounded">mode_comment</span>
-            <span class="material-symbols-outlined">close</span>
-        </button>
-        <div class="chatbot">
-            <header>
-                <h2>Chatbot</h2>
-                <span class="close-btn material-symbols-outlined">close</span>
-            </header>
-            <ul class="chatbox">
-                <li class="chat incoming">
-                <span class="material-symbols-outlined">smart_toy</span>
-                <p>Hola 👋<br>Como te puedo ayudar?</p>
-                </li>
-            </ul>
-            <div class="chat-input">
-                <textarea placeholder="Enter a message..." spellcheck="false" required></textarea>
-                <span id="send-btn" class="material-symbols-rounded">send</span>
-            </div>
-        </div>
+        </section>
 
         <!-- Footer -->
 
         <footer>
-            <div class="footer-selector">
-                <div class="footer-logo">
-                    <div class="img-footer">
-                        <img src="images/logo/logo.c.b.png">
+            <div class="top">
+                <div class="logo">
+                    <img src="assets/images/logo/icon.png" alt="logo">
+                    <h3>FusionLabs</h3>
+                </div>
+                <div class="row">
+                    <div class="section">
+                        <h4>Pages</h4>
+                        <ul>
+                            <li><a href="#services">Servicios</a></li>
+                            <li><a href="#">Sobre nosotros</a></li>
+                            <li><a href="#contact-us">Contactanos</a></li>
+                            <li><a href="#">FAQs</a></li>
+                        </ul>
+                    </div>
+                    <div class="section">
+                        <h4>Partners</h4>
+                        <ul>
+                            <li><img src="assets/images/icons/github.png">Github</li>
+                            <li><img src="assets/images/icons/shopify.png">Shopify</li>
+                            <li><img src="assets/images/icons/figma.png">Figma</li>
+                            <li><img src="assets/images/icons/vscode.png">VSCode</li>
+                        </ul>
                     </div>
                 </div>
-                <div class="pages-footer">
-                    <h4>Pages</h4>
-                    <ul>
-                        <li><a href="#services">Servicios</a></li>
-                        <li><a href="#about-us">Sobre nosotros</a></li>
-                        <li><a href="#contact-us">Contactanos</a></li>
-                        <li><a href="FAQs.html">FAQs</a></li>
-                    </ul>
-                </div>
-                <div class="partners-footer">
-                    <h4>Partners</h4>
-                    <ul>
-                        <li><img src="images/icons/github.png">Github</li>
-                        <li><img src="images/icons/shopify.png">Shopify</li>
-                        <li><img src="images/icons/figma.png">Figma</li>
-                        <li><img src="images/icons/vscode.png">VSCode</li>
-                    </ul>
-                </div>
-                <div class="contact-footer">
+                <div class="section">
                     <h4>Contact</h4>
                     <ul>
                         <li>fusionlabsuy.com</li>
                         <li>fusion.labs.uy@gmail.com</li>
                         <div class="socialmedia">
-                            <a href="https://wa.me/59893967391">
-                                <img src="images/icons/whatsapp.png" alt="wpp">
+                            <a href="https://wa.me/59893995536">
+                                <img src="assets/images/icons/whatsapp.png" alt="whatsapp">
                             </a>
                             <a href="https://www.instagram.com/fusionlabsuy/">
-                                <img src="images/icons/instagram.png" alt="ig">
+                                <img src="assets/images/icons/instagram.png" alt="instagram">
                             </a>
-                            <img src="images/icons/twitter.png" alt="twt">
-                            <img src="images/icons/facebook.png" alt="fb">
+                            <a href="#">
+                                <img src="assets/images/icons/facebook.png" alt="facebook">
+                            </a>
                         </div>
                     </ul>
+                </div>
+            </div>
+            <div class="bottom">
+                <div class="line"></div>
+                <div class="text">
+                    <p>&copy; 2023 FusionLabs Uy - Todos los derechos reservados.</p>
+                    <p>FusionLabs | Uy Software Company</p>
                 </div>
             </div>
         </footer>
 
     </main>
 
-    <!-- Email Server (Smpt.js) -->
-    <script src="https://smtpjs.com/v3/smtp.js"></script>
-    <!-- ChatBot -->
-    <script src="chatbot/chatbot.js"></script>
-    <!-- General JavaScript -->
-    <script src="app.js"></script>    
+    <!-- JavaScript File -->
+    <script src="assets/script.js"></script>
+
 </body>
 </html>
