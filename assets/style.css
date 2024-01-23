@@ -970,8 +970,6 @@ footer .bottom .text{
     #growth-partner .btn2{
         width: 80vw;
         margin: 5vh auto;
-        color: var(--dark);
-        background-color: var(--light);
     }
 
 
@@ -982,7 +980,7 @@ footer .bottom .text{
         height: auto;
         padding: 0 8vw;
         padding-left: 10vw;
-        margin-top: 175vh;
+        margin-top: 160vh;
     }
     #landing-pages .text, #landing-pages .features{
         width: 80vw;
