@@ -48,7 +48,7 @@ contactBtn.addEventListener('click', function(e){
   var phoneNumber = document.getElementById('phone-number')
   var msg = document.getElementById('msg')
 
-  var body = '<br/> name: ' + nombre.value + '<br/> businessr: ' + empresa.value + 
+  var body = '<br/> name: ' + nombre.value + '<br/> business: ' + empresa.value + 
              '<br/> email: ' + email.value + '<br/> phone number: ' + phoneNumber.value +
              '<br/> message: ' + msg.value 
              
