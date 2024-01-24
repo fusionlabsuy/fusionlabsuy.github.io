@@ -585,82 +585,41 @@ nav .menu a:hover::after {
 footer {
     display: flex;
     flex-direction: column;
-    justify-content: space-between;
+    align-items: center;
+    justify-content: space-around;
     padding: 5vh 4vw;
     width: 100vw;
     height: 45vh;
     color: var(--light);
     background-color: var(--grey);
 }
-footer .top{
-    display: flex;
-    align-items: top;
-    justify-content: space-between;
-}
 
 /* Footer - logo */
 
-footer .top .logo{
+footer .logo{
     display: flex;
 }
-footer .top .logo img{
-    width: 90px;
-    object-fit: contain;
+footer .logo img{
+    width:50px;
 }
-footer .top .logo h3{
-    font-family: 'Montserrat', sans-serif;
-    font-size: 40px;
+footer .logo h2{
     font-weight: 100;
-    transform: translateY(70px);
+    font-family: 'Montserrat', sans-serif;
+    transform: translateY(10px);
 }
 
-/* Footer - sections */
+/* Footer - social media */
 
-footer .row{
-    display: flex;
-    align-items: top;
-    justify-content: space-between;
-    width: 30vw;
-    margin-bottom: 2.5vh;
+footer .social-media img{
+    width: 40px;
+    padding: 5px;
+    margin: 0 0.5vw;
+    transition: 0.2 ease-in-out;
 }
-footer .row .section:last-child{
-    margin-right: 0vw;
-}
-footer .top .section h4{
-    font-size: 25px;
-    margin-bottom: 5px;
-}
-footer .top .section ul{
-    list-style: none;
-}
-footer .top .section ul li a{
-    color: var(--light);
-}
-footer .top .row .section ul li img{
-    width: 18px;
-    margin-right: 5px;
-}
-footer .top .section:last-child img{
-    width: 30px;
-    margin-top: 5px;
-}
-
-/* Footer - copyright */
-
-footer .bottom{
-    display: flex;
-    flex-direction: column;
-}
-footer .bottom .line{
-    width: 92vw;
-    height: 1px;
-    margin: 3vh auto;
-    background-color: var(--light);
-}
-footer .bottom .text{
-    display: flex;
-    align-items: center;
-    justify-content: space-between;
+footer .social-media img:hover{
+    transform: translateY(-5px);
+    background-image: var(--gradient1);
+    border-radius: 50%;
 }
 
 
@@ -753,46 +712,6 @@ footer .bottom .text{
     
     nav .btn{
         display: none;
-    }
-
-
-    /* FOOTER | RESPONSIVE */
-
-    footer {
-        padding: 5vh 8vw;
-        width: 100vw;
-        height: 90vh;
-        margin-top: 12vh;
-    }
-    footer .top{
-        flex-direction: column;
-    }
-
-    /* Footer | Responsive - logo */
-    footer .logo{
-        margin-bottom: 2.5vh;
-    }
-    footer .top .logo img{
-        width: 75px;
-    }
-    footer .top .logo h3{
-        font-size: 35px;
-        transform: translateY(15px);
-    }
-
-    /* Footer | Responsive - sections */
-
-    footer .top .row .section:first-child{
-        margin-right: 15vw;
-    }
-
-    /* Footer - copyright */
-
-    footer .bottom .line{
-        width: 84vw;
-    }
-    footer .bottom .text{
-        flex-direction: column;
     }
 
 }
@@ -1144,6 +1063,23 @@ footer .bottom .text{
     }
     #contact-us .form .contact-buttons .btn2:hover{
         background-color: transparent;
+    }
+
+
+
+    /* FOOTER | RESPONSIVE */
+
+    /* Footer - logo */
+
+    footer .logo{
+        display: flex;
+    }
+    footer .logo img{
+        width: 40px;
+    }
+    footer .logo h2{
+        font-size: 16px;
+        transform: translateY(10px);
     }
 
 
