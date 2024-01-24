@@ -61,8 +61,6 @@ contactBtn.addEventListener('click', function(e){
     msg.value = ""
   }
 
-  clearInputs()
-
   Email.send({
     SecureToken : "09c36a42-e397-48c2-a1a7-7a86178c331c",
     To : 'fusion.labs.uy@gmail.com',
@@ -72,4 +70,7 @@ contactBtn.addEventListener('click', function(e){
   }).then(
     message => alert("Tu mensaje fue enviado, pronto te llegara una respuesta!")
   )
+
+  clearInputs()
+  
 })
