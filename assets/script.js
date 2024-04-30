@@ -37,6 +37,17 @@ function reveal(){
 }
 
 
+var formBtn = document.getElementById("form-btn")
+
+formBtn.addEventListener('click', function() {
+  window.open(
+    'https://calendar.google.com/calendar/appointments/schedules/AcZssZ3klyCDkaLkpVv7koIvli2WPb5PF5PVgfMeVgdVJdjBG6zZjZKgjEswSOsCF28E-Qw1kxn7_gbz?gv=true', 
+    'Meeting Window', 
+  )
+
+})
+
+
 var contactBtn = document.getElementById("contact-btn")
 
 contactBtn.addEventListener('click', function(e){

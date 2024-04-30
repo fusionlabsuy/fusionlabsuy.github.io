@@ -269,7 +269,8 @@ nav .menu a:hover::after {
     align-items: center;
 }
 #hero .image img{
-    width: 40vw;
+    width: 50vw;
+    transform: translate(-8vw, -12vh);
     margin: 0 auto;
 }
 
@@ -538,16 +539,25 @@ nav .menu a:hover::after {
 #contact-us .form .top input[type="text"],
 #contact-us .form input[type="email"],
 #contact-us .form textarea {
+    height: 9vh;
+    width: 84vw;
     color: var(--light);
-    background-color: transparent;
-    border: solid var(--light);
-    border-radius: 2px;
+    background-color: var(--grey);
     font-family: 'Poppins', sans-serif;
+    outline: none;
+    border-radius: 4px;
+    border: 2px solid var(--grey);
+    transition: all 0.3s ease;
     padding: 2vh 1vw;
-    margin: 1vh 0.5vw;
+    margin: 1vh 0.25vw;
+}
+#contact-us .form .top input[type="text"]:focus,
+#contact-us .form input[type="email"]:focus,
+#contact-us .form textarea:focus {
+    border-color: var(--light);
 }
 #contact-us .form .top input[type="text"]{
-    width: 27.45vw;
+    width: 27.75vw;
 }
 #contact-us .form input[type="email"]{
     width: 85vw;
@@ -556,7 +566,7 @@ nav .menu a:hover::after {
     resize: none; 
     width: 85vw;
     height: 20vh;
-    margin-bottom: -2.5vh;
+    margin-bottom: 0vh;
 }
 
 /* Contact Us - Buttons */
@@ -577,6 +587,9 @@ nav .menu a:hover::after {
 }
 #contact-us .form .contact-buttons .btn2:hover{
     background-color: transparent;
+}
+#contact-us .form .contact-buttons .btn{
+    margin: 4vh 1vw;
 }
 
 
@@ -781,10 +794,11 @@ footer .social-media img:hover{
     }
     #hero .text{
         padding: 1vh 8vw;
-        padding-bottom: 7.5vh;
+        padding-bottom: 0vh;
     }
     #hero .image img{
-        width: 80vw;
+        width: 100vw;
+        transform: translate(-6vw, -15vh);
     }
     
     /* Hero Section | Responsive - buttons */
@@ -998,13 +1012,13 @@ footer .social-media img:hover{
         margin-top: 15vh;
     }
     #contact-us .title{
-        margin-bottom: 5vh;
+        margin: 7.5vh 0;
     }
 
     /* Contact Us | Responsive - form */
     
     #contact-us .form {
-        height: 70vh;
+        height: 80vh;
         width: 80vw;
         border-style: none;
         margin: 0 auto;
@@ -1016,11 +1030,6 @@ footer .social-media img:hover{
     #contact-us .form .top input[type="text"],
     #contact-us .form input[type="email"],
     #contact-us .form textarea {
-        color: var(--light);
-        background-color: transparent;
-        border: solid var(--light);
-        border-radius: 2px;
-        font-family: 'Poppins', sans-serif;
         padding: 2vh 5vw;
         margin: 1vh 0.5vw;
     }
@@ -1064,6 +1073,10 @@ footer .social-media img:hover{
     }
     #contact-us .form .contact-buttons .btn2:hover{
         background-color: transparent;
+    }
+    #contact-us .form .contact-buttons .btn{
+        width: 80vw;
+        margin-left: 0;
     }
 
 
